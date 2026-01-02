@@ -386,8 +386,18 @@ export const en_US = {
     "Settings.Sound.Volume": "Volume",
     "Settings.Sound.Volume.Desc": "Overall volume",
     "Settings.Sound.Collection": "Sound collection",
-    "Settings.Sound.Collection.Desc": "Collection of sounds used",
-    "Settings.Directories.Desc": "Customize the directories used by the app",
+    "Settings.Sound.Collection.Desc": "Collection of sounds used",    "Settings.PiecePersonality": "Piece Personalities",
+    "Settings.PiecePersonality.Desc":
+      "Give your pieces unique personalities that respond to moves",
+    "Settings.PiecePersonality.Enabled": "Enable Piece Personalities",
+    "Settings.PiecePersonality.Enabled.Desc":
+      "Pieces will speak when moved based on move quality and situation",
+    "Settings.PiecePersonality.Volume": "Personality Volume",
+    "Settings.PiecePersonality.Volume.Desc":
+      "Volume for piece responses and audio clips",
+    "Settings.PiecePersonality.Style": "Personality Style",
+    "Settings.PiecePersonality.Style.Desc":
+      "Choose the personality style for your pieces",    "Settings.Directories.Desc": "Customize the directories used by the app",
     "Settings.Directories.Files": "Files directory",
     "Settings.Directories.Files.Desc":
       "This is where your games in the Files page are stored",

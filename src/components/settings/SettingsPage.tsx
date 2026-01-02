@@ -11,6 +11,7 @@ import {
   moveNotationTypeAtom,
   nativeBarAtom,
   percentageCoverageAtom,
+  piecePersonalityEnabledAtom,
   previewBoardOnHoverAtom,
   showArrowsAtom,
   showConsecutiveArrowsAtom,
@@ -43,6 +44,7 @@ import {
   IconMouse,
   IconReload,
   IconVolume,
+  IconMoodSmile,
 } from "@tabler/icons-react";
 import { useLoaderData } from "@tanstack/react-router";
 import { open } from "@tauri-apps/plugin-dialog";
@@ -54,6 +56,8 @@ import BoardSelect from "./BoardSelect";
 import ColorControl from "./ColorControl";
 import FontSizeSlider from "./FontSizeSlider";
 import KeybindInput from "./KeybindInput";
+import PersonalitySelect from "./PersonalitySelect";
+import PersonalityVolumeSlider from "./PersonalityVolumeSlider";
 import PiecesSelect from "./PiecesSelect";
 import SettingsNumberInput from "./SettingsNumberInput";
 import * as classes from "./SettingsPage.css";
@@ -98,6 +102,9 @@ export default function Page() {
         </Tabs.Tab>
         <Tabs.Tab value="sound" leftSection={<IconVolume size="1rem" />}>
           {t("Settings.Sound")}
+        </Tabs.Tab>
+        <Tabs.Tab value="personality" leftSection={<IconMoodSmile size="1rem" />}>
+          {t("Settings.PiecePersonality")}
         </Tabs.Tab>
         <Tabs.Tab value="keybinds" leftSection={<IconKeyboard size="1rem" />}>
           {t("Settings.Keybinds")}
@@ -647,6 +654,57 @@ export default function Page() {
                   </Text>
                 </div>
                 <SoundSelect />
+              </Group>
+            </Tabs.Panel>
+
+            <Tabs.Panel value="personality">
+              <Text size="lg" fw={500} className={classes.title}>
+                {t("Settings.PiecePersonality")}
+              </Text>
+              <Text size="xs" c="dimmed" mt={3} mb="lg">
+                {t("Settings.PiecePersonality.Desc")}
+              </Text>
+              <Group
+                justify="space-between"
+                wrap="nowrap"
+                gap="xl"
+                className={classes.item}
+              >
+                <div>
+                  <Text>{t("Settings.PiecePersonality.Enabled")}</Text>
+                  <Text size="xs" c="dimmed">
+                    {t("Settings.PiecePersonality.Enabled.Desc")}
+                  </Text>
+                </div>
+                <SettingsSwitch atom={piecePersonalityEnabledAtom} />
+              </Group>
+              <Group
+                justify="space-between"
+                wrap="nowrap"
+                gap="xl"
+                className={classes.item}
+              >
+                <div>
+                  <Text>{t("Settings.PiecePersonality.Volume")}</Text>
+                  <Text size="xs" c="dimmed">
+                    {t("Settings.PiecePersonality.Volume.Desc")}
+                  </Text>
+                </div>
+                <PersonalityVolumeSlider />
+              </Group>
+              <Group
+                justify="space-between"
+                wrap="nowrap"
+                gap="xl"
+                className={classes.item}
+              >
+                <div>
+                  <Text>{t("Settings.PiecePersonality.Style")}</Text>
+                  <Text size="xs" c="dimmed">
+                    {t("Settings.PiecePersonality.Style.Desc")}
+                  </Text>
+                </div>
+                <PersonalitySelect />
               </Group>
             </Tabs.Panel>
 

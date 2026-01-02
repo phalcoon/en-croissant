@@ -176,6 +176,36 @@ export const soundVolumeAtom = atomWithStorage<number>(
   },
 );
 
+// Piece Personality Settings
+export const piecePersonalityEnabledAtom = atomWithStorage<boolean>(
+  "piece-personality-enabled",
+  false,
+  undefined,
+  {
+    getOnInit: true,
+  },
+);
+
+export const piecePersonalityVolumeAtom = atomWithStorage<number>(
+  "piece-personality-volume",
+  0.7,
+  undefined,
+  {
+    getOnInit: true,
+  },
+);
+
+export const piecePersonalityNameAtom = atomWithStorage<string>(
+  "piece-personality-name",
+  "standard",
+  undefined,
+  {
+    getOnInit: true,
+  },
+);
+
+export const piecePersonalitiesConfigAtom = atom<any | null>(null);
+
 export const pieceSetAtom = atomWithStorage<string>("piece-set", "staunty");
 export const boardImageAtom = atomWithStorage<string>(
   "board-image",

@@ -6,6 +6,12 @@ import { isPrefix } from "@/utils/misc";
 import { getAnnotation } from "@/utils/score";
 import { playSound } from "@/utils/sound";
 import {
+  triggerPiecePersonality,
+  playGlobalClip,
+  type MoveContext,
+} from "@/utils/piecePersonality";
+import { castlingSide } from "chessops/chess";
+import {
   type GameHeaders,
   type TreeNode,
   type TreeState,
@@ -535,10 +541,63 @@ function makeMove({
   if (!pos) return;
   const san = makeSan(pos, move);
   if (san === "--") return; // invalid move
+  
+  // Get move information for personality system BEFORE playing the move
+  const piece = isNormal(move) ? pos.board.get(move.from) : undefined;
+  const isCapture = san.includes("x");
+  const prevScore = moveNode.score?.value;
+  
+  // Detect castling and en passant BEFORE pos.play() modifies the position
+  const isCastling = isNormal(move) ? !!castlingSide(pos, move) : false;
+  const epSquareBefore = pos.epSquare; // Save before pos.play()
+  const isEnPassant = piece?.role === "pawn" && 
+                      isCapture && 
+                      isNormal(move) &&
+                      move.to === epSquareBefore;
+  
   pos.play(move);
+  
   if (sound) {
     playSound(san.includes("x"), san.includes("+"));
   }
+  
+  const newFen = makeFen(pos.toSetup());
+  const isCheck = san.includes("+") && !san.includes("#");
+  const isCheckmate = san.includes("#");
+  
+  // Trigger piece personality if we have all needed info (independent of sound parameter)
+  if (piece && last && isNormal(move)) {
+    const moveContext: MoveContext = {
+      piece,
+      from: move.from,
+      to: move.to,
+      san,
+      isCapture,
+      isCheck,
+      isCheckmate,
+      isCastling,
+      isEnPassant,
+      isPromotion: !!move.promotion,
+      promotion: move.promotion,
+      prevScore,
+      currentScore: undefined, // Will be set by analysis if available
+      color: piece.color,
+      halfMoves: moveNode.halfMoves,
+      opening: undefined, // Opening field doesn't exist on GameHeaders yet
+      isSacrifice: false, // Would need additional analysis
+    };
+    
+    // Trigger personality response asynchronously
+    triggerPiecePersonality(moveContext).catch((err) => {
+      console.warn("Failed to trigger piece personality:", err);
+    });
+    
+    // Play global clips for special situations
+    if (isCheckmate) {
+      playGlobalClip("checkmate").catch(() => {});
+    }
+  }
+  
   if (changeHeaders && pos.isEnd()) {
     if (pos.isCheckmate()) {
       state.headers.result = pos.turn === "white" ? "0-1" : "1-0";
@@ -547,8 +606,6 @@ function makeMove({
       state.headers.result = "1/2-1/2";
     }
   }
-
-  const newFen = makeFen(pos.toSetup());
 
   if (
     (changeHeaders && isThreeFoldRepetition(state, newFen)) ||

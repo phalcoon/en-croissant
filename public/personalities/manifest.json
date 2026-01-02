@@ -1,0 +1,22 @@
+{
+  "personalities": [
+    {
+      "id": "standard",
+      "name": "Standard",
+      "description": "Balanced and respectful - suitable for all players",
+      "author": "En Croissant Team",
+      "version": "1.0.0",
+      "contextual": false,
+      "languages": ["en"]
+    },
+    {
+      "id": "italian",
+      "name": "Italian",
+      "description": "Passionate and expressive with Italian flair",
+      "author": "En Croissant Team",
+      "version": "1.0.0",
+      "contextual": true,
+      "languages": ["en", "it"]
+    }
+  ]
+}

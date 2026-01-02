@@ -1,0 +1,322 @@
+{
+  "name": "italian",
+  "description": "Italian-themed personality - passionate and expressive",
+  "contextual": true,
+  "pieces": [
+    {
+      "role": "pawn",
+      "responses": [
+        {
+          "id": "pawn_good_1",
+          "text": "Avanti! Forward!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "good" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_excellent_1",
+          "text": "Magnifico! What a push!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "excellent" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_neutral_1",
+          "text": "Piano, piano... step by step.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "neutral" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_bad_1",
+          "text": "Mamma mia, not good!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "bad" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_capture_1",
+          "text": "Prego! Take that!",
+          "conditions": [
+            { "type": "specialMove", "specialMove": "capture" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_promotion_1",
+          "text": "Finalmente! I am reborn as a queen!",
+          "conditions": [
+            { "type": "specialMove", "specialMove": "promotion" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_center_1",
+          "text": "Il centro! The heart of battle!",
+          "conditions": [
+            { "type": "position", "positionType": "center" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "role": "knight",
+      "responses": [
+        {
+          "id": "knight_good_1",
+          "text": "Bellissimo! A beautiful jump!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "good" },
+            { "type": "pieceType", "pieceType": "knight" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_excellent_1",
+          "text": "Che fantastico salto!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "excellent" },
+            { "type": "pieceType", "pieceType": "knight" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_neutral_1",
+          "text": "Così così... okay move.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "neutral" },
+            { "type": "pieceType", "pieceType": "knight" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_bad_1",
+          "text": "Porca miseria! Bad jump!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "bad" },
+            { "type": "pieceType", "pieceType": "knight" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_check_1",
+          "text": "Scacco! From nowhere!",
+          "conditions": [
+            { "type": "specialMove", "specialMove": "check" },
+            { "type": "pieceType", "pieceType": "knight" }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "role": "bishop",
+      "responses": [
+        {
+          "id": "bishop_good_1",
+          "text": "Perfetto! Perfect diagonal!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "good" },
+            { "type": "pieceType", "pieceType": "bishop" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_excellent_1",
+          "text": "Straordinario! Extraordinary!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "excellent" },
+            { "type": "pieceType", "pieceType": "bishop" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_neutral_1",
+          "text": "Va bene... it's okay.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "neutral" },
+            { "type": "pieceType", "pieceType": "bishop" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_bad_1",
+          "text": "Che disastro! What a disaster!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "bad" },
+            { "type": "pieceType", "pieceType": "bishop" }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "role": "rook",
+      "responses": [
+        {
+          "id": "rook_good_1",
+          "text": "Forte! Strong and direct!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "good" },
+            { "type": "pieceType", "pieceType": "rook" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_excellent_1",
+          "text": "Fantastico! Dominating!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "excellent" },
+            { "type": "pieceType", "pieceType": "rook" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_neutral_1",
+          "text": "Normale... nothing special.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "neutral" },
+            { "type": "pieceType", "pieceType": "rook" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_bad_1",
+          "text": "Oddio! Too aggressive!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "bad" },
+            { "type": "pieceType", "pieceType": "rook" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_castling_1",
+          "text": "Proteggere il re! Arrocco!",
+          "conditions": [
+            { "type": "specialMove", "specialMove": "castling" },
+            { "type": "pieceType", "pieceType": "rook" }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "role": "queen",
+      "responses": [
+        {
+          "id": "queen_good_1",
+          "text": "La regina comanda! The queen commands!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "good" },
+            { "type": "pieceType", "pieceType": "queen" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_excellent_1",
+          "text": "Stupendo! Magnificent!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "excellent" },
+            { "type": "pieceType", "pieceType": "queen" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_neutral_1",
+          "text": "Semplice... a simple move.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "neutral" },
+            { "type": "pieceType", "pieceType": "queen" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_bad_1",
+          "text": "Che stupida! How foolish!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "bad" },
+            { "type": "pieceType", "pieceType": "queen" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_blunder_1",
+          "text": "Disgraziato! Tragic mistake!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "blunder" },
+            { "type": "pieceType", "pieceType": "queen" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_check_1",
+          "text": "Scacco, caro mio!",
+          "conditions": [
+            { "type": "specialMove", "specialMove": "check" },
+            { "type": "pieceType", "pieceType": "queen" }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "role": "king",
+      "responses": [
+        {
+          "id": "king_good_1",
+          "text": "Saggio! A wise move.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "good" },
+            { "type": "pieceType", "pieceType": "king" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_neutral_1",
+          "text": "Con calma... carefully now.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "neutral" },
+            { "type": "pieceType", "pieceType": "king" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_bad_1",
+          "text": "Pericoloso! Too dangerous!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "bad" },
+            { "type": "pieceType", "pieceType": "king" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_castling_1",
+          "text": "Arrocco! To the castle!",
+          "conditions": [
+            { "type": "specialMove", "specialMove": "castling" },
+            { "type": "pieceType", "pieceType": "king" }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "globalClips": {
+    "brilliant": "brillante.mp3",
+    "blunder": "blunder_italian.mp3",
+    "checkmate": "scacco_matto.mp3",
+    "stalemate": "stallo.mp3"
+  }
+}
