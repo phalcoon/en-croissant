@@ -13,7 +13,9 @@
     "test": "vitest run",
     "lint": "tsc --noEmit && biome check ./src",
     "lint:ci": "tsc --noEmit && biome ci ./src --diagnostic-level=error",
-    "lint:fix": "biome check --apply ./src"
+    "lint:fix": "biome check --apply ./src",
+    "generate-voices": "node scripts/generate_voices.js",
+    "generate-voices:free": "python scripts/generate_voices_free.py"
   },
   "dependencies": {
     "@badrap/result": "^0.2.13",
@@ -95,6 +97,7 @@
     "@vanilla-extract/css": "^1.14.1",
     "@vanilla-extract/vite-plugin": "^4.0.6",
     "jsdom": "^24.0.0",
+    "openai": "^6.15.0",
     "typescript": "^5.4.2",
     "vitest": "^2.1.1"
   }

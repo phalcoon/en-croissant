@@ -343,10 +343,22 @@ function findMatchingResponses(
   personality: PiecePersonality,
   context: MoveContext,
 ): PersonalityResponse[] {
-  return personality.responses.filter((response) => {
+  const matches = personality.responses.filter((response) => {
     // All conditions must match
     return response.conditions.every((condition) => conditionMatches(condition, context));
   });
+
+  // If we have matches with specialMove conditions, prioritize them
+  // This prevents generic "neutral" responses from overriding specific "check" responses
+  const specialMoveMatches = matches.filter(r => 
+    r.conditions.some(c => c.type === 'specialMove')
+  );
+
+  if (specialMoveMatches.length > 0) {
+    return specialMoveMatches;
+  }
+
+  return matches;
 }
 
 /**
@@ -373,32 +385,75 @@ function selectWeightedResponse(responses: PersonalityResponse[]): PersonalityRe
  */
 function speakText(text: string, volume: number, pieceRole?: Role): void {
   if ('speechSynthesis' in window) {
-    // Don't cancel - let current speech finish if playing
-    // This prevents interruptions during engine analysis
-    
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.volume = volume;
+    
+    // Get voices and filter for English
+    let voices = window.speechSynthesis.getVoices();
+    const englishVoices = voices.filter(v => v.lang.startsWith('en'));
+    const voicePool = englishVoices.length > 0 ? englishVoices : voices;
+
+    // Debug: Log available voices once to help troubleshoot
+    if (!window['__voices_logged' as any]) {
+      console.log('Available Voices:', voicePool.map(v => `${v.name} (${v.lang})`));
+      window['__voices_logged' as any] = true;
+    }
+    
+    // Helper to find voice by keywords
+    const findVoice = (keywords: string[]) => 
+      voicePool.find(v => keywords.some(k => v.name.toLowerCase().includes(k)));
+
+    // Default settings
     utterance.rate = 1.0;
     utterance.pitch = 1.0;
     
-    // Select voice based on piece role
-    if (pieceRole === 'queen') {
-      // Try to find a female voice for the queen
-      const voices = window.speechSynthesis.getVoices();
-      const femaleVoice = voices.find(voice => 
-        voice.name.toLowerCase().includes('female') ||
-        voice.name.toLowerCase().includes('woman') ||
-        voice.name.toLowerCase().includes('zira') ||
-        voice.name.toLowerCase().includes('hazel') ||
-        voice.name.toLowerCase().includes('samantha') ||
-        voice.name.toLowerCase().includes('victoria') ||
-        voice.name.toLowerCase().includes('karen') ||
-        voice.name.toLowerCase().includes('susan') ||
-        voice.name.toLowerCase().includes('amelie') ||
-        voice.name.toLowerCase().includes('anna')
-      );
-      if (femaleVoice) {
-        utterance.voice = femaleVoice;
+    // Select voice and characteristics based on piece role
+    // We use aggressive pitch/rate changes to ensure distinctness even if the same voice actor is used
+    if (pieceRole) {
+      switch (pieceRole) {
+        case 'queen':
+          // Queen: Commanding, slightly higher pitch
+          utterance.pitch = 1.1;
+          const queenVoice = findVoice(['female', 'woman', 'zira', 'samantha', 'victoria', 'karen', 'susan', 'amelie', 'anna', 'moira', 'tessa']);
+          if (queenVoice) utterance.voice = queenVoice;
+          break;
+          
+        case 'king':
+          // King: Deep, authoritative, slower
+          utterance.pitch = 0.7; 
+          utterance.rate = 0.85;
+          const kingVoice = findVoice(['male', 'david', 'daniel', 'james', 'mark', 'alex', 'fred']);
+          if (kingVoice) utterance.voice = kingVoice;
+          break;
+          
+        case 'rook':
+          // Rook: Very deep, slow, heavy (Golem-like)
+          utterance.pitch = 0.5;
+          utterance.rate = 0.7;
+          const rookVoice = findVoice(['mark', 'fred', 'male', 'david']);
+          if (rookVoice) utterance.voice = rookVoice;
+          break;
+          
+        case 'bishop':
+          // Bishop: Higher pitch, precise, slightly faster (Scholarly)
+          utterance.pitch = 1.3;
+          utterance.rate = 1.1;
+          const bishopVoice = findVoice(['richard', 'george', 'male', 'david']);
+          if (bishopVoice) utterance.voice = bishopVoice;
+          break;
+          
+        case 'knight':
+          // Knight: Normal pitch, very fast (Impulsive/Energetic)
+          utterance.pitch = 1.0;
+          utterance.rate = 1.4;
+          // Use default voice but fast
+          break;
+          
+        case 'pawn':
+          // Pawn: Slightly higher/younger
+          utterance.pitch = 1.2;
+          utterance.rate = 1.0;
+          break;
       }
     }
     
@@ -515,16 +570,55 @@ export async function triggerPiecePersonality(context: MoveContext): Promise<voi
     assignedVariant = identityMap.get(evaluatedContext.pieceKey);
     
     if (!assignedVariant) {
-      // First move for this piece - assign personality based on opening
-      const theme = getThemeFromOpening(evaluatedContext.opening);
-      assignedVariant = selectPersonalityVariant(evaluatedContext.piece.role, theme, config);
+      // Check if any other piece of the same role/color has been assigned
+      const currentRole = evaluatedContext.piece.role;
+      const currentColor = evaluatedContext.color;
       
-      console.log('[Personality Assignment]', {
-        pieceKey: evaluatedContext.pieceKey,
-        opening: evaluatedContext.opening,
-        theme,
-        assignedVariant,
-      });
+      // Get all assigned variants for this role/color
+      const assignedVariantsForRole = new Set<string>();
+      let hasFirstPieceAssigned = false;
+      
+      for (const [key, variantName] of identityMap.entries()) {
+        // key format: "color-role-square"
+        if (key.startsWith(`${currentColor}-${currentRole}-`)) {
+          assignedVariantsForRole.add(variantName);
+          hasFirstPieceAssigned = true;
+        }
+      }
+
+      if (!hasFirstPieceAssigned) {
+        // First move for this piece type - assign personality based on opening
+        const theme = getThemeFromOpening(evaluatedContext.opening);
+        assignedVariant = selectPersonalityVariant(evaluatedContext.piece.role, theme, config);
+        
+        console.log('[Personality Assignment - First]', {
+          pieceKey: evaluatedContext.pieceKey,
+          opening: evaluatedContext.opening,
+          theme,
+          assignedVariant,
+        });
+      } else {
+        // Subsequent pieces - assign random available personality
+        // Filter out already assigned variants
+        const availableVariants = pieceConfig.personalities.filter(p => 
+          !assignedVariantsForRole.has(p.name)
+        );
+        
+        if (availableVariants.length > 0) {
+          const randomVariant = availableVariants[Math.floor(Math.random() * availableVariants.length)];
+          assignedVariant = randomVariant.name;
+        } else {
+          // No unique variants left, pick any random one
+          const allVariants = pieceConfig.personalities;
+          assignedVariant = allVariants[Math.floor(Math.random() * allVariants.length)].name;
+        }
+        
+        console.log('[Personality Assignment - Subsequent]', {
+          pieceKey: evaluatedContext.pieceKey,
+          assignedVariant,
+          availableCount: availableVariants.length
+        });
+      }
       
       // Store the assignment persistently in the atom
       const newIdentityMap = new Map(identityMap);
