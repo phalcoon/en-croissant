@@ -27,7 +27,7 @@
             },
             {
               "id": "pawn_default_excellent",
-              "text": "Breaking through their defenses!",
+              "text": "Holy shit, crushing your sorry ass!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -51,7 +51,7 @@
             },
             {
               "id": "pawn_default_blunder",
-              "text": "NO! I'm hanging!",
+              "text": "Oh fuck, I'm hanging like a dumbass!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -69,7 +69,7 @@
             },
             {
               "id": "pawn_royal_excellent",
-              "text": "I shall not fail my liege!",
+              "text": "Fuck yeah, I shall not fail my liege - you're screwed!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -93,7 +93,7 @@
             },
             {
               "id": "pawn_royal_blunder",
-              "text": "I have disgraced the crown!",
+              "text": "Shit, I have disgraced the crown - you bastards win!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -111,7 +111,7 @@
             },
             {
               "id": "pawn_italian_excellent",
-              "text": "Magnifico! We're dominating!",
+              "text": "Magnifico! We're dominating - eat shit, losers!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -135,7 +135,7 @@
             },
             {
               "id": "pawn_italian_blunder",
-              "text": "Disastro totale! Total disaster!",
+              "text": "Disastro totale! Total fucking disaster!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -153,7 +153,7 @@
             },
             {
               "id": "pawn_aggressive_excellent",
-              "text": "They can't stop us now!",
+              "text": "They can't stop us now - fuck you all!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -177,7 +177,7 @@
             },
             {
               "id": "pawn_aggressive_blunder",
-              "text": "I've thrown everything away!",
+              "text": "I've thrown everything away - you bastards!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -195,7 +195,7 @@
             },
             {
               "id": "pawn_sicilian_excellent",
-              "text": "Creating chaos! Just as planned!",
+              "text": "Creating chaos! Just as planned - you're fucked!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -219,7 +219,7 @@
             },
             {
               "id": "pawn_sicilian_blunder",
-              "text": "The tactics backfired horribly!",
+              "text": "The tactics backfired horribly - shit!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -237,7 +237,7 @@
             },
             {
               "id": "pawn_french_excellent",
-              "text": "Très bien! Perfect structure!",
+              "text": "Très bien! Perfect structure - suck it!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -261,7 +261,7 @@
             },
             {
               "id": "pawn_french_blunder",
-              "text": "Catastrophe! The structure collapses!",
+              "text": "Catastrophe! The structure collapses - merde!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -279,7 +279,7 @@
             },
             {
               "id": "pawn_spanish_excellent",
-              "text": "¡Perfecto! Traditional mastery!",
+              "text": "¡Perfecto! Traditional mastery - you're doomed!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -303,7 +303,7 @@
             },
             {
               "id": "pawn_spanish_blunder",
-              "text": "¡Horror! A terrible mistake!",
+              "text": "¡Horror! A terrible mistake - joder!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -321,7 +321,7 @@
             },
             {
               "id": "pawn_queens_gambit_excellent",
-              "text": "Masterful central control!",
+              "text": "Masterful central control - bow down, bitches!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -345,7 +345,7 @@
             },
             {
               "id": "pawn_queens_gambit_blunder",
-              "text": "The entire plan has crumbled!",
+              "text": "The entire plan has crumbled - fuck!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -377,7 +377,7 @@
             },
             {
               "id": "knight_default_excellent",
-              "text": "Perfect outpost! They can't stop me!",
+              "text": "Perfect outpost! They can't stop me - assholes!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -401,7 +401,7 @@
             },
             {
               "id": "knight_default_blunder",
-              "text": "I jumped into a trap!",
+              "text": "I jumped into a trap - you sneaky bastards!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -419,7 +419,7 @@
             },
             {
               "id": "knight_cavalier_excellent",
-              "text": "A knight's valor conquers all!",
+              "text": "A knight's valor conquers all - die, scum!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -443,7 +443,7 @@
             },
             {
               "id": "knight_cavalier_blunder",
-              "text": "My honor is lost!",
+              "text": "My honor is lost - you dishonorable fucks!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -461,7 +461,7 @@
             },
             {
               "id": "knight_italian_excellent",
-              "text": "Perfetto salto! Perfect leap!",
+              "text": "Perfetto salto! Perfect leap - you're screwed!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -485,7 +485,7 @@
             },
             {
               "id": "knight_italian_blunder",
-              "text": "Che orrore! What a horror!",
+              "text": "Che orrore! What a horror - porca miseria!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -503,7 +503,7 @@
             },
             {
               "id": "knight_sicilian_excellent",
-              "text": "Tactical domination!",
+              "text": "Tactical domination - fuck your tactics!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -527,7 +527,7 @@
             },
             {
               "id": "knight_sicilian_blunder",
-              "text": "Tactical disaster! I'm lost!",
+              "text": "Tactical disaster! I'm lost - shit!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -545,7 +545,7 @@
             },
             {
               "id": "knight_french_excellent",
-              "text": "Magnifique placement! Pressuring them!",
+              "text": "Magnifique placement! Pressuring them - allez vous faire foutre!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -569,7 +569,7 @@
             },
             {
               "id": "knight_french_blunder",
-              "text": "Quelle erreur! What a mistake!",
+              "text": "Quelle erreur! What a mistake - putain!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -587,7 +587,7 @@
             },
             {
               "id": "knight_spanish_excellent",
-              "text": "¡Magnífico! Traditional mastery!",
+              "text": "¡Magnífico! Traditional mastery - jódete!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -611,7 +611,7 @@
             },
             {
               "id": "knight_spanish_blunder",
-              "text": "¡Desastre! I'm captured!",
+              "text": "¡Desastre! I'm captured - hostia puta!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -643,7 +643,7 @@
             },
             {
               "id": "bishop_default_excellent",
-              "text": "A devastating diagonal!",
+              "text": "A devastating diagonal! You're fucked!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -667,7 +667,7 @@
             },
             {
               "id": "bishop_default_blunder",
-              "text": "I'm hanging on the diagonal!",
+              "text": "I'm hanging on the diagonal - shit!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -685,7 +685,7 @@
             },
             {
               "id": "bishop_cleric_excellent",
-              "text": "Providence guides our attack!",
+              "text": "Providence guides our attack - praise the lord, you're doomed!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -709,7 +709,7 @@
             },
             {
               "id": "bishop_cleric_blunder",
-              "text": "Heavens! I am forsaken!",
+              "text": "Heavens! I am forsaken - god damn it!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -727,7 +727,7 @@
             },
             {
               "id": "bishop_italian_excellent",
-              "text": "Che spettacolo! What a show!",
+              "text": "Che spettacolo! What a show - you're finished!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -751,7 +751,7 @@
             },
             {
               "id": "bishop_italian_blunder",
-              "text": "Madonna! Sono perso!",
+              "text": "Madonna! Sono perso! - holy shit!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -769,7 +769,7 @@
             },
             {
               "id": "bishop_sicilian_excellent",
-              "text": "Lethal diagonals!",
+              "text": "Lethal diagonals - die, you bastards!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -793,7 +793,7 @@
             },
             {
               "id": "bishop_sicilian_blunder",
-              "text": "I miscalculated everything!",
+              "text": "I miscalculated everything - fuck!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -811,7 +811,7 @@
             },
             {
               "id": "bishop_french_excellent",
-              "text": "Liberté totale! Total freedom!",
+              "text": "Liberté totale! Total freedom - va te faire enculer!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -835,7 +835,7 @@
             },
             {
               "id": "bishop_french_blunder",
-              "text": "Non! Total miscalculation!",
+              "text": "Non! Total miscalculation - bordel!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -853,7 +853,7 @@
             },
             {
               "id": "bishop_queens_gambit_excellent",
-              "text": "Perfect piece coordination!",
+              "text": "Perfect piece coordination - you're outmatched, assholes!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -877,7 +877,7 @@
             },
             {
               "id": "bishop_queens_gambit_blunder",
-              "text": "The coordination shattered!",
+              "text": "The coordination shattered - damn it!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -909,7 +909,7 @@
             },
             {
               "id": "rook_default_excellent",
-              "text": "Invading their territory!",
+              "text": "Invading their territory - get fucked!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -933,7 +933,7 @@
             },
             {
               "id": "rook_default_blunder",
-              "text": "I've left the file undefended!",
+              "text": "I've left the file undefended - you sneaky shits!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -951,7 +951,7 @@
             },
             {
               "id": "rook_fortress_excellent",
-              "text": "Crushing their defenses!",
+              "text": "Crushing their defenses - die, invaders!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -975,7 +975,7 @@
             },
             {
               "id": "rook_fortress_blunder",
-              "text": "The tower has fallen!",
+              "text": "The tower has fallen - fuck!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -993,7 +993,7 @@
             },
             {
               "id": "rook_sicilian_excellent",
-              "text": "Penetrating their position!",
+              "text": "Penetrating their position - you're screwed!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -1017,7 +1017,7 @@
             },
             {
               "id": "rook_sicilian_blunder",
-              "text": "The breakthrough failed! I'm trapped!",
+              "text": "The breakthrough failed! I'm trapped - shit!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1035,7 +1035,7 @@
             },
             {
               "id": "rook_queens_gambit_excellent",
-              "text": "Total file domination!",
+              "text": "Total file domination - bow down!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -1059,7 +1059,7 @@
             },
             {
               "id": "rook_queens_gambit_blunder",
-              "text": "All pressure is lost!",
+              "text": "All pressure is lost - damn!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1091,7 +1091,7 @@
             },
             {
               "id": "queen_default_excellent",
-              "text": "Unstoppable power!",
+              "text": "Unstoppable power - you're fucked!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -1115,7 +1115,7 @@
             },
             {
               "id": "queen_default_blunder",
-              "text": "NO! The queen is lost!",
+              "text": "NO! The queen is lost - holy shit!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1133,7 +1133,7 @@
             },
             {
               "id": "queen_monarch_excellent",
-              "text": "Regal and overwhelming!",
+              "text": "Regal and overwhelming - kneel before me!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -1157,7 +1157,7 @@
             },
             {
               "id": "queen_monarch_blunder",
-              "text": "The realm has lost its queen!",
+              "text": "The realm has lost its queen - god damn it!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1175,7 +1175,7 @@
             },
             {
               "id": "queen_sicilian_excellent",
-              "text": "Irresistible tactical force!",
+              "text": "Irresistible tactical force - die!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -1199,7 +1199,7 @@
             },
             {
               "id": "queen_sicilian_blunder",
-              "text": "Trapped! The attack collapsed!",
+              "text": "Trapped! The attack collapsed - fuck!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1217,7 +1217,7 @@
             },
             {
               "id": "queen_french_excellent",
-              "text": "C'est magnifique! Strategic perfection!",
+              "text": "C'est magnifique! Strategic perfection - allez vous faire foutre!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -1241,7 +1241,7 @@
             },
             {
               "id": "queen_french_blunder",
-              "text": "Incroyable! Completely miscalculated!",
+              "text": "Incroyable! Completely miscalculated - merde!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1259,7 +1259,7 @@
             },
             {
               "id": "queen_queens_gambit_excellent",
-              "text": "Flawless coordination!",
+              "text": "Flawless coordination - you're outplayed!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -1283,7 +1283,7 @@
             },
             {
               "id": "queen_queens_gambit_blunder",
-              "text": "Everything falls apart!",
+              "text": "Everything falls apart - shit!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1315,7 +1315,7 @@
             },
             {
               "id": "king_default_excellent",
-              "text": "Safe and sound!",
+              "text": "Safe and sound - you're fucked now!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -1339,7 +1339,7 @@
             },
             {
               "id": "king_default_blunder",
-              "text": "I walked into danger!",
+              "text": "I walked into danger - you bastards!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1357,7 +1357,7 @@
             },
             {
               "id": "king_sovereign_excellent",
-              "text": "My kingdom is fortified!",
+              "text": "My kingdom is fortified - kneel, peasants!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -1381,7 +1381,7 @@
             },
             {
               "id": "king_sovereign_blunder",
-              "text": "The kingdom falls! Checkmate looms!",
+              "text": "The kingdom falls! Checkmate looms - damn!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1399,7 +1399,7 @@
             },
             {
               "id": "king_sicilian_excellent",
-              "text": "Now unleash the tactics!",
+              "text": "Now unleash the tactics - you're doomed!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -1423,7 +1423,7 @@
             },
             {
               "id": "king_sicilian_blunder",
-              "text": "I'm exposed! The attack is over!",
+              "text": "I'm exposed! The attack is over - fuck!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1441,7 +1441,7 @@
             },
             {
               "id": "king_french_excellent",
-              "text": "Bien protégé! Well protected!",
+              "text": "Bien protégé! Well protected - va te faire enculer!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
@@ -1465,7 +1465,7 @@
             },
             {
               "id": "king_french_blunder",
-              "text": "La défaite! The fortress crumbles!",
+              "text": "La défaite! The fortress crumbles - merde!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
