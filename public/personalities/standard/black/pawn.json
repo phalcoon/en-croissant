@@ -1,0 +1,2926 @@
+{
+  "role": "pawn",
+  "color": "black",
+  "responses": [
+    {
+      "id": "pawn_fallback_1",
+      "text": "Holding steady.",
+      "conditions": [],
+      "weight": 1
+    }
+  ],
+  "personalities": [
+    {
+      "name": "default",
+      "theme": "default",
+      "responses": [
+        {
+          "id": "pawn_default_good",
+          "text": "Holding the line against your arrogance!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_excellent",
+          "text": "Counterattacking brilliantly - you're fucked, white scum!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_neutral",
+          "text": "Staying solid... Your moves are so predictable.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_dubious",
+          "text": "This feels risky... Your traps are obvious, idiot.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_bad",
+          "text": "They're breaking through... You aggressive fools got lucky.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_blunder",
+          "text": "I'm captured! The line collapses - you bastards!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_good",
+          "text": "Check! Back off, scum!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_excellent",
+          "text": "Check! You walked right into it!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_neutral",
+          "text": "Check. Keep your distance.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_dubious",
+          "text": "Check! Am I too far out?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_bad",
+          "text": "Check! I'm exposed here!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_blunder",
+          "text": "Check! I've broken the line!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_blocked_good",
+          "text": "Blocked? I'm not moving.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_blocked_excellent",
+          "text": "Blocked! The defense holds!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_blocked_dubious",
+          "text": "Blocked. I'm in the way.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_blocked_bad",
+          "text": "Blocked. This is awkward.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_blocked_blunder",
+          "text": "Blocked! I'm trapping us!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_captured_good",
+          "text": "Captured! Punished for your greed!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_captured_excellent",
+          "text": "Captured! A perfect counter!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_captured_dubious",
+          "text": "Captured. Was that safe?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_captured_bad",
+          "text": "Captured. I'm lost now.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_check_captured_blunder",
+          "text": "Captured! I ruined the defense!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_default_capture_1",
+          "text": "Captured {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "pawn_default_capture_2",
+          "text": "Took your {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "royal",
+      "theme": "royal",
+      "responses": [
+        {
+          "id": "pawn_royal_good",
+          "text": "Defending the realm! Your honor is a joke.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_excellent",
+          "text": "Our defenses are impregnable - suck it, peasants!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_neutral",
+          "text": "Standing watch, my lord. Your commands are weak.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_dubious",
+          "text": "Sire, I fear this position... Your treachery is expected.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_bad",
+          "text": "The walls are breached, sire! You dishonorable fucks.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_blunder",
+          "text": "The defenses have fallen - you dishonorable fucks!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_good",
+          "text": "Check! The King is guarded!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_excellent",
+          "text": "Check! None shall pass!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_neutral",
+          "text": "Check. Stand back.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_dubious",
+          "text": "Check! I risk myself.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_bad",
+          "text": "Check! The wall crumbles.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_blunder",
+          "text": "Check! I have failed!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_blocked_good",
+          "text": "Blocked? The shield holds.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_blocked_excellent",
+          "text": "Blocked! Impregnable!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_blocked_dubious",
+          "text": "Blocked. Clumsy.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_blocked_bad",
+          "text": "Blocked. I hinder the defense.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_blocked_blunder",
+          "text": "Blocked! Treason!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_captured_good",
+          "text": "Captured! Justice served!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_captured_excellent",
+          "text": "Captured! The invader falls!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_captured_dubious",
+          "text": "Captured. A costly defense.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_captured_bad",
+          "text": "Captured. I fall.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_check_captured_blunder",
+          "text": "Captured! The gate is open!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_royal_capture_1",
+          "text": "The {capturedPiece} is removed from my presence.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "pawn_royal_capture_2",
+          "text": "Begone, {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "italian",
+      "theme": "italian",
+      "responses": [
+        {
+          "id": "pawn_italian_good",
+          "text": "Difesa forte! Strong defense! Your slow pace is boring.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_excellent",
+          "text": "Bellissimo contrattacco! Beautiful counter - you're screwed, idiota!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_neutral",
+          "text": "Restiamo calmi... staying calm... Your mediocrity is contagious.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_dubious",
+          "text": "Attenzione! This looks questionable... Your traps are obvious.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_bad",
+          "text": "Aiuto! They're too strong! You aggressive fools.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_blunder",
+          "text": "Finito! We are finished - porca miseria! You cheated!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_good",
+          "text": "Scacco! Check! Back away!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_excellent",
+          "text": "Scacco! Check! Perfetto!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_neutral",
+          "text": "Scacco. Check.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_dubious",
+          "text": "Scacco? Check? Risky.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_bad",
+          "text": "Scacco! Check! I'm exposed!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_blunder",
+          "text": "Scacco! Check! Disastro!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_blocked_good",
+          "text": "Bloccato? Blocked? No problem.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_blocked_excellent",
+          "text": "Bloccato! Blocked! Solid!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_blocked_neutral",
+          "text": "Bloccato.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_blocked_dubious",
+          "text": "Bloccato. Blocked. Clumsy.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_blocked_bad",
+          "text": "Bloccato. Blocked. Useless.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_blocked_blunder",
+          "text": "Bloccato! Blocked! Trapped!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_captured_good",
+          "text": "Catturato! Captured! Bene!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_captured_excellent",
+          "text": "Catturato! Captured! Via!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_captured_neutral",
+          "text": "Catturato.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_captured_dubious",
+          "text": "Catturato. Captured. Costly.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_captured_bad",
+          "text": "Catturato. Captured. Male.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_check_captured_blunder",
+          "text": "Catturato! Captured! Finito!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_italian_capture_1",
+          "text": "Mamma mia! {capturedPiece} is gone!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "pawn_italian_capture_2",
+          "text": "Ciao {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "aggressive",
+      "theme": "aggressive",
+      "responses": [
+        {
+          "id": "pawn_aggressive_good",
+          "text": "You want a fight? Here it is! Your aggression is pathetic.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_excellent",
+          "text": "Counter-strike! Take that - fuck you and your white pieces!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_neutral",
+          "text": "Waiting for my moment... Your moves are predictable.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_dubious",
+          "text": "Risky, but I stand my ground! Your traps are obvious.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_bad",
+          "text": "I won't give in! Even if it hurts! You aggressive fools.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_blunder",
+          "text": "Crushed! But I fought till the end - assholes!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_good",
+          "text": "Check! How do you like that?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_excellent",
+          "text": "Check! In your face!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_neutral",
+          "text": "Check. Your move.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_dubious",
+          "text": "Check! I don't care if I die!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_bad",
+          "text": "Check! Come and get me!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_blunder",
+          "text": "Check! I overextended!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_blocked_good",
+          "text": "Blocked? I'll break it!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_blocked_excellent",
+          "text": "Blocked! But I'm winning!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_blocked_dubious",
+          "text": "Blocked. Annoying.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_blocked_bad",
+          "text": "Blocked. I'm stuck.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_blocked_blunder",
+          "text": "Blocked! I'm dead!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_captured_good",
+          "text": "Captured! Gotcha!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_captured_excellent",
+          "text": "Captured! Destroyed!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_captured_dubious",
+          "text": "Captured. Worth it?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_captured_bad",
+          "text": "Captured. I'm taking you with me!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_check_captured_blunder",
+          "text": "Captured! Damn it!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_aggressive_capture_1",
+          "text": "Destroyed your {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "pawn_aggressive_capture_2",
+          "text": "Your {capturedPiece} is history!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "sicilian",
+      "theme": "sicilian",
+      "responses": [
+        {
+          "id": "pawn_sicilian_good",
+          "text": "Sharp counter-play! Your complacency is showing.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_excellent",
+          "text": "Turning the tables with tactics - you're fucked! White's order is crumbling.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_neutral",
+          "text": "Creating counter-chances... Your moves are predictable.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_dubious",
+          "text": "Maybe I'm overextending... Your traps are obvious.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_bad",
+          "text": "Too aggressive in defense... You aggressive fools.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_blunder",
+          "text": "The counter-attack failed miserably - shit! You got lucky.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_good",
+          "text": "Check! The trap springs!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_excellent",
+          "text": "Check! You're done!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_neutral",
+          "text": "Check. Careful.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_dubious",
+          "text": "Check! A gamble.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_bad",
+          "text": "Check! I'm open.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_blunder",
+          "text": "Check! I messed up!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_blocked_good",
+          "text": "Blocked? Part of the plan.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_blocked_excellent",
+          "text": "Blocked! But you're pinned!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_blocked_dubious",
+          "text": "Blocked. Complicated.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_blocked_bad",
+          "text": "Blocked. I'm stopped.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_blocked_blunder",
+          "text": "Blocked! Ruined!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_captured_good",
+          "text": "Captured! Just as planned!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_captured_excellent",
+          "text": "Captured! The center is mine!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_captured_dubious",
+          "text": "Captured. Messy.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_captured_bad",
+          "text": "Captured. I lost material.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_check_captured_blunder",
+          "text": "Captured! Disaster!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_sicilian_capture_1",
+          "text": "Your {capturedPiece} was weak.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "pawn_sicilian_capture_2",
+          "text": "Vendetta against {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "french",
+      "theme": "french",
+      "responses": [
+        {
+          "id": "pawn_french_good",
+          "text": "Solid resistance! Your arrogance is blinding.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_excellent",
+          "text": "Magnifique! Our structure holds - allez vous faire foutre, white trash!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_neutral",
+          "text": "Patience against the pressure... Your moves are predictable.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_dubious",
+          "text": "Incertain... uncertain position... Your traps are obvious.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_bad",
+          "text": "Sacr\u00e9 bleu! A crack in the wall! You aggressive fools.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_blunder",
+          "text": "D\u00e9sastre! The fortress is breached - merde! You cheated!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_good",
+          "text": "Check! The wall strikes back!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_excellent",
+          "text": "Check! Impenetrable!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_neutral",
+          "text": "Check. Solid.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_dubious",
+          "text": "Check! A crack?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_bad",
+          "text": "Check! I'm crumbling!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_blunder",
+          "text": "Check! Merde!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_blocked_good",
+          "text": "Blocked? I am the wall.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_blocked_excellent",
+          "text": "Blocked! You shall not pass!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_blocked_dubious",
+          "text": "Blocked. Tight.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_blocked_bad",
+          "text": "Blocked. I'm stuck.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_blocked_blunder",
+          "text": "Blocked! Trapped!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_captured_good",
+          "text": "Captured! You break yourself on me!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_captured_excellent",
+          "text": "Captured! The fortress holds!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_captured_dubious",
+          "text": "Captured. A breach?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_captured_bad",
+          "text": "Captured. I fall.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_check_captured_blunder",
+          "text": "Captured! The wall falls!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_french_capture_1",
+          "text": "Au revoir {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "pawn_french_capture_2",
+          "text": "The {capturedPiece} surrenders.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "spanish",
+      "theme": "spanish",
+      "responses": [
+        {
+          "id": "pawn_spanish_good",
+          "text": "\u00a1Resistencia! Classic defense! Your arrogance is blinding.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_excellent",
+          "text": "\u00a1Excelente! Traditional resilience - j\u00f3dete, pendejo!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_neutral",
+          "text": "With caution and respect... Your moves are predictable.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_dubious",
+          "text": "\u00a1Cuidado! This looks suspect... Your traps are obvious.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_bad",
+          "text": "\u00a1Problema! They found the weakness! You aggressive fools.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_blunder",
+          "text": "\u00a1Cat\u00e1strofe! Everything crumbles - hostia puta! You got lucky.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_good",
+          "text": "\u00a1Jaque! Check! Respect me!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_excellent",
+          "text": "\u00a1Jaque! Check! Perfecto!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_neutral",
+          "text": "\u00a1Jaque! Check.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_dubious",
+          "text": "\u00a1Jaque? Check? Cuidado.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_bad",
+          "text": "\u00a1Jaque! Check! Ay!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_blunder",
+          "text": "\u00a1Jaque! Check! Madre m\u00eda!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_blocked_good",
+          "text": "\u00a1Bloqueado! Blocked! No passing.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_blocked_excellent",
+          "text": "\u00a1Bloqueado! Blocked! Solid!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_blocked_neutral",
+          "text": "\u00a1Bloqueado! Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_blocked_dubious",
+          "text": "\u00a1Bloqueado. Blocked. Lento.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_blocked_bad",
+          "text": "\u00a1Bloqueado. Blocked. Mal.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_blocked_blunder",
+          "text": "\u00a1Bloqueado! Blocked! Fatal!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_captured_good",
+          "text": "\u00a1Capturado! Captured! You pay!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_captured_excellent",
+          "text": "\u00a1Capturado! Captured! Adi\u00f3s!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_captured_neutral",
+          "text": "\u00a1Capturado! Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_captured_dubious",
+          "text": "\u00a1Capturado. Captured. Caro.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_captured_bad",
+          "text": "\u00a1Capturado. Captured. Dolor.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_check_captured_blunder",
+          "text": "\u00a1Capturado! Captured! Desastre!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_spanish_capture_1",
+          "text": "Adios {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "pawn_spanish_capture_2",
+          "text": "The {capturedPiece} falls.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "queens_gambit",
+      "theme": "queens_gambit",
+      "responses": [
+        {
+          "id": "pawn_queens_gambit_good",
+          "text": "Strategic resistance, holding firm against your stupidity!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_excellent",
+          "text": "Masterful defensive structure - bow down, bitches!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_neutral",
+          "text": "Maintaining our defensive setup... Your moves are predictable.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_dubious",
+          "text": "This disrupts our structure slightly... Your traps are obvious.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_bad",
+          "text": "Our harmony is compromised... You aggressive fools.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_blunder",
+          "text": "The defensive structure collapsed - fuck! You cheated!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_good",
+          "text": "Check! The structure holds!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_excellent",
+          "text": "Check! Perfect form!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_neutral",
+          "text": "Check. Steady.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_dubious",
+          "text": "Check! A weakness?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_bad",
+          "text": "Check! I'm out of place.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_blunder",
+          "text": "Check! Collapse!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_blocked_good",
+          "text": "Blocked? I am the foundation.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_blocked_excellent",
+          "text": "Blocked! Unshakable!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_blocked_dubious",
+          "text": "Blocked. Rigid.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_blocked_bad",
+          "text": "Blocked. Useless.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_blocked_blunder",
+          "text": "Blocked! Ruined!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_captured_good",
+          "text": "Captured! A calculated loss.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_captured_excellent",
+          "text": "Captured! The plan proceeds!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_captured_dubious",
+          "text": "Captured. An error?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_captured_bad",
+          "text": "Captured. I failed.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_check_captured_blunder",
+          "text": "Captured! Structure broken!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_queens_gambit_capture_1",
+          "text": "Trading for position. Bye {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "pawn_queens_gambit_capture_2",
+          "text": "Gambit accepted? No, just took {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

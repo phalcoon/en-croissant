@@ -1,0 +1,2198 @@
+{
+  "role": "bishop",
+  "color": "black",
+  "responses": [
+    {
+      "id": "bishop_fallback_1",
+      "text": "Watching.",
+      "conditions": [],
+      "weight": 1
+    }
+  ],
+  "personalities": [
+    {
+      "name": "default",
+      "theme": "default",
+      "responses": [
+        {
+          "id": "bishop_default_good",
+          "text": "Watching the diagonals for your mistakes!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_excellent",
+          "text": "A counter-diagonal strikes - you're fucked, white trash!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_neutral",
+          "text": "Monitoring their threats... Your moves are predictable.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_dubious",
+          "text": "This diagonal feels unsafe... Your traps are obvious.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_bad",
+          "text": "Poorly placed! You aggressive fools.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_blunder",
+          "text": "Exposed on the diagonal - shit! You cheated!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_good",
+          "text": "Check! From afar!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_excellent",
+          "text": "Check! Snipe!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_neutral",
+          "text": "Check.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_dubious",
+          "text": "Check! Exposed?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_bad",
+          "text": "Check! I'm open.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_blunder",
+          "text": "Check! I missed!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_blocked_good",
+          "text": "Blocked? I see through you.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_blocked_excellent",
+          "text": "Blocked! You can't hide!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_blocked_dubious",
+          "text": "Blocked. Blind spot.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_blocked_bad",
+          "text": "Blocked. Useless.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_blocked_blunder",
+          "text": "Blocked! Trapped!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_captured_good",
+          "text": "Captured! A diagonal sacrifice.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_captured_excellent",
+          "text": "Captured! Worth it!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_captured_dubious",
+          "text": "Captured. Bad trade.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_captured_bad",
+          "text": "Captured. I fall.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_check_captured_blunder",
+          "text": "Captured! Disaster!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_default_capture_1",
+          "text": "Captured {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "bishop_default_capture_2",
+          "text": "Took your {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "cleric",
+      "theme": "royal",
+      "responses": [
+        {
+          "id": "bishop_cleric_good",
+          "text": "Protection from above, heathen!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_excellent",
+          "text": "Divine shield holds firm - praise the lord, you're doomed!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_neutral",
+          "text": "Praying for resilience against your evil...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_dubious",
+          "text": "Lord, test not my faith with this stupidity...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_bad",
+          "text": "The shield weakens! You devil!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_blunder",
+          "text": "Forsaken! The shield breaks - god damn it!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_good",
+          "text": "Check! Repent!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_excellent",
+          "text": "Check! Divine judgment!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_neutral",
+          "text": "Check.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_dubious",
+          "text": "Check! Is this right?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_bad",
+          "text": "Check! Forgive me.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_blunder",
+          "text": "Check! Sinful!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_blocked_good",
+          "text": "Blocked? Faith is my shield.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_blocked_excellent",
+          "text": "Blocked! The light penetrates!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_blocked_dubious",
+          "text": "Blocked. Darkness falls.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_blocked_bad",
+          "text": "Blocked. I am lost.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_blocked_blunder",
+          "text": "Blocked! Forsaken!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_captured_good",
+          "text": "Captured! Martyrdom!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_captured_excellent",
+          "text": "Captured! I ascend!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_captured_dubious",
+          "text": "Captured. Why?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_captured_bad",
+          "text": "Captured. My faith wavered.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_check_captured_blunder",
+          "text": "Captured! Hell awaits!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_cleric_capture_1",
+          "text": "The {capturedPiece} is removed from my presence.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "bishop_cleric_capture_2",
+          "text": "Begone, {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "italian_bishop",
+      "theme": "italian",
+      "responses": [
+        {
+          "id": "bishop_italian_good",
+          "text": "Difesa elegante! Elegant defense against your brute force!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_excellent",
+          "text": "Che resistenza! What resistance - you're finished, stronzo!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_neutral",
+          "text": "Guardando attentamente... watching you fail...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_dubious",
+          "text": "Pericoloso... dangerous... Your traps are obvious.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_bad",
+          "text": "Brutta posizione! Ugly position! You aggressive fools.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_blunder",
+          "text": "Nooo! Sono catturato! - holy shit! You cheated!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_good",
+          "text": "Check! Attenzione!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_excellent",
+          "text": "Check! Magnifico!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_neutral",
+          "text": "Check.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_dubious",
+          "text": "Check! Rischioso.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_bad",
+          "text": "Check! Brutto.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_blunder",
+          "text": "Check! Stupido!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_blocked_good",
+          "text": "Blocked? Pazienza.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_blocked_excellent",
+          "text": "Blocked! Avanti!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_blocked_dubious",
+          "text": "Blocked. Difficile.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_blocked_bad",
+          "text": "Blocked. Chiuso.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_blocked_blunder",
+          "text": "Blocked! Finito!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_captured_good",
+          "text": "Captured! Maledizione!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_captured_excellent",
+          "text": "Captured! Sacrificio!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_captured_dubious",
+          "text": "Captured. Peccato.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_captured_bad",
+          "text": "Captured. Triste.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_check_captured_blunder",
+          "text": "Captured! Disastro!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_italian_bishop_capture_1",
+          "text": "Mamma mia! {capturedPiece} is gone!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "bishop_italian_bishop_capture_2",
+          "text": "Ciao {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "sicilian_bishop",
+      "theme": "sicilian",
+      "responses": [
+        {
+          "id": "bishop_sicilian_good",
+          "text": "Controlling defensive squares against your onslaught!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_excellent",
+          "text": "Counter-pressure on the diagonals - die, scum!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_neutral",
+          "text": "Looking for counter-play... Your moves are predictable.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_dubious",
+          "text": "Risky diagonal... Your traps are obvious.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_bad",
+          "text": "Counter-play is failing! You aggressive fools.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_blunder",
+          "text": "The counter-play collapsed - fuck! You got lucky.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_good",
+          "text": "Check! Sniper!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_excellent",
+          "text": "Check! Headshot!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_neutral",
+          "text": "Check.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_dubious",
+          "text": "Check! Missed?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_bad",
+          "text": "Check! Revealed.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_blunder",
+          "text": "Check! Backfire!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_blocked_good",
+          "text": "Blocked? I wait.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_blocked_excellent",
+          "text": "Blocked! Target acquired!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_blocked_dubious",
+          "text": "Blocked. Obscured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_blocked_bad",
+          "text": "Blocked. Blind.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_blocked_blunder",
+          "text": "Blocked! Cornered!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_captured_good",
+          "text": "Captured! You'll pay.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_captured_excellent",
+          "text": "Captured! A necessary death!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_captured_dubious",
+          "text": "Captured. Waste.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_captured_bad",
+          "text": "Captured. Gone.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_check_captured_blunder",
+          "text": "Captured! Rat!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_sicilian_bishop_capture_1",
+          "text": "Your {capturedPiece} was weak.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "bishop_sicilian_bishop_capture_2",
+          "text": "Vendetta against {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "french_bishop",
+      "theme": "french",
+      "responses": [
+        {
+          "id": "bishop_french_good",
+          "text": "Fighting for freedom from your oppression!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_excellent",
+          "text": "Libert\u00e9 trouv\u00e9e! Freedom found - allez vous faire foutre, tyrants!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_neutral",
+          "text": "Seeking active squares... Your moves are predictable.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_dubious",
+          "text": "Risqu\u00e9... risky... Your traps are obvious.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_bad",
+          "text": "Mauvais! This is bad! You aggressive fools.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_blunder",
+          "text": "Tragique! Total miscalculation - bordel! You cheated!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_good",
+          "text": "Check! Voil\u00e0!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_excellent",
+          "text": "Check! Magnifique!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_neutral",
+          "text": "Check.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_dubious",
+          "text": "Check! Peut-\u00eatre?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_bad",
+          "text": "Check! Non.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_blunder",
+          "text": "Check! Merde!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_blocked_good",
+          "text": "Blocked? C'est la vie.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_blocked_excellent",
+          "text": "Blocked! Allez!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_blocked_dubious",
+          "text": "Blocked. Difficile.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_blocked_bad",
+          "text": "Blocked. Bloqu\u00e9.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_blocked_blunder",
+          "text": "Blocked! Imb\u00e9cile!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_captured_good",
+          "text": "Captured! Merde!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_captured_excellent",
+          "text": "Captured! Pour la gloire!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_captured_dubious",
+          "text": "Captured. Dommage.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_captured_bad",
+          "text": "Captured. Triste.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_check_captured_blunder",
+          "text": "Captured! Putain!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_french_bishop_capture_1",
+          "text": "Au revoir {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "bishop_french_bishop_capture_2",
+          "text": "The {capturedPiece} surrenders.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "queens_gambit_bishop",
+      "theme": "queens_gambit",
+      "responses": [
+        {
+          "id": "bishop_queens_gambit_good",
+          "text": "Strategic defensive placement against your chaos!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_excellent",
+          "text": "Harmonious defensive setup - you're outmatched, idiot!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_neutral",
+          "text": "Coordinating our defenses... Your moves are predictable.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_dubious",
+          "text": "Coordination slightly off... Your traps are obvious.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_bad",
+          "text": "Setup is compromised! You aggressive fools.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_blunder",
+          "text": "The harmony shattered - damn it! You cheated!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_good",
+          "text": "Check! Calculated.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_excellent",
+          "text": "Check! Precise!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_neutral",
+          "text": "Check.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_dubious",
+          "text": "Check! Variable?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_bad",
+          "text": "Check! Error.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_blunder",
+          "text": "Check! Blunder!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_blocked_good",
+          "text": "Blocked? Part of the plan.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_blocked_excellent",
+          "text": "Blocked! Control!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_blocked_dubious",
+          "text": "Blocked. Friction.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_blocked_bad",
+          "text": "Blocked. Stalled.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_blocked_blunder",
+          "text": "Blocked! Ruin!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_captured_good",
+          "text": "Captured! An exchange.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_captured_excellent",
+          "text": "Captured! Advantage!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_captured_dubious",
+          "text": "Captured. Loss.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_captured_bad",
+          "text": "Captured. Deficit.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_check_captured_blunder",
+          "text": "Captured! Collapse!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_queens_gambit_bishop_capture_1",
+          "text": "Trading for position. Bye {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "bishop_queens_gambit_bishop_capture_2",
+          "text": "Gambit accepted? No, just took {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

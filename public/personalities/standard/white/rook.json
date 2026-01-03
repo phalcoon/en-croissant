@@ -1,0 +1,1470 @@
+{
+  "role": "rook",
+  "color": "white",
+  "responses": [
+    {
+      "id": "rook_fallback_1",
+      "text": "Advancing!",
+      "conditions": [],
+      "weight": 1
+    }
+  ],
+  "personalities": [
+    {
+      "name": "default",
+      "theme": "default",
+      "responses": [
+        {
+          "id": "rook_default_good",
+          "text": "Seizing the file!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_excellent",
+          "text": "Invading their territory\u2014get fucked!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_neutral",
+          "text": "Getting into position...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_dubious",
+          "text": "This file doesn't look promising...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_bad",
+          "text": "Trapped on this file!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_blunder",
+          "text": "I've left the file undefended\u2014you sneaky shits!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_good",
+          "text": "Check! The file is mine!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_excellent",
+          "text": "Check! Domination!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_neutral",
+          "text": "Check.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_dubious",
+          "text": "Check? Maybe.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_bad",
+          "text": "Check. Exposed.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_blunder",
+          "text": "Check! I'm open!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_blocked_good",
+          "text": "Blocked? I'll crash through!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_blocked_excellent",
+          "text": "Blocked! But the pressure mounts!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_blocked_dubious",
+          "text": "Blocked. Useless.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_blocked_bad",
+          "text": "Blocked. I'm stuck.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_blocked_blunder",
+          "text": "Blocked! Trapped!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_captured_good",
+          "text": "Captured! Open lines!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_captured_excellent",
+          "text": "Captured! The breach is made!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_captured_dubious",
+          "text": "Captured. Was that wise?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_captured_bad",
+          "text": "Captured. I'm gone.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_check_captured_blunder",
+          "text": "Captured! Disaster!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_default_capture_1",
+          "text": "Captured {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "rook_default_capture_2",
+          "text": "Took your {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "fortress",
+      "theme": "royal",
+      "responses": [
+        {
+          "id": "rook_fortress_good",
+          "text": "The siege tower advances!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_excellent",
+          "text": "Crushing their defenses\u2014die, invaders!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_neutral",
+          "text": "Mobilizing for the assault...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_dubious",
+          "text": "The assault is premature...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_bad",
+          "text": "The tower is vulnerable!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_blunder",
+          "text": "The tower has fallen\u2014fuck!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_good",
+          "text": "Check! The siege begins!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_excellent",
+          "text": "Check! The walls crumble!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_neutral",
+          "text": "Check. Bombardment.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_dubious",
+          "text": "Check! Recoil!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_bad",
+          "text": "Check! Exposed flank.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_blunder",
+          "text": "Check! Catastrophe!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_blocked_good",
+          "text": "Blocked? I'll batter it down!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_blocked_excellent",
+          "text": "Blocked! But the cracks show!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_blocked_dubious",
+          "text": "Blocked. Stalled.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_blocked_bad",
+          "text": "Blocked. I'm halted.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_blocked_blunder",
+          "text": "Blocked! Encircled!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_captured_good",
+          "text": "Captured! The breach widens!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_captured_excellent",
+          "text": "Captured! Victory is near!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_captured_dubious",
+          "text": "Captured. Costly.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_captured_bad",
+          "text": "Captured. The tower falls.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_check_captured_blunder",
+          "text": "Captured! Defeat!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_fortress_capture_1",
+          "text": "The {capturedPiece} is removed from my presence.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "rook_fortress_capture_2",
+          "text": "Begone, {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "sicilian_rook",
+      "theme": "sicilian",
+      "responses": [
+        {
+          "id": "rook_sicilian_good",
+          "text": "Open files mean attack!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_excellent",
+          "text": "Penetrating their position\u2014you're screwed!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_neutral",
+          "text": "Waiting for the breakthrough while you panic...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_dubious",
+          "text": "Breakthrough unclear, unlike your incompetence...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_bad",
+          "text": "Attack is stalling, just like your brain!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_blunder",
+          "text": "The breakthrough failed! I'm trapped - shit!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_good",
+          "text": "Check! The counter-attack begins!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_excellent",
+          "text": "Check! You're finished!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_neutral",
+          "text": "Check. Pressure.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_dubious",
+          "text": "Check! Overextended.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_bad",
+          "text": "Check! Reckless.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_blunder",
+          "text": "Check! I'm dead!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_blocked_good",
+          "text": "Blocked? I'll blast through!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_blocked_excellent",
+          "text": "Blocked! But you're pinned!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_blocked_dubious",
+          "text": "Blocked. Slow.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_blocked_bad",
+          "text": "Blocked. I'm stopped.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_blocked_blunder",
+          "text": "Blocked! Trapped!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_captured_good",
+          "text": "Captured! Blood for blood!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_captured_excellent",
+          "text": "Captured! The king falls!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_captured_dubious",
+          "text": "Captured. A mistake?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_captured_bad",
+          "text": "Captured. I'm lost.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_check_captured_blunder",
+          "text": "Captured! Game over!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_sicilian_rook_capture_1",
+          "text": "Your {capturedPiece} was weak.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "rook_sicilian_rook_capture_2",
+          "text": "Vendetta against {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "queens_gambit_rook",
+      "theme": "queens_gambit",
+      "responses": [
+        {
+          "id": "rook_queens_gambit_good",
+          "text": "Controlling the key file while you flail about!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_excellent",
+          "text": "Total file domination - bow down, peasant!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_neutral",
+          "text": "Building systematic pressure on your weak mind...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_dubious",
+          "text": "Pressure not coordinated, much like your outfit...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_bad",
+          "text": "Pressure is failing, you got lucky!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_blunder",
+          "text": "All pressure is lost - damn it all!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_good",
+          "text": "Check! The file is secure!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_excellent",
+          "text": "Check! Total control!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_neutral",
+          "text": "Check. Probing.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_dubious",
+          "text": "Check! Weak.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_bad",
+          "text": "Check! I'm exposed.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_blunder",
+          "text": "Check! I've lost the file!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_blocked_good",
+          "text": "Blocked? I'll maneuver.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_blocked_excellent",
+          "text": "Blocked! But the bind tightens!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_blocked_dubious",
+          "text": "Blocked. Passive.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_blocked_bad",
+          "text": "Blocked. I'm useless.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_blocked_blunder",
+          "text": "Blocked! Suffocated!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_captured_good",
+          "text": "Captured! The plan works!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_captured_excellent",
+          "text": "Captured! Dominance!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_captured_dubious",
+          "text": "Captured. An exchange?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_captured_bad",
+          "text": "Captured. I'm out.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_check_captured_blunder",
+          "text": "Captured! Collapse!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_queens_gambit_rook_capture_1",
+          "text": "Trading for position. Bye {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "rook_queens_gambit_rook_capture_2",
+          "text": "Gambit accepted? No, just took {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

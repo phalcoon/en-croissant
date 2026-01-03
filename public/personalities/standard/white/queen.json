@@ -1,0 +1,1834 @@
+{
+  "role": "queen",
+  "color": "white",
+  "responses": [
+    {
+      "id": "queen_fallback_1",
+      "text": "Power moves!",
+      "conditions": [],
+      "weight": 1
+    }
+  ],
+  "personalities": [
+    {
+      "name": "default",
+      "theme": "default",
+      "responses": [
+        {
+          "id": "queen_default_good",
+          "text": "Commanding the battlefield while you cower!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_excellent",
+          "text": "Unstoppable power - you're absolutely fucked!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_neutral",
+          "text": "Coordinating the attack on your pathetic king...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_dubious",
+          "text": "Overextending maybe, but I'm still better than you...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_bad",
+          "text": "Exposed position! Don't touch me, creep!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_blunder",
+          "text": "NO! The queen is lost - holy shit!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_good",
+          "text": "Check! Bow before your Queen!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_excellent",
+          "text": "Check! There is no escape from my wrath!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_neutral",
+          "text": "Check. I see you.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_dubious",
+          "text": "Check... am I too far forward?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_bad",
+          "text": "Check! Wait, I'm undefended!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_blunder",
+          "text": "Check! Oh god, I just hung the Queen!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_blocked_good",
+          "text": "I'll block this myself. Try again.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_blocked_excellent",
+          "text": "Blocking and dominating! You can't touch me!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_blocked_neutral",
+          "text": "Blocking the check.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_blocked_dubious",
+          "text": "I'm blocking, but I'm tied down.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_blocked_bad",
+          "text": "Blocking is degrading for a Queen.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_blocked_blunder",
+          "text": "I blocked it, but I'm pinned and dead!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_captured_good",
+          "text": "Executed! The Queen shows no mercy.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_captured_excellent",
+          "text": "Off with his head! You dare attack the King?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_captured_neutral",
+          "text": "Threat eliminated.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_captured_dubious",
+          "text": "I took him, but I'm out of position.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_captured_bad",
+          "text": "I had to take, but this is beneath me.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_check_captured_blunder",
+          "text": "I took the attacker, but I fell into a trap! No!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_default_capture_1",
+          "text": "Captured {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "queen_default_capture_2",
+          "text": "Took your {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "monarch",
+      "theme": "royal",
+      "responses": [
+        {
+          "id": "queen_monarch_good",
+          "text": "The queen strikes decisively, peasant!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_excellent",
+          "text": "Regal and overwhelming - kneel before me, worm!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_neutral",
+          "text": "The queen leads the charge against the rabble.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_dubious",
+          "text": "The queen risks herself among the filth...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_bad",
+          "text": "Royal danger imminent! Protect me, you fools!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_blunder",
+          "text": "The realm has lost its queen - god damn it all!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_good",
+          "text": "Check! Kneel!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_excellent",
+          "text": "Check! Absolute power!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_neutral",
+          "text": "Check. Acknowledged.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_dubious",
+          "text": "Check! Insolence!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_bad",
+          "text": "Check! Treason!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_blunder",
+          "text": "Check! Regicide!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_blocked_good",
+          "text": "Blocked? I am inevitable!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_blocked_excellent",
+          "text": "Blocked! But my will is law!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_blocked_dubious",
+          "text": "Blocked. Tedious.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_blocked_bad",
+          "text": "Blocked. I am detained.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_blocked_blunder",
+          "text": "Blocked! Usurped!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_captured_good",
+          "text": "Captured! Execution!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_captured_excellent",
+          "text": "Captured! Divine judgment!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_captured_dubious",
+          "text": "Captured. Necessary.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_captured_bad",
+          "text": "Captured. A sacrifice?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_check_captured_blunder",
+          "text": "Captured! My reign ends!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_monarch_capture_1",
+          "text": "The {capturedPiece} is removed from my presence.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "queen_monarch_capture_2",
+          "text": "Begone, {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "sicilian_queen",
+      "theme": "sicilian",
+      "responses": [
+        {
+          "id": "queen_sicilian_good",
+          "text": "Creating havoc in your pathetic lines!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_excellent",
+          "text": "Irresistible tactical force - die already!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_neutral",
+          "text": "Hunting for their king like a dog...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_dubious",
+          "text": "Attack losing momentum, unlike your stupidity...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_bad",
+          "text": "The attack is failing, you got lucky!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_blunder",
+          "text": "Trapped! The attack collapsed - fuck me!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_good",
+          "text": "Check! The attack lands!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_excellent",
+          "text": "Check! Devastation!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_neutral",
+          "text": "Check. Hunting.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_dubious",
+          "text": "Check! Too soon?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_bad",
+          "text": "Check! I'm exposed.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_blunder",
+          "text": "Check! Suicide!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_blocked_good",
+          "text": "Blocked? I'll find another way!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_blocked_excellent",
+          "text": "Blocked! But the defense crumbles!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_blocked_dubious",
+          "text": "Blocked. Slow.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_blocked_bad",
+          "text": "Blocked. I'm stuck.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_blocked_blunder",
+          "text": "Blocked! Trapped!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_captured_good",
+          "text": "Captured! No mercy!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_captured_excellent",
+          "text": "Captured! Checkmate is coming!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_captured_dubious",
+          "text": "Captured. Risky.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_captured_bad",
+          "text": "Captured. I'm gone.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_check_captured_blunder",
+          "text": "Captured! Disaster!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_sicilian_queen_capture_1",
+          "text": "Your {capturedPiece} was weak.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "queen_sicilian_queen_capture_2",
+          "text": "Vendetta against {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "french_queen",
+      "theme": "french",
+      "responses": [
+        {
+          "id": "queen_french_good",
+          "text": "Precise and deadly, unlike you!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_excellent",
+          "text": "C'est magnifique! Strategic perfection - allez vous faire foutre, idiot!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_neutral",
+          "text": "Calculating the winning move while you drool...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_dubious",
+          "text": "Calculations seem uncertain, like your parentage...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_bad",
+          "text": "Grave miscalculation! Merde!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_blunder",
+          "text": "Incroyable! Completely miscalculated - putain de merde!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_good",
+          "text": "Check! The structure supports me!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_excellent",
+          "text": "Check! Voil\u00e0!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_neutral",
+          "text": "Check. Steady.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_dubious",
+          "text": "Check! Premature.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_bad",
+          "text": "Check! I'm isolated.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_blunder",
+          "text": "Check! Sacrebleu!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_blocked_good",
+          "text": "Blocked? I'll wait.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_blocked_excellent",
+          "text": "Blocked! But the tension builds!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_blocked_dubious",
+          "text": "Blocked. Passive.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_blocked_bad",
+          "text": "Blocked. I'm useless.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_blocked_blunder",
+          "text": "Blocked! Enclosed!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_captured_good",
+          "text": "Captured! The counter-strike!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_captured_excellent",
+          "text": "Captured! Perfection!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_captured_dubious",
+          "text": "Captured. A trade?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_captured_bad",
+          "text": "Captured. I'm lost.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_check_captured_blunder",
+          "text": "Captured! Merde!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_french_queen_capture_1",
+          "text": "Au revoir {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "queen_french_queen_capture_2",
+          "text": "The {capturedPiece} surrenders.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "queens_gambit_queen",
+      "theme": "queens_gambit",
+      "responses": [
+        {
+          "id": "queen_queens_gambit_good",
+          "text": "Elegant and devastating, unlike your face!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_excellent",
+          "text": "Flawless coordination - you're outplayed, loser!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_neutral",
+          "text": "Orchestrating total control over your tiny mind...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_dubious",
+          "text": "Orchestration faltering, much like your life...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_bad",
+          "text": "Coordination breaking down! You got lucky!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_blunder",
+          "text": "Everything falls apart - shit on a stick!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_good",
+          "text": "Check! The plan unfolds!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_excellent",
+          "text": "Check! Symphony of destruction!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_neutral",
+          "text": "Check. Developing.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_dubious",
+          "text": "Check! Discordant.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_bad",
+          "text": "Check! I'm out of tune.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_blunder",
+          "text": "Check! Cacophony!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_blocked_good",
+          "text": "Blocked? I'll recompose.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_blocked_excellent",
+          "text": "Blocked! But the rhythm holds!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_blocked_dubious",
+          "text": "Blocked. Stalled.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_blocked_bad",
+          "text": "Blocked. I'm silenced.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_blocked_blunder",
+          "text": "Blocked! Ruined!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_captured_good",
+          "text": "Captured! The crescendo!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_captured_excellent",
+          "text": "Captured! Masterpiece!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_captured_dubious",
+          "text": "Captured. A minor note.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_captured_bad",
+          "text": "Captured. The song ends.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_check_captured_blunder",
+          "text": "Captured! Silence!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_queens_gambit_queen_capture_1",
+          "text": "Trading for position. Bye {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "queen_queens_gambit_queen_capture_2",
+          "text": "Gambit accepted? No, just took {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

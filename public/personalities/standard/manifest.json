@@ -1,0 +1,19 @@
+{
+  "name": "standard",
+  "description": "Standard personality with balanced and respectful dialogue",
+  "contextual": true,
+  "files": [
+    "white/pawn.json",
+    "white/knight.json",
+    "white/bishop.json",
+    "white/rook.json",
+    "white/queen.json",
+    "white/king.json",
+    "black/pawn.json",
+    "black/knight.json",
+    "black/bishop.json",
+    "black/rook.json",
+    "black/queen.json",
+    "black/king.json"
+  ]
+}

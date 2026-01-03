@@ -1,0 +1,1470 @@
+{
+  "role": "king",
+  "color": "white",
+  "responses": [
+    {
+      "id": "king_fallback_1",
+      "text": "Carefully...",
+      "conditions": [],
+      "weight": 1
+    }
+  ],
+  "personalities": [
+    {
+      "name": "default",
+      "theme": "default",
+      "responses": [
+        {
+          "id": "king_default_good",
+          "text": "Securing my position while you scramble.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_excellent",
+          "text": "Safe and sound - you're fucked now, idiot!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_neutral",
+          "text": "Moving to safety, away from your stench...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_dubious",
+          "text": "Not quite safe yet, damn it...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_bad",
+          "text": "Still in danger! Help me, you morons!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_blunder",
+          "text": "I walked into danger - you bastards let me down!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_good",
+          "text": "Discovered check! The King strikes from the shadows!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_excellent",
+          "text": "Check! Even the King joins the hunt! You're finished!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_neutral",
+          "text": "Check. I reveal my power.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_dubious",
+          "text": "Check... but am I safe?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_bad",
+          "text": "Check! But I think I exposed myself...",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_blunder",
+          "text": "Check! Oh god, I walked into a trap!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_evaded_good",
+          "text": "You can't catch me! I slip away.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_evaded_excellent",
+          "text": "Nice try, assassin! I'm untouchable!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_evaded_neutral",
+          "text": "Stepping aside. Try harder.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_evaded_dubious",
+          "text": "I escaped, but this square feels hot.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_evaded_bad",
+          "text": "Running for my life, but running into trouble!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_evaded_blunder",
+          "text": "I ran right into the fire! I'm doomed!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_captured_good",
+          "text": "I'll do it myself! Die, assassin!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_captured_excellent",
+          "text": "The King strikes back! You dare attack me?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_captured_neutral",
+          "text": "Removing the threat personally.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_captured_dubious",
+          "text": "I killed him, but now I'm in the open...",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_captured_bad",
+          "text": "I had to kill him, but this is bad.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_check_captured_blunder",
+          "text": "I took the bait! I'm dead!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_default_capture_1",
+          "text": "Captured {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "king_default_capture_2",
+          "text": "Took your {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "sovereign",
+      "theme": "royal",
+      "responses": [
+        {
+          "id": "king_sovereign_good",
+          "text": "The throne is secure, unlike your future!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_excellent",
+          "text": "My kingdom is fortified - kneel, peasants!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_neutral",
+          "text": "Ensuring the royal safety from your incompetence...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_dubious",
+          "text": "The throne remains at risk, protect me you fools!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_bad",
+          "text": "Royal peril grows! Do something!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_blunder",
+          "text": "The kingdom falls! Checkmate looms - damn you all!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_good",
+          "text": "Check! The King's gaze burns!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_excellent",
+          "text": "Check! Divine wrath!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_neutral",
+          "text": "Check. Bow.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_dubious",
+          "text": "Check! Insolence!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_bad",
+          "text": "Check! I am exposed!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_blunder",
+          "text": "Check! My reign crumbles!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_evaded_good",
+          "text": "You cannot touch the anointed!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_evaded_excellent",
+          "text": "I am beyond your reach!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_evaded_neutral",
+          "text": "I step aside.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_evaded_dubious",
+          "text": "A narrow escape.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_evaded_bad",
+          "text": "I flee like a commoner!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_evaded_blunder",
+          "text": "Cornered! Treason!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_captured_good",
+          "text": "I sentence you to death!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_captured_excellent",
+          "text": "The King executes judgment!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_captured_neutral",
+          "text": "Threat removed.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_captured_dubious",
+          "text": "I soil my hands.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_captured_bad",
+          "text": "A desperate act.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_check_captured_blunder",
+          "text": "I have fallen into a trap!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sovereign_capture_1",
+          "text": "The {capturedPiece} is removed from my presence.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "king_sovereign_capture_2",
+          "text": "Begone, {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "sicilian_king",
+      "theme": "sicilian",
+      "responses": [
+        {
+          "id": "king_sicilian_good",
+          "text": "Safe enough to keep attacking your weak points!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_excellent",
+          "text": "Now unleash the tactics - you're doomed, sucker!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_neutral",
+          "text": "Getting out of the fire zone, unlike you...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_dubious",
+          "text": "Still in the crossfire, this is messy...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_bad",
+          "text": "Attack risks everything! Are you insane?",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_blunder",
+          "text": "I'm exposed! The attack is over - fuck my life!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_good",
+          "text": "Check! The King attacks!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_excellent",
+          "text": "Check! You forgot about me!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_neutral",
+          "text": "Check. Sharp.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_dubious",
+          "text": "Check! Risky.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_bad",
+          "text": "Check! I'm open.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_blunder",
+          "text": "Check! Fatal error!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_evaded_good",
+          "text": "Too slow! I'm gone!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_evaded_excellent",
+          "text": "You can't catch smoke!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_evaded_neutral",
+          "text": "Dodged.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_evaded_dubious",
+          "text": "Close call.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_evaded_bad",
+          "text": "Running into danger!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_evaded_blunder",
+          "text": "Nowhere to run!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_captured_good",
+          "text": "I'll take that!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_captured_excellent",
+          "text": "King takes! You're done!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_captured_dubious",
+          "text": "Taking risks.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_captured_bad",
+          "text": "Forced capture.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_check_captured_blunder",
+          "text": "Poisoned pawn!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_sicilian_king_capture_1",
+          "text": "Your {capturedPiece} was weak.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "king_sicilian_king_capture_2",
+          "text": "Vendetta against {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "french_king",
+      "theme": "french",
+      "responses": [
+        {
+          "id": "king_french_good",
+          "text": "Solidly protected, try harder!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_excellent",
+          "text": "Bien prot\u00e9g\u00e9! Well protected - va te faire enculer, connard!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_neutral",
+          "text": "Maintaining fortress safety while you struggle...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_dubious",
+          "text": "Fortress defenses uncertain, like your future...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_bad",
+          "text": "Defenses are breached! Merde!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_blunder",
+          "text": "La d\u00e9faite! The fortress crumbles - putain!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_good",
+          "text": "Check! The fortress strikes!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_excellent",
+          "text": "Check! Impenetrable!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_neutral",
+          "text": "Check. Safe.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_dubious",
+          "text": "Check! Cracks appearing.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_bad",
+          "text": "Check! The walls breach.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_blunder",
+          "text": "Check! Collapse!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_evaded_good",
+          "text": "Safe behind the walls.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_evaded_excellent",
+          "text": "You cannot breach this!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_evaded_neutral",
+          "text": "Retreating.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_evaded_dubious",
+          "text": "Tight squeeze.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_evaded_bad",
+          "text": "Nowhere is safe!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_evaded_blunder",
+          "text": "The fortress falls!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkEvaded"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_captured_good",
+          "text": "Intruder eliminated.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_captured_excellent",
+          "text": "The King defends his castle!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_captured_dubious",
+          "text": "Exposing the King.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_captured_bad",
+          "text": "Desperate defense.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_check_captured_blunder",
+          "text": "Fatal mistake!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_french_king_capture_1",
+          "text": "Au revoir {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "king_french_king_capture_2",
+          "text": "The {capturedPiece} surrenders.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

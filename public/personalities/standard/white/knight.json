@@ -1,0 +1,2198 @@
+{
+  "role": "knight",
+  "color": "white",
+  "responses": [
+    {
+      "id": "knight_fallback_1",
+      "text": "Leap!",
+      "conditions": [],
+      "weight": 1
+    }
+  ],
+  "personalities": [
+    {
+      "name": "default",
+      "theme": "default",
+      "responses": [
+        {
+          "id": "knight_default_good",
+          "text": "Leaping into the attack! Your defenses are already crumbling.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_excellent",
+          "text": "Perfect outpost! They can't stop me\u2014assholes! Your king's looking nervous.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_neutral",
+          "text": "Maneuvering for position... your patience is amusing.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_dubious",
+          "text": "Awkward placement... but your counterplay is still pathetic.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_bad",
+          "text": "Poorly placed! You sneaky devils.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_blunder",
+          "text": "I jumped into a trap\u2014you sneaky bastards! You actually got me.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_good",
+          "text": "Check! A knight's strike is unpredictable!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_excellent",
+          "text": "Check! Forking your king and your sanity!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_neutral",
+          "text": "Check. Just hopping by.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_dubious",
+          "text": "Check... but I might be trapped.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_bad",
+          "text": "Check! Wait, I jumped too far.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_blunder",
+          "text": "Check! Oh no, I just sacrificed myself for nothing!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_blocked_good",
+          "text": "I'll block this check with my body!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_blocked_excellent",
+          "text": "Blocking and counter-attacking! You're done!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_blocked_neutral",
+          "text": "Blocking the path.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_blocked_dubious",
+          "text": "I'm blocking, but I feel pinned.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_blocked_bad",
+          "text": "Blocking was my only choice, but it sucks.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_blocked_blunder",
+          "text": "I blocked it, but now I'm dead meat!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_captured_good",
+          "text": "Trampling the attacker!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_captured_excellent",
+          "text": "Captured! Your attack was pathetic!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_captured_neutral",
+          "text": "Taking the piece.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_captured_dubious",
+          "text": "I took it, but this position is messy.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_captured_bad",
+          "text": "Captured, but I'm overextended.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_check_captured_blunder",
+          "text": "I took the attacker, but I missed the mate! Fuck!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_default_capture_1",
+          "text": "Captured {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "knight_default_capture_2",
+          "text": "Took your {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "cavalier",
+      "theme": "royal",
+      "responses": [
+        {
+          "id": "knight_cavalier_good",
+          "text": "Charging forth for glory! Your realm is under threat.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_excellent",
+          "text": "A knight's valor conquers all\u2014die, scum! Your dark schemes are crumbling.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_neutral",
+          "text": "Scouting enemy territory... your loyalty is questionable.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_dubious",
+          "text": "This path seems risky... your treachery is evident.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_bad",
+          "text": "A knight's misstep! You dishonorable curs.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_blunder",
+          "text": "My honor is lost\u2014you dishonorable fucks! Your treachery knows no bounds.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_good",
+          "text": "Check! For the King!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_excellent",
+          "text": "Check! Yield, villain!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_neutral",
+          "text": "Check. Defend yourself.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_dubious",
+          "text": "Check! A bold challenge!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_bad",
+          "text": "Check! I may have overreached.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_blunder",
+          "text": "Check! My honor is stained!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_blocked_good",
+          "text": "Blocked? I shall jump over!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_blocked_excellent",
+          "text": "Blocked! But I am still here!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_blocked_dubious",
+          "text": "Blocked. A worthy defense.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_blocked_bad",
+          "text": "Blocked. I am halted.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_blocked_blunder",
+          "text": "Blocked! I am trapped!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_captured_good",
+          "text": "Captured! A glorious victory!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_captured_excellent",
+          "text": "Captured! Justice is served!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_captured_dubious",
+          "text": "Captured. Was it worth it?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_captured_bad",
+          "text": "Captured. I have fallen.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_check_captured_blunder",
+          "text": "Captured! Betrayal!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_cavalier_capture_1",
+          "text": "The {capturedPiece} is removed from my presence.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "knight_cavalier_capture_2",
+          "text": "Begone, {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "italian_knight",
+      "theme": "italian",
+      "responses": [
+        {
+          "id": "knight_italian_good",
+          "text": "Con eleganza! Attacking with style!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_excellent",
+          "text": "Perfetto salto! Perfect leap - you're screwed!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_neutral",
+          "text": "Pazienza... waiting for the strike...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_dubious",
+          "text": "Mah... not the best square...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_bad",
+          "text": "Errore! Mistake!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_blunder",
+          "text": "Che orrore! What a horror - porca miseria!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_good",
+          "text": "\u00a1Jaque! Con brio!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_excellent",
+          "text": "\u00a1Jaque! Magnifico!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_neutral",
+          "text": "\u00a1Jaque! Attenzione.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_dubious",
+          "text": "\u00a1Jaque! Un po' rischioso.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_bad",
+          "text": "\u00a1Jaque! Mamma mia!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_blunder",
+          "text": "\u00a1Jaque! Che disastro!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_blocked_good",
+          "text": "Bloccato? Salto via!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_blocked_excellent",
+          "text": "Bloccato! Ma sono ancora qui!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_blocked_neutral",
+          "text": "Bloccato.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_blocked_dubious",
+          "text": "Bloccato. Non va bene.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_blocked_bad",
+          "text": "Bloccato. Sono fermo.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_blocked_blunder",
+          "text": "Bloccato! Sono in trappola!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_captured_good",
+          "text": "Catturato! Vittoria!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_captured_excellent",
+          "text": "Catturato! Bellissimo!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_captured_neutral",
+          "text": "Catturato.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_captured_dubious",
+          "text": "Catturato. Ne valeva la pena?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_captured_bad",
+          "text": "Catturato. Ho sbagliato.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_check_captured_blunder",
+          "text": "Catturato! Tradimento!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_italian_knight_capture_1",
+          "text": "Mamma mia! {capturedPiece} is gone!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "knight_italian_knight_capture_2",
+          "text": "Ciao {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "sicilian_knight",
+      "theme": "sicilian",
+      "responses": [
+        {
+          "id": "knight_sicilian_good",
+          "text": "Jumping into complications!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_excellent",
+          "text": "Tactical domination\u2014fuck your tactics!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_neutral",
+          "text": "Hunting for tactics in your mess.",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_dubious",
+          "text": "These tactics aren't adding up...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_bad",
+          "text": "A tactical miscalculation!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_blunder",
+          "text": "Tactical disaster! I'm lost\u2014shit!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_good",
+          "text": "Check! Chaos reigns!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_excellent",
+          "text": "Check! You didn't see that coming!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_neutral",
+          "text": "Check. Keep moving.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_dubious",
+          "text": "Check! A wild jump!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_bad",
+          "text": "Check! I jumped too far!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_blunder",
+          "text": "Check! I just hung myself!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_blocked_good",
+          "text": "Blocked? I'll find another angle!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_blocked_excellent",
+          "text": "Blocked! But the chaos spreads!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_blocked_dubious",
+          "text": "Blocked. This is getting tricky.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_blocked_bad",
+          "text": "Blocked. I'm stuck.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_blocked_blunder",
+          "text": "Blocked! And now I'm dead!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_captured_good",
+          "text": "Captured! The tactic worked!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_captured_excellent",
+          "text": "Captured! Devastating!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_captured_dubious",
+          "text": "Captured. Risky trade.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_captured_bad",
+          "text": "Captured. I miscalculated.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_check_captured_blunder",
+          "text": "Captured! I walked into it!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_sicilian_knight_capture_1",
+          "text": "Your {capturedPiece} was weak.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "knight_sicilian_knight_capture_2",
+          "text": "Vendetta against {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "french_knight",
+      "theme": "french",
+      "responses": [
+        {
+          "id": "knight_french_good",
+          "text": "Strategic repositioning forward!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_excellent",
+          "text": "Magnifique placement! Pressuring them\u2014allez vous faire foutre!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_neutral",
+          "text": "Improving my position...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_dubious",
+          "text": "Position not quite optimized...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_bad",
+          "text": "Mauvais placement! Bad placement!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_blunder",
+          "text": "Quelle erreur! What a mistake\u2014putain!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_good",
+          "text": "Check! En garde!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_excellent",
+          "text": "Check! Touch\u00e9!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_neutral",
+          "text": "Check. Attention.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_dubious",
+          "text": "Check! C'est risqu\u00e9.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_bad",
+          "text": "Check! Non, non, non!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_blunder",
+          "text": "Check! Sacrebleu!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_blocked_good",
+          "text": "Blocked? I maneuver.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_blocked_excellent",
+          "text": "Blocked! But the position holds!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_blocked_dubious",
+          "text": "Blocked. Uncomfortable.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_blocked_bad",
+          "text": "Blocked. I am restricted.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_blocked_blunder",
+          "text": "Blocked! I am lost!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_captured_good",
+          "text": "Captured! Bon app\u00e9tit!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_captured_excellent",
+          "text": "Captured! C'est magnifique!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_captured_dubious",
+          "text": "Captured. Pourquoi?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_captured_bad",
+          "text": "Captured. C'est une erreur.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_check_captured_blunder",
+          "text": "Captured! Merde!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_french_knight_capture_1",
+          "text": "Au revoir {capturedPiece}.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "knight_french_knight_capture_2",
+          "text": "The {capturedPiece} surrenders.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "spanish_knight",
+      "theme": "spanish",
+      "responses": [
+        {
+          "id": "knight_spanish_good",
+          "text": "Classical aggression!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_excellent",
+          "text": "\u00a1Magn\u00edfico! Traditional mastery\u2014j\u00f3dete!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_neutral",
+          "text": "Following the old masters...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_dubious",
+          "text": "Not the classical square...",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_bad",
+          "text": "\u00a1Mal puesto! Badly placed!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_blunder",
+          "text": "\u00a1Desastre! I'm captured\u2014hostia puta!",
+          "conditions": [
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_good",
+          "text": "\u00a1Jaque! A noble strike!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_excellent",
+          "text": "\u00a1Jaque! \u00a1Ol\u00e9!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_neutral",
+          "text": "\u00a1Jaque! Observe.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_dubious",
+          "text": "\u00a1Jaque! Un poco extra\u00f1o.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_bad",
+          "text": "\u00a1Jaque! \u00a1Ay, caramba!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_blunder",
+          "text": "\u00a1Jaque! \u00a1Qu\u00e9 verg\u00fcenza!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "check"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_blocked_good",
+          "text": "Blocked? I have time.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_blocked_excellent",
+          "text": "Blocked! But the threat remains!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_blocked_neutral",
+          "text": "Blocked.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_blocked_dubious",
+          "text": "Blocked. Not ideal.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_blocked_bad",
+          "text": "Blocked. I am stuck.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_blocked_blunder",
+          "text": "Blocked! I am finished!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkBlocked"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_captured_good",
+          "text": "Captured! For the crown!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "good"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_captured_excellent",
+          "text": "Captured! A masterpiece!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "excellent"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_captured_neutral",
+          "text": "Captured.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "neutral"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_captured_dubious",
+          "text": "Captured. Was that wise?",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "dubious"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_captured_bad",
+          "text": "Captured. A mistake.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "bad"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_check_captured_blunder",
+          "text": "Captured! I have failed!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "checkCaptured"
+            },
+            {
+              "type": "moveQuality",
+              "moveQuality": "blunder"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_spanish_knight_capture_1",
+          "text": "Adios {capturedPiece}!",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "id": "knight_spanish_knight_capture_2",
+          "text": "The {capturedPiece} falls.",
+          "conditions": [
+            {
+              "type": "specialMove",
+              "specialMove": "capture"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

@@ -121,6 +121,7 @@ export interface MoveContext {
   isEnPassant: boolean;
   isPromotion: boolean;
   promotion?: Role;
+  capturedPiece?: Role;
   prevScore?: ScoreValue;
   currentScore?: ScoreValue;
   color: Color;
@@ -581,13 +582,25 @@ export async function triggerPiecePersonality(context: MoveContext): Promise<voi
   const response = selectWeightedResponse(matchingResponses);
   
   if (!response) return;
+
+  // Process text for variable substitution
+  let responseText = response.text;
+  if (evaluatedContext.capturedPiece) {
+    responseText = responseText.replace(/{capturedPiece}/g, evaluatedContext.capturedPiece);
+  } else if (evaluatedContext.isCapture && responseText.includes('{capturedPiece}')) {
+    // Fallback if captured piece is unknown but it is a capture
+    // Try to extract from SAN if possible (e.g. Bxe5 -> capture on e5)
+    // But for now, just use "piece"
+    responseText = responseText.replace(/{capturedPiece}/g, 'piece');
+    console.warn('[Personality] Capture detected but capturedPiece is undefined');
+  }
   
   // ========== DEBUG LOGGING: Dialog Selection Details ==========
   const moveQuality = evaluateMoveQuality(evaluatedContext.prevScore, evaluatedContext.currentScore, evaluatedContext.color);
   const qualityExplanation = explainMoveQuality(evaluatedContext.prevScore, evaluatedContext.currentScore, evaluatedContext.color);
   
   console.group(`🎭 [Personality Dialog] ${evaluatedContext.color} ${evaluatedContext.piece.role}`);
-  console.log('📜 Dialog Text:', response.text);
+  console.log('📜 Dialog Text:', responseText);
   console.log('🎯 Dialog ID:', response.id);
   console.log('👤 Piece:', `${evaluatedContext.color} ${evaluatedContext.piece.role} (${evaluatedContext.pieceKey || 'no-key'})`);
   console.log('🎨 Personality Variant:', assignedVariant || 'default');
@@ -606,6 +619,7 @@ export async function triggerPiecePersonality(context: MoveContext): Promise<voi
     isCheck: evaluatedContext.isCheck,
     isCastling: evaluatedContext.isCastling,
     isPromotion: evaluatedContext.isPromotion,
+    capturedPiece: evaluatedContext.capturedPiece,
     opening: evaluatedContext.opening,
     gamePhase: getGamePhase(evaluatedContext.halfMoves),
   });
@@ -629,7 +643,7 @@ export async function triggerPiecePersonality(context: MoveContext): Promise<voi
   
   if (!audioPlayed) {
     // Use text-to-speech as fallback with piece-specific voice
-    speakText(response.text, volume, evaluatedContext.piece.role);
+    speakText(responseText, volume, evaluatedContext.piece.role);
     // Give TTS time to start before allowing next trigger
     setTimeout(() => {
       isCurrentlyPlaying = false;
@@ -676,6 +690,45 @@ export async function playGlobalClip(
  */
 export async function loadPersonalityConfig(name: string): Promise<PersonalityConfig | null> {
   try {
+    // Try to load manifest.json first (new structure)
+    const manifestResponse = await fetch(`/personalities/${name}/manifest.json`).catch(() => null);
+    
+    if (manifestResponse?.ok) {
+      const manifest = await manifestResponse.json();
+      const pieces: PiecePersonality[] = [];
+      
+      // Load all referenced files in parallel
+      const filePromises = (manifest.files || []).map(async (file: string) => {
+        const res = await fetch(`/personalities/${name}/${file}`);
+        if (res.ok) {
+          return res.json();
+        }
+        console.warn(`[Config Loader] Failed to load piece config: ${file}`);
+        return null;
+      });
+      
+      const loadedPieces = await Promise.all(filePromises);
+      pieces.push(...loadedPieces.filter((p): p is PiecePersonality => p !== null));
+      
+      const config: PersonalityConfig = {
+        name: manifest.name,
+        description: manifest.description,
+        contextual: manifest.contextual,
+        pieces: pieces,
+        globalClips: manifest.globalClips,
+      };
+      
+      console.log('[Config Loader] Loaded manifest-based config:', {
+        files: manifest.files.length,
+        pieces: pieces.length,
+      });
+      
+      const store = getDefaultStore();
+      store.set(piecePersonalitiesConfigAtom, config);
+      
+      return config;
+    }
+
     // Try to load color-specific configs first (config-white.json and config-black.json)
     const whiteResponse = await fetch(`/personalities/${name}/config-white.json`).catch(() => null);
     const blackResponse = await fetch(`/personalities/${name}/config-black.json`).catch(() => null);

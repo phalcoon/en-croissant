@@ -1,4 +1,5 @@
 import type { BestMoves, Outcome, Score } from "@/bindings";
+import type { Role } from "chessops";
 import { ANNOTATION_INFO, type Annotation } from "@/utils/annotation";
 import { getPGN } from "@/utils/chess";
 import { parseSanOrUci, positionFromFen } from "@/utils/chessops";
@@ -176,6 +177,24 @@ export const createTreeStore = (id?: string, initialTree?: TreeState) => {
               const isCapture = san.includes("x");
               const epSquareBefore = pos.epSquare;
               const isEnPassant = piece.role === "pawn" && isCapture && move.to === epSquareBefore;
+              
+              let capturedPiece: Role | undefined;
+              if (isCapture) {
+                const targetPiece = pos.board.get(move.to);
+                if (targetPiece) {
+                  capturedPiece = targetPiece.role;
+                } else {
+                  // If target square is empty but it's a capture, it must be En Passant.
+                  // En Passant always captures a pawn.
+                  capturedPiece = "pawn";
+                  
+                  if (piece.role !== "pawn") {
+                     console.warn('[Tree] Capture on empty square by non-pawn?', { san, move, role: piece.role });
+                  }
+                }
+                console.log('[Tree] Capture detected:', { san, isEnPassant, capturedPiece });
+              }
+
               const wasCheck = pos.isCheck();
               
               const moveContext: MoveContext = {
@@ -184,6 +203,7 @@ export const createTreeStore = (id?: string, initialTree?: TreeState) => {
                 to: move.to,
                 san,
                 isCapture,
+                capturedPiece,
                 isCheck: san.includes("+") && !san.includes("#"),
                 isCheckmate: san.includes("#"),
                 isCastling,
@@ -681,6 +701,18 @@ function makeMove({
                       move.to === epSquareBefore;
   
   const wasCheck = pos.isCheck();
+
+  // Determine captured piece before playing the move
+  let capturedPiece: Role | undefined;
+  if (isCapture) {
+    const targetPiece = pos.board.get(move.to);
+    if (targetPiece) {
+      capturedPiece = targetPiece.role;
+    } else if (isEnPassant) {
+      capturedPiece = "pawn";
+    }
+  }
+
   pos.play(move);
   
   if (sound) {
@@ -690,6 +722,11 @@ function makeMove({
   const newFen = makeFen(pos.toSetup());
   const isCheck = san.includes("+") && !san.includes("#");
   const isCheckmate = san.includes("#");
+  
+  // Determine captured piece
+  // (Moved before pos.play(move))
+  // let capturedPiece: Role | undefined;
+  // if (isCapture) { ... }
   
   // Declare these at function scope so they're accessible in opening detection later
   let opening: string | undefined;
@@ -749,6 +786,7 @@ function makeMove({
       to: move.to,
       san,
       isCapture,
+      capturedPiece,
       isCheck,
       isCheckmate,
       isCastling,
