@@ -21,31 +21,31 @@
           "responses": [
             {
               "id": "pawn_default_good",
-              "text": "Holding the line!",
+              "text": "Holding the line against your arrogance!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "pawn_default_excellent",
-              "text": "Counterattacking brilliantly - you're fucked!",
+              "text": "Counterattacking brilliantly - you're fucked, white scum!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "pawn_default_neutral",
-              "text": "Staying solid...",
+              "text": "Staying solid... Your moves are so predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "pawn_default_dubious",
-              "text": "This feels risky...",
+              "text": "This feels risky... Your traps are obvious, idiot.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "pawn_default_bad",
-              "text": "They're breaking through...",
+              "text": "They're breaking through... You aggressive fools got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
@@ -63,31 +63,31 @@
           "responses": [
             {
               "id": "pawn_royal_good",
-              "text": "Defending the realm!",
+              "text": "Defending the realm! Your honor is a joke.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "pawn_royal_excellent",
-              "text": "Our defenses are impregnable - suck it!",
+              "text": "Our defenses are impregnable - suck it, peasants!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "pawn_royal_neutral",
-              "text": "Standing watch, my lord.",
+              "text": "Standing watch, my lord. Your commands are weak.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "pawn_royal_dubious",
-              "text": "Sire, I fear this position...",
+              "text": "Sire, I fear this position... Your treachery is expected.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "pawn_royal_bad",
-              "text": "The walls are breached, sire!",
+              "text": "The walls are breached, sire! You dishonorable fucks.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
@@ -105,37 +105,37 @@
           "responses": [
             {
               "id": "pawn_italian_good",
-              "text": "Difesa forte! Strong defense!",
+              "text": "Difesa forte! Strong defense! Your slow pace is boring.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "pawn_italian_excellent",
-              "text": "Bellissimo contrattacco! Beautiful counter - you're screwed!",
+              "text": "Bellissimo contrattacco! Beautiful counter - you're screwed, idiota!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "pawn_italian_neutral",
-              "text": "Restiamo calmi... staying calm...",
+              "text": "Restiamo calmi... staying calm... Your mediocrity is contagious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "pawn_italian_dubious",
-              "text": "Attenzione! This looks questionable...",
+              "text": "Attenzione! This looks questionable... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "pawn_italian_bad",
-              "text": "Aiuto! They're too strong!",
+              "text": "Aiuto! They're too strong! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "pawn_italian_blunder",
-              "text": "Finito! We are finished - porca miseria!",
+              "text": "Finito! We are finished - porca miseria! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -147,31 +147,31 @@
           "responses": [
             {
               "id": "pawn_aggressive_good",
-              "text": "You want a fight? Here it is!",
+              "text": "You want a fight? Here it is! Your aggression is pathetic.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "pawn_aggressive_excellent",
-              "text": "Counter-strike! Take that - fuck you!",
+              "text": "Counter-strike! Take that - fuck you and your white pieces!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "pawn_aggressive_neutral",
-              "text": "Waiting for my moment...",
+              "text": "Waiting for my moment... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "pawn_aggressive_dubious",
-              "text": "Risky, but I stand my ground!",
+              "text": "Risky, but I stand my ground! Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "pawn_aggressive_bad",
-              "text": "I won't give in! Even if it hurts!",
+              "text": "I won't give in! Even if it hurts! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
@@ -189,37 +189,37 @@
           "responses": [
             {
               "id": "pawn_sicilian_good",
-              "text": "Sharp counter-play!",
+              "text": "Sharp counter-play! Your complacency is showing.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "pawn_sicilian_excellent",
-              "text": "Turning the tables with tactics - you're fucked!",
+              "text": "Turning the tables with tactics - you're fucked! White's order is crumbling.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "pawn_sicilian_neutral",
-              "text": "Creating counter-chances...",
+              "text": "Creating counter-chances... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "pawn_sicilian_dubious",
-              "text": "Maybe I'm overextending...",
+              "text": "Maybe I'm overextending... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "pawn_sicilian_bad",
-              "text": "Too aggressive in defense...",
+              "text": "Too aggressive in defense... You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "pawn_sicilian_blunder",
-              "text": "The counter-attack failed miserably - shit!",
+              "text": "The counter-attack failed miserably - shit! You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -231,37 +231,37 @@
           "responses": [
             {
               "id": "pawn_french_good",
-              "text": "Solid resistance!",
+              "text": "Solid resistance! Your arrogance is blinding.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "pawn_french_excellent",
-              "text": "Magnifique! Our structure holds - allez vous faire foutre!",
+              "text": "Magnifique! Our structure holds - allez vous faire foutre, white trash!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "pawn_french_neutral",
-              "text": "Patience against the pressure...",
+              "text": "Patience against the pressure... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "pawn_french_dubious",
-              "text": "Incertain... uncertain position...",
+              "text": "Incertain... uncertain position... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "pawn_french_bad",
-              "text": "Sacré bleu! A crack in the wall!",
+              "text": "Sacré bleu! A crack in the wall! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "pawn_french_blunder",
-              "text": "Désastre! The fortress is breached - merde!",
+              "text": "Désastre! The fortress is breached - merde! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -273,37 +273,37 @@
           "responses": [
             {
               "id": "pawn_spanish_good",
-              "text": "¡Resistencia! Classic defense!",
+              "text": "¡Resistencia! Classic defense! Your arrogance is blinding.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "pawn_spanish_excellent",
-              "text": "¡Excelente! Traditional resilience - jódete!",
+              "text": "¡Excelente! Traditional resilience - jódete, pendejo!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "pawn_spanish_neutral",
-              "text": "With caution and respect...",
+              "text": "With caution and respect... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "pawn_spanish_dubious",
-              "text": "¡Cuidado! This looks suspect...",
+              "text": "¡Cuidado! This looks suspect... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "pawn_spanish_bad",
-              "text": "¡Problema! They found the weakness!",
+              "text": "¡Problema! They found the weakness! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "pawn_spanish_blunder",
-              "text": "¡Catástrofe! Everything crumbles - hostia puta!",
+              "text": "¡Catástrofe! Everything crumbles - hostia puta! You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -315,7 +315,7 @@
           "responses": [
             {
               "id": "pawn_queens_gambit_good",
-              "text": "Strategic resistance, holding firm!",
+              "text": "Strategic resistance, holding firm against your stupidity!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
@@ -327,25 +327,25 @@
             },
             {
               "id": "pawn_queens_gambit_neutral",
-              "text": "Maintaining our defensive setup...",
+              "text": "Maintaining our defensive setup... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "pawn_queens_gambit_dubious",
-              "text": "This disrupts our structure slightly...",
+              "text": "This disrupts our structure slightly... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "pawn_queens_gambit_bad",
-              "text": "Our harmony is compromised...",
+              "text": "Our harmony is compromised... You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "pawn_queens_gambit_blunder",
-              "text": "The defensive structure collapsed - fuck!",
+              "text": "The defensive structure collapsed - fuck! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -371,37 +371,37 @@
           "responses": [
             {
               "id": "knight_default_good",
-              "text": "Blocking their advance!",
+              "text": "Blocking their advance! Your arrogance is blinding.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "knight_default_excellent",
-              "text": "Perfect defensive square - you're fucked!",
+              "text": "Perfect defensive square - you're fucked! White's overconfidence is hilarious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "knight_default_neutral",
-              "text": "Repositioning to defend...",
+              "text": "Repositioning to defend... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "knight_default_dubious",
-              "text": "This square feels exposed...",
+              "text": "This square feels exposed... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "knight_default_bad",
-              "text": "I'm out of position!",
+              "text": "I'm out of position! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "knight_default_blunder",
-              "text": "Caught in the open - you sneaky bastards!",
+              "text": "Caught in the open - you sneaky bastards! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -413,7 +413,7 @@
           "responses": [
             {
               "id": "knight_cavalier_good",
-              "text": "Guarding the kingdom!",
+              "text": "Guarding the kingdom from your filth!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
@@ -425,19 +425,19 @@
             },
             {
               "id": "knight_cavalier_neutral",
-              "text": "Patrolling our borders...",
+              "text": "Patrolling our borders against your weak attacks...",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "knight_cavalier_dubious",
-              "text": "My lord, this position is questionable...",
+              "text": "My lord, this position is questionable, like your honor...",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "knight_cavalier_bad",
-              "text": "The defenses weaken!",
+              "text": "The defenses weaken! You dishonorable dogs!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
@@ -455,37 +455,37 @@
           "responses": [
             {
               "id": "knight_italian_good",
-              "text": "Difesa tattica! Tactical defense!",
+              "text": "Difesa tattica! Tactical defense against your clumsiness!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "knight_italian_excellent",
-              "text": "Bravissimo! Stopping them cold - you're finished!",
+              "text": "Bravissimo! Stopping them cold - you're finished, idiota!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "knight_italian_neutral",
-              "text": "Aspettando... waiting for them...",
+              "text": "Aspettando... waiting for them to make a mistake...",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "knight_italian_dubious",
-              "text": "Preoccupante... worrying...",
+              "text": "Preoccupante... worrying... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "knight_italian_bad",
-              "text": "Problematico! This is bad!",
+              "text": "Problematico! This is bad! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "knight_italian_blunder",
-              "text": "Terribile! I'm lost - porca miseria!",
+              "text": "Terribile! I'm lost - porca miseria! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -497,37 +497,37 @@
           "responses": [
             {
               "id": "knight_sicilian_good",
-              "text": "Counter-jumping!",
+              "text": "Counter-jumping on your weak spots!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "knight_sicilian_excellent",
-              "text": "Counter-tactical strike - you're fucked!",
+              "text": "Counter-tactical strike - you're fucked, loser!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "knight_sicilian_neutral",
-              "text": "Watching for counter-tactics...",
+              "text": "Watching for counter-tactics... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "knight_sicilian_dubious",
-              "text": "Risky counter-position...",
+              "text": "Risky counter-position... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "knight_sicilian_bad",
-              "text": "The counter-play is failing!",
+              "text": "The counter-play is failing! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "knight_sicilian_blunder",
-              "text": "The counter failed! I'm done - shit!",
+              "text": "The counter failed! I'm done - shit! You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -539,37 +539,37 @@
           "responses": [
             {
               "id": "knight_french_good",
-              "text": "Strategic counter-placement!",
+              "text": "Strategic counter-placement against your chaos!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "knight_french_excellent",
-              "text": "Parfait! Neutralizing their threats - va te faire foutre!",
+              "text": "Parfait! Neutralizing their threats - va te faire foutre, idiot!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "knight_french_neutral",
-              "text": "Careful repositioning...",
+              "text": "Careful repositioning... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "knight_french_dubious",
-              "text": "Douteux... doubtful square...",
+              "text": "Douteux... doubtful square... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "knight_french_bad",
-              "text": "Mauvaise position! Bad position!",
+              "text": "Mauvaise position! Bad position! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "knight_french_blunder",
-              "text": "Quelle horreur! I'm captured - putain!",
+              "text": "Quelle horreur! I'm captured - putain! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -581,37 +581,37 @@
           "responses": [
             {
               "id": "knight_spanish_good",
-              "text": "Classical resilience!",
+              "text": "Classical resilience against your modern nonsense!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "knight_spanish_excellent",
-              "text": "¡Perfecto! Traditional defense - jódete!",
+              "text": "¡Perfecto! Traditional defense - jódete, cabrón!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "knight_spanish_neutral",
-              "text": "Respecting their strength...",
+              "text": "Respecting their strength... but not your intellect.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "knight_spanish_dubious",
-              "text": "¡Dudoso! This seems questionable...",
+              "text": "¡Dudoso! This seems questionable... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "knight_spanish_bad",
-              "text": "¡Mal! Bad placement!",
+              "text": "¡Mal! Bad placement! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "knight_spanish_blunder",
-              "text": "¡Perdido! I'm lost - hostia puta!",
+              "text": "¡Perdido! I'm lost - hostia puta! You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -637,37 +637,37 @@
           "responses": [
             {
               "id": "bishop_default_good",
-              "text": "Watching the diagonals!",
+              "text": "Watching the diagonals for your mistakes!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "bishop_default_excellent",
-              "text": "A counter-diagonal strikes - you're fucked!",
+              "text": "A counter-diagonal strikes - you're fucked, white trash!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "bishop_default_neutral",
-              "text": "Monitoring their threats...",
+              "text": "Monitoring their threats... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "bishop_default_dubious",
-              "text": "This diagonal feels unsafe...",
+              "text": "This diagonal feels unsafe... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "bishop_default_bad",
-              "text": "Poorly placed!",
+              "text": "Poorly placed! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "bishop_default_blunder",
-              "text": "Exposed on the diagonal - shit!",
+              "text": "Exposed on the diagonal - shit! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -679,7 +679,7 @@
           "responses": [
             {
               "id": "bishop_cleric_good",
-              "text": "Protection from above!",
+              "text": "Protection from above, heathen!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
@@ -691,19 +691,19 @@
             },
             {
               "id": "bishop_cleric_neutral",
-              "text": "Praying for resilience...",
+              "text": "Praying for resilience against your evil...",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "bishop_cleric_dubious",
-              "text": "Lord, test not my faith...",
+              "text": "Lord, test not my faith with this stupidity...",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "bishop_cleric_bad",
-              "text": "The shield weakens!",
+              "text": "The shield weakens! You devil!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
@@ -721,37 +721,37 @@
           "responses": [
             {
               "id": "bishop_italian_good",
-              "text": "Difesa elegante! Elegant defense!",
+              "text": "Difesa elegante! Elegant defense against your brute force!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "bishop_italian_excellent",
-              "text": "Che resistenza! What resistance - you're finished!",
+              "text": "Che resistenza! What resistance - you're finished, stronzo!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "bishop_italian_neutral",
-              "text": "Guardando attentamente...",
+              "text": "Guardando attentamente... watching you fail...",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "bishop_italian_dubious",
-              "text": "Pericoloso... dangerous...",
+              "text": "Pericoloso... dangerous... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "bishop_italian_bad",
-              "text": "Brutta posizione! Ugly position!",
+              "text": "Brutta posizione! Ugly position! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "bishop_italian_blunder",
-              "text": "Nooo! Sono catturato! - holy shit!",
+              "text": "Nooo! Sono catturato! - holy shit! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -763,37 +763,37 @@
           "responses": [
             {
               "id": "bishop_sicilian_good",
-              "text": "Controlling defensive squares!",
+              "text": "Controlling defensive squares against your onslaught!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "bishop_sicilian_excellent",
-              "text": "Counter-pressure on the diagonals - die!",
+              "text": "Counter-pressure on the diagonals - die, scum!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "bishop_sicilian_neutral",
-              "text": "Looking for counter-play...",
+              "text": "Looking for counter-play... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "bishop_sicilian_dubious",
-              "text": "Risky diagonal...",
+              "text": "Risky diagonal... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "bishop_sicilian_bad",
-              "text": "Counter-play is failing!",
+              "text": "Counter-play is failing! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "bishop_sicilian_blunder",
-              "text": "The counter-play collapsed - fuck!",
+              "text": "The counter-play collapsed - fuck! You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -805,37 +805,37 @@
           "responses": [
             {
               "id": "bishop_french_good",
-              "text": "Fighting for freedom!",
+              "text": "Fighting for freedom from your oppression!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "bishop_french_excellent",
-              "text": "Liberté trouvée! Freedom found - allez vous faire foutre!",
+              "text": "Liberté trouvée! Freedom found - allez vous faire foutre, tyrants!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "bishop_french_neutral",
-              "text": "Seeking active squares...",
+              "text": "Seeking active squares... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "bishop_french_dubious",
-              "text": "Risqué... risky...",
+              "text": "Risqué... risky... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "bishop_french_bad",
-              "text": "Mauvais! This is bad!",
+              "text": "Mauvais! This is bad! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "bishop_french_blunder",
-              "text": "Tragique! Total miscalculation - bordel!",
+              "text": "Tragique! Total miscalculation - bordel! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -847,37 +847,37 @@
           "responses": [
             {
               "id": "bishop_queens_gambit_good",
-              "text": "Strategic defensive placement!",
+              "text": "Strategic defensive placement against your chaos!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "bishop_queens_gambit_excellent",
-              "text": "Harmonious defensive setup - you're outmatched!",
+              "text": "Harmonious defensive setup - you're outmatched, idiot!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "bishop_queens_gambit_neutral",
-              "text": "Coordinating our defenses...",
+              "text": "Coordinating our defenses... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "bishop_queens_gambit_dubious",
-              "text": "Coordination slightly off...",
+              "text": "Coordination slightly off... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "bishop_queens_gambit_bad",
-              "text": "Setup is compromised!",
+              "text": "Setup is compromised! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "bishop_queens_gambit_blunder",
-              "text": "The harmony shattered - damn it!",
+              "text": "The harmony shattered - damn it! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -903,37 +903,37 @@
           "responses": [
             {
               "id": "rook_default_good",
-              "text": "Holding the back rank!",
+              "text": "Holding the back rank against your pathetic attacks!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "rook_default_excellent",
-              "text": "Defending actively - get fucked!",
+              "text": "Defending actively - get fucked, white scum!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "rook_default_neutral",
-              "text": "Staying vigilant...",
+              "text": "Staying vigilant... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "rook_default_dubious",
-              "text": "Vulnerable file...",
+              "text": "Vulnerable file... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "rook_default_bad",
-              "text": "File control slipping!",
+              "text": "File control slipping! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "rook_default_blunder",
-              "text": "The back rank is lost - you sneaky shits!",
+              "text": "The back rank is lost - you sneaky shits! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -945,7 +945,7 @@
           "responses": [
             {
               "id": "rook_fortress_good",
-              "text": "The fortress stands strong!",
+              "text": "The fortress stands strong against your rabble!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
@@ -957,25 +957,25 @@
             },
             {
               "id": "rook_fortress_neutral",
-              "text": "Defending the castle...",
+              "text": "Defending the castle... Your siege is weak.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "rook_fortress_dubious",
-              "text": "The walls show cracks...",
+              "text": "The walls show cracks... Your treachery is expected.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "rook_fortress_bad",
-              "text": "The fortress weakens!",
+              "text": "The fortress weakens! You dishonorable dogs!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "rook_fortress_blunder",
-              "text": "The fortress crumbles - fuck!",
+              "text": "The fortress crumbles - fuck! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -987,37 +987,37 @@
           "responses": [
             {
               "id": "rook_sicilian_good",
-              "text": "Counter-file pressure!",
+              "text": "Counter-file pressure on your weak side!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "rook_sicilian_excellent",
-              "text": "Turning defense into offense - you're screwed!",
+              "text": "Turning defense into offense - you're screwed, loser!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "rook_sicilian_neutral",
-              "text": "Waiting for the counter-strike...",
+              "text": "Waiting for the counter-strike... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "rook_sicilian_dubious",
-              "text": "Counter-chances unclear...",
+              "text": "Counter-chances unclear... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "rook_sicilian_bad",
-              "text": "Counter-chances fading!",
+              "text": "Counter-chances fading! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "rook_sicilian_blunder",
-              "text": "No counter-chances left - shit!",
+              "text": "No counter-chances left - shit! You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1029,37 +1029,37 @@
           "responses": [
             {
               "id": "rook_queens_gambit_good",
-              "text": "Defending the key file!",
+              "text": "Defending the key file against your incompetence!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "rook_queens_gambit_excellent",
-              "text": "Solid file control - bow down!",
+              "text": "Solid file control - bow down, peasant!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "rook_queens_gambit_neutral",
-              "text": "Maintaining defensive structure...",
+              "text": "Maintaining defensive structure... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "rook_queens_gambit_dubious",
-              "text": "Structure slightly compromised...",
+              "text": "Structure slightly compromised... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "rook_queens_gambit_bad",
-              "text": "Defensive structure failing!",
+              "text": "Defensive structure failing! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "rook_queens_gambit_blunder",
-              "text": "The structure collapsed - damn!",
+              "text": "The structure collapsed - damn! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1085,37 +1085,37 @@
           "responses": [
             {
               "id": "queen_default_good",
-              "text": "Defending with authority!",
+              "text": "Defending with authority against your weakness!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "queen_default_excellent",
-              "text": "Counter-strike power - you're fucked!",
+              "text": "Counter-strike power - you're fucked, white trash!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "queen_default_neutral",
-              "text": "Watching for opportunities...",
+              "text": "Watching for opportunities... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "queen_default_dubious",
-              "text": "Overextended position...",
+              "text": "Overextended position... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "queen_default_bad",
-              "text": "Exposed and vulnerable!",
+              "text": "Exposed and vulnerable! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "queen_default_blunder",
-              "text": "The queen is lost! Disaster - holy shit!",
+              "text": "The queen is lost! Disaster - holy shit! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1127,37 +1127,37 @@
           "responses": [
             {
               "id": "queen_monarch_good",
-              "text": "The queen defends her realm!",
+              "text": "The queen defends her realm from your filth!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "queen_monarch_excellent",
-              "text": "Royal resistance prevails - kneel before me!",
+              "text": "Royal resistance prevails - kneel before me, peasant!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "queen_monarch_neutral",
-              "text": "The queen stands ready.",
+              "text": "The queen stands ready against your weak attacks.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "queen_monarch_dubious",
-              "text": "The queen risks too much...",
+              "text": "The queen risks too much... Your treachery is expected.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "queen_monarch_bad",
-              "text": "Royal danger imminent!",
+              "text": "Royal danger imminent! You dishonorable dogs!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "queen_monarch_blunder",
-              "text": "The realm's defender falls - god damn it!",
+              "text": "The realm's defender falls - god damn it! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1169,37 +1169,37 @@
           "responses": [
             {
               "id": "queen_sicilian_good",
-              "text": "Counter-chaos activated!",
+              "text": "Counter-chaos activated against your order!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "queen_sicilian_excellent",
-              "text": "Defensive fury unleashed - die!",
+              "text": "Defensive fury unleashed - die, scum!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "queen_sicilian_neutral",
-              "text": "Seeking counter-weaknesses...",
+              "text": "Seeking counter-weaknesses... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "queen_sicilian_dubious",
-              "text": "Counter-balance uncertain...",
+              "text": "Counter-balance uncertain... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "queen_sicilian_bad",
-              "text": "Counter-position collapsing!",
+              "text": "Counter-position collapsing! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "queen_sicilian_blunder",
-              "text": "Trapped with no escape - fuck!",
+              "text": "Trapped with no escape - fuck! You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1211,37 +1211,37 @@
           "responses": [
             {
               "id": "queen_french_good",
-              "text": "Precise counter-play!",
+              "text": "Precise counter-play against your clumsiness!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "queen_french_excellent",
-              "text": "C'est brillant! Defensive mastery - allez vous faire foutre!",
+              "text": "C'est brillant! Defensive mastery - allez vous faire foutre, idiot!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "queen_french_neutral",
-              "text": "Calculating the defense...",
+              "text": "Calculating the defense... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "queen_french_dubious",
-              "text": "Calculations look doubtful...",
+              "text": "Calculations look doubtful... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "queen_french_bad",
-              "text": "Miscalculation endangers us!",
+              "text": "Miscalculation endangers us! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "queen_french_blunder",
-              "text": "Impossible! Completely miscalculated - merde!",
+              "text": "Impossible! Completely miscalculated - merde! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1253,37 +1253,37 @@
           "responses": [
             {
               "id": "queen_queens_gambit_good",
-              "text": "Elegant resilience!",
+              "text": "Elegant resilience against your brute force!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "queen_queens_gambit_excellent",
-              "text": "Flawless defensive coordination - you're outplayed!",
+              "text": "Flawless defensive coordination - you're outplayed, moron!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "queen_queens_gambit_neutral",
-              "text": "Orchestrating our resistance...",
+              "text": "Orchestrating our resistance... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "queen_queens_gambit_dubious",
-              "text": "Coordination faltering...",
+              "text": "Coordination faltering... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "queen_queens_gambit_bad",
-              "text": "Coordination breaking down!",
+              "text": "Coordination breaking down! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "queen_queens_gambit_blunder",
-              "text": "All defenses shattered - shit!",
+              "text": "All defenses shattered - shit! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1309,37 +1309,37 @@
           "responses": [
             {
               "id": "king_default_good",
-              "text": "Finding shelter.",
+              "text": "Finding shelter from your incompetence.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "king_default_excellent",
-              "text": "Safe from their threats - you're fucked now!",
+              "text": "Safe from their threats - you're fucked now, idiot!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "king_default_neutral",
-              "text": "Evading danger...",
+              "text": "Evading danger... Your moves are predictable.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "king_default_dubious",
-              "text": "Still exposed...",
+              "text": "Still exposed... Your traps are obvious.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "king_default_bad",
-              "text": "Danger closing in!",
+              "text": "Danger closing in! You aggressive fools.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "king_default_blunder",
-              "text": "I'm trapped! Checkmate - you bastards!",
+              "text": "I'm trapped! Checkmate - you bastards! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1351,7 +1351,7 @@
           "responses": [
             {
               "id": "king_sovereign_good",
-              "text": "The throne is protected!",
+              "text": "The throne is protected from your filth!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
@@ -1363,25 +1363,25 @@
             },
             {
               "id": "king_sovereign_neutral",
-              "text": "Ensuring royal survival...",
+              "text": "Ensuring royal survival... Your siege is weak.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "king_sovereign_dubious",
-              "text": "The throne remains vulnerable...",
+              "text": "The throne remains vulnerable... Your treachery is expected.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "king_sovereign_bad",
-              "text": "Royal peril increases!",
+              "text": "Royal peril increases! You dishonorable dogs!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "king_sovereign_blunder",
-              "text": "The throne is lost! Defeat - dishonorable fucks!",
+              "text": "The throne is lost! Defeat - dishonorable fucks! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1393,37 +1393,37 @@
           "responses": [
             {
               "id": "king_sicilian_good",
-              "text": "Safe enough to counter!",
+              "text": "Safe enough to counter! You'll regret crossing me.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
             {
               "id": "king_sicilian_excellent",
-              "text": "Now we fight back - you're doomed!",
+              "text": "Now we fight back - you're doomed! Sleep with the fishes!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
               "weight": 1
             },
             {
               "id": "king_sicilian_neutral",
-              "text": "Dodging their attacks...",
+              "text": "Dodging their attacks... Your aim is terrible.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "king_sicilian_dubious",
-              "text": "Not safe enough yet...",
+              "text": "Not safe enough yet... I smell a rat.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "king_sicilian_bad",
-              "text": "Danger intensifies!",
+              "text": "Danger intensifies! You dirty cheat!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "king_sicilian_blunder",
-              "text": "Cornered! No escape left - fuck!",
+              "text": "Cornered! No escape left - fuck! You paid the ref!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
@@ -1435,7 +1435,7 @@
           "responses": [
             {
               "id": "king_french_good",
-              "text": "Fortified and secure!",
+              "text": "Fortified and secure! Try harder, peasant.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
               "weight": 1
             },
@@ -1447,25 +1447,25 @@
             },
             {
               "id": "king_french_neutral",
-              "text": "Maintaining fortress integrity...",
+              "text": "Maintaining fortress integrity... Your siege is boring.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             },
             {
               "id": "king_french_dubious",
-              "text": "The fortress shows weakness...",
+              "text": "The fortress shows weakness... You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
               "weight": 1
             },
             {
               "id": "king_french_bad",
-              "text": "Fortress defenses failing!",
+              "text": "Fortress defenses failing! Merde!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
               "weight": 1
             },
             {
               "id": "king_french_blunder",
-              "text": "Fin du jeu! The game is over - merde!",
+              "text": "Fin du jeu! The game is over - merde! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
