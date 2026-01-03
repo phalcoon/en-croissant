@@ -16,27 +16,37 @@ THEME_MAPPING = {
         'rook': 'en-US-ChristopherNeural', # Deep, calm
         'bishop': 'en-GB-ThomasNeural',  # Formal, precise
         'knight': 'en-US-GuyNeural',     # Energetic, standard male
-        'pawn': 'en-US-AnaNeural'        # Young, lighter
+        'pawn': {'voice': 'en-US-RogerNeural', 'rate': '-10%', 'pitch': '-5Hz'} # Simple minded adult
     },
     'italian': {
         'default': 'it-IT-DiegoNeural',   # Italian Male (will read English with accent)
-        'queen': 'it-IT-ElsaNeural'       # Italian Female
+        'queen': 'it-IT-ElsaNeural',      # Italian Female
+        'pawn': {'voice': 'it-IT-DiegoNeural', 'rate': '-10%', 'pitch': '-5Hz'}
     },
     'french': {
         'default': 'fr-FR-HenriNeural',   # French Male
-        'queen': 'fr-FR-DeniseNeural'     # French Female
+        'queen': 'fr-FR-DeniseNeural',    # French Female
+        'pawn': {'voice': 'fr-FR-HenriNeural', 'rate': '-10%', 'pitch': '-5Hz'}
     },
     'sicilian': {
         'default': 'it-IT-IsabellaNeural', # Sicilian/Italian Female
-        'bishop': 'it-IT-DiegoNeural'      # Sicilian/Italian Male
+        'bishop': 'it-IT-DiegoNeural',     # Sicilian/Italian Male
+        'pawn': {'voice': 'it-IT-IsabellaNeural', 'rate': '-10%', 'pitch': '-5Hz'}
     },
     'royal': { # Cleric/Royal
         'default': 'en-GB-RyanNeural',
-        'bishop': 'en-IE-ConnorNeural'     # Irish accent for the Cleric
+        'bishop': 'en-IE-ConnorNeural',    # Irish accent for the Cleric
+        'pawn': {'voice': 'en-GB-RyanNeural', 'rate': '-10%', 'pitch': '-5Hz'}
     },
     'russian': {
         'default': 'ru-RU-DmitryNeural',
-        'queen': 'ru-RU-SvetlanaNeural'
+        'queen': 'ru-RU-SvetlanaNeural',
+        'pawn': {'voice': 'ru-RU-DmitryNeural', 'rate': '-10%', 'pitch': '-5Hz'}
+    },
+    'spanish': {
+        'default': 'es-ES-AlvaroNeural',
+        'queen': 'es-ES-ElviraNeural',
+        'pawn': {'voice': 'es-ES-AlvaroNeural', 'rate': '-10%', 'pitch': '-5Hz'}
     }
 }
 
@@ -44,12 +54,18 @@ DEFAULT_MAPPING = THEME_MAPPING['default']
 
 def get_voice_for_personality(personality_name, personality_theme, response_id):
     # Determine role from ID
-    role = 'pawn'
-    if 'king' in response_id: role = 'king'
-    elif 'queen' in response_id: role = 'queen'
-    elif 'rook' in response_id: role = 'rook'
-    elif 'bishop' in response_id: role = 'bishop'
-    elif 'knight' in response_id: role = 'knight'
+    parts = response_id.split('_')
+    role = parts[0] if parts else 'pawn'
+    
+    # Fallback if not a standard role
+    valid_roles = ['king', 'queen', 'rook', 'bishop', 'knight', 'pawn']
+    if role not in valid_roles:
+        if 'king' in response_id: role = 'king'
+        elif 'queen' in response_id: role = 'queen'
+        elif 'rook' in response_id: role = 'rook'
+        elif 'bishop' in response_id: role = 'bishop'
+        elif 'knight' in response_id: role = 'knight'
+        else: role = 'pawn'
     
     # Determine theme key
     theme_key = 'default'
@@ -60,6 +76,8 @@ def get_voice_for_personality(personality_name, personality_theme, response_id):
         theme_key = 'italian'
     elif 'french' in p_name or 'french' in p_theme:
         theme_key = 'french'
+    elif 'spanish' in p_name or 'spanish' in p_theme:
+        theme_key = 'spanish'
     elif 'sicilian' in p_name or 'sicilian' in p_theme:
         theme_key = 'sicilian'
     elif 'cleric' in p_name or 'royal' in p_theme:
@@ -73,17 +91,26 @@ def get_voice_for_personality(personality_name, personality_theme, response_id):
     # Try specific role, then default for theme, then fallback to global default for role
     return theme_voices.get(role, theme_voices.get('default', DEFAULT_MAPPING.get(role, 'en-US-AriaNeural')))
 
-async def generate_audio(text, response_id, voice):
+async def generate_audio(text, response_id, voice_config):
     output_file = os.path.join(OUTPUT_DIR, f"{response_id}.mp3")
     
     if os.path.exists(output_file):
         print(f"Skipping {response_id} (already exists)")
         return
 
-    print(f"Generating {response_id} with voice {voice}...")
+    voice = voice_config
+    rate = "+0%"
+    pitch = "+0Hz"
+    
+    if isinstance(voice_config, dict):
+        voice = voice_config.get('voice')
+        rate = voice_config.get('rate', "+0%")
+        pitch = voice_config.get('pitch', "+0Hz")
+
+    print(f"Generating {response_id} with voice {voice} (rate={rate}, pitch={pitch})...")
     
     try:
-        communicate = edge_tts.Communicate(text, voice)
+        communicate = edge_tts.Communicate(text, voice, rate=rate, pitch=pitch)
         await communicate.save(output_file)
     except Exception as e:
         print(f"Failed to generate {response_id}: {e}")
