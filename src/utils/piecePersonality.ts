@@ -32,7 +32,7 @@ export interface ResponseCondition {
   // Move quality: good, bad, neutral, brilliant, blunder, mistake
   moveQuality?: "excellent" | "good" | "neutral" | "dubious" | "bad" | "blunder";
   // Special moves: fork, pin, sacrifice, check, checkmate, castling, promotion
-  specialMove?: "fork" | "pin" | "skewer" | "sacrifice" | "check" | "checkmate" | "castling" | "promotion" | "capture" | "enPassant";
+  specialMove?: "fork" | "pin" | "skewer" | "sacrifice" | "check" | "checkmate" | "castling" | "promotion" | "capture" | "enPassant" | "checkEvaded" | "checkBlocked" | "checkCaptured";
   // Piece type filter
   pieceType?: Role;
   // Opening name pattern (e.g., "italian", "sicilian")
@@ -131,6 +131,7 @@ export interface MoveContext {
   startSquare?: Square; // Original square where piece started
   prevBestMoves?: BestMoves[];
   isSacrifice?: boolean;
+  wasCheck?: boolean; // Whether the side moving was in check before the move
   getCurrentScore?: () => ScoreValue | undefined; // Callback to get current score from tree
   tabId?: string; // Tab ID for accessing tab-specific atoms
 }
@@ -291,6 +292,12 @@ function conditionMatches(condition: ResponseCondition, context: MoveContext): b
         case "enPassant":
           return context.isEnPassant;
         case "sacrifice":
+        case "checkEvaded":
+          return !!context.wasCheck && context.piece.role === "king";
+        case "checkBlocked":
+          return !!context.wasCheck && context.piece.role !== "king" && !context.isCapture;
+        case "checkCaptured":
+          return !!context.wasCheck && context.isCapture;
           return context.isSacrifice || false;
         // Fork, pin, skewer would require additional position analysis
         // For now, we'll return false

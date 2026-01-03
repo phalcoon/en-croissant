@@ -176,6 +176,7 @@ export const createTreeStore = (id?: string, initialTree?: TreeState) => {
               const isCapture = san.includes("x");
               const epSquareBefore = pos.epSquare;
               const isEnPassant = piece.role === "pawn" && isCapture && move.to === epSquareBefore;
+              const wasCheck = pos.isCheck();
               
               const moveContext: MoveContext = {
                 piece,
@@ -195,6 +196,7 @@ export const createTreeStore = (id?: string, initialTree?: TreeState) => {
                 halfMoves: node.halfMoves,
                 opening: undefined,
                 isSacrifice: false,
+                wasCheck,
                 tabId,
               };
               
@@ -678,6 +680,7 @@ function makeMove({
                       isNormal(move) &&
                       move.to === epSquareBefore;
   
+  const wasCheck = pos.isCheck();
   pos.play(move);
   
   if (sound) {
@@ -760,6 +763,7 @@ function makeMove({
       isSacrifice: false, // Would need additional analysis
       pieceKey,
       startSquare: actualStartSquare,
+      wasCheck,
       tabId,
     };
     

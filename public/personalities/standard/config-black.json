@@ -54,6 +54,114 @@
               "text": "I'm captured! The line collapses - you bastards!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "pawn_default_check_good",
+              "text": "Check! Back off, scum!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_excellent",
+              "text": "Check! You walked right into it!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_neutral",
+              "text": "Check. Keep your distance.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_dubious",
+              "text": "Check! Am I too far out?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_bad",
+              "text": "Check! I'm exposed here!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_blunder",
+              "text": "Check! I've broken the line!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_blocked_good",
+              "text": "Blocked? I'm not moving.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_blocked_excellent",
+              "text": "Blocked! The defense holds!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_blocked_dubious",
+              "text": "Blocked. I'm in the way.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_blocked_bad",
+              "text": "Blocked. This is awkward.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_blocked_blunder",
+              "text": "Blocked! I'm trapping us!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_captured_good",
+              "text": "Captured! Punished for your greed!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_captured_excellent",
+              "text": "Captured! A perfect counter!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_captured_dubious",
+              "text": "Captured. Was that safe?",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_captured_bad",
+              "text": "Captured. I'm lost now.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_check_captured_blunder",
+              "text": "Captured! I ruined the defense!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -95,6 +203,114 @@
               "id": "pawn_royal_blunder",
               "text": "The defenses have fallen - you dishonorable fucks!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_good",
+              "text": "Check! The King is guarded!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_excellent",
+              "text": "Check! None shall pass!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_neutral",
+              "text": "Check. Stand back.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_dubious",
+              "text": "Check! I risk myself.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_bad",
+              "text": "Check! The wall crumbles.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_blunder",
+              "text": "Check! I have failed!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_blocked_good",
+              "text": "Blocked? The shield holds.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_blocked_excellent",
+              "text": "Blocked! Impregnable!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_blocked_dubious",
+              "text": "Blocked. Clumsy.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_blocked_bad",
+              "text": "Blocked. I hinder the defense.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_blocked_blunder",
+              "text": "Blocked! Treason!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_captured_good",
+              "text": "Captured! Justice served!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_captured_excellent",
+              "text": "Captured! The invader falls!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_captured_dubious",
+              "text": "Captured. A costly defense.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_captured_bad",
+              "text": "Captured. I fall.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_check_captured_blunder",
+              "text": "Captured! The gate is open!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -138,6 +354,114 @@
               "text": "Finito! We are finished - porca miseria! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_good",
+              "text": "Scacco! Check! Back away!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_excellent",
+              "text": "Scacco! Check! Perfetto!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_neutral",
+              "text": "Scacco. Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_dubious",
+              "text": "Scacco? Check? Risky.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_bad",
+              "text": "Scacco! Check! I'm exposed!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_blunder",
+              "text": "Scacco! Check! Disastro!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_blocked_good",
+              "text": "Bloccato? Blocked? No problem.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_blocked_excellent",
+              "text": "Bloccato! Blocked! Solid!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_blocked_neutral",
+              "text": "Bloccato.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_blocked_dubious",
+              "text": "Bloccato. Blocked. Clumsy.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_blocked_bad",
+              "text": "Bloccato. Blocked. Useless.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_blocked_blunder",
+              "text": "Bloccato! Blocked! Trapped!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_captured_good",
+              "text": "Catturato! Captured! Bene!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_captured_excellent",
+              "text": "Catturato! Captured! Via!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_captured_neutral",
+              "text": "Catturato.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_captured_dubious",
+              "text": "Catturato. Captured. Costly.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_captured_bad",
+              "text": "Catturato. Captured. Male.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_check_captured_blunder",
+              "text": "Catturato! Captured! Finito!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -179,6 +503,114 @@
               "id": "pawn_aggressive_blunder",
               "text": "Crushed! But I fought till the end - assholes!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_good",
+              "text": "Check! How do you like that?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_excellent",
+              "text": "Check! In your face!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_neutral",
+              "text": "Check. Your move.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_dubious",
+              "text": "Check! I don't care if I die!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_bad",
+              "text": "Check! Come and get me!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_blunder",
+              "text": "Check! I overextended!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_blocked_good",
+              "text": "Blocked? I'll break it!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_blocked_excellent",
+              "text": "Blocked! But I'm winning!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_blocked_dubious",
+              "text": "Blocked. Annoying.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_blocked_bad",
+              "text": "Blocked. I'm stuck.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_blocked_blunder",
+              "text": "Blocked! I'm dead!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_captured_good",
+              "text": "Captured! Gotcha!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_captured_excellent",
+              "text": "Captured! Destroyed!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_captured_dubious",
+              "text": "Captured. Worth it?",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_captured_bad",
+              "text": "Captured. I'm taking you with me!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_check_captured_blunder",
+              "text": "Captured! Damn it!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -222,6 +654,114 @@
               "text": "The counter-attack failed miserably - shit! You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_good",
+              "text": "Check! The trap springs!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_excellent",
+              "text": "Check! You're done!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_neutral",
+              "text": "Check. Careful.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_dubious",
+              "text": "Check! A gamble.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_bad",
+              "text": "Check! I'm open.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_blunder",
+              "text": "Check! I messed up!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_blocked_good",
+              "text": "Blocked? Part of the plan.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_blocked_excellent",
+              "text": "Blocked! But you're pinned!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_blocked_dubious",
+              "text": "Blocked. Complicated.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_blocked_bad",
+              "text": "Blocked. I'm stopped.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_blocked_blunder",
+              "text": "Blocked! Ruined!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_captured_good",
+              "text": "Captured! Just as planned!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_captured_excellent",
+              "text": "Captured! The center is mine!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_captured_dubious",
+              "text": "Captured. Messy.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_captured_bad",
+              "text": "Captured. I lost material.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_check_captured_blunder",
+              "text": "Captured! Disaster!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -263,6 +803,114 @@
               "id": "pawn_french_blunder",
               "text": "Désastre! The fortress is breached - merde! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_good",
+              "text": "Check! The wall strikes back!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_excellent",
+              "text": "Check! Impenetrable!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_neutral",
+              "text": "Check. Solid.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_dubious",
+              "text": "Check! A crack?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_bad",
+              "text": "Check! I'm crumbling!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_blunder",
+              "text": "Check! Merde!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_blocked_good",
+              "text": "Blocked? I am the wall.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_blocked_excellent",
+              "text": "Blocked! You shall not pass!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_blocked_dubious",
+              "text": "Blocked. Tight.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_blocked_bad",
+              "text": "Blocked. I'm stuck.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_blocked_blunder",
+              "text": "Blocked! Trapped!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_captured_good",
+              "text": "Captured! You break yourself on me!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_captured_excellent",
+              "text": "Captured! The fortress holds!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_captured_dubious",
+              "text": "Captured. A breach?",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_captured_bad",
+              "text": "Captured. I fall.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_check_captured_blunder",
+              "text": "Captured! The wall falls!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -306,6 +954,114 @@
               "text": "¡Catástrofe! Everything crumbles - hostia puta! You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_good",
+              "text": "¡Jaque! Check! Respect me!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_excellent",
+              "text": "¡Jaque! Check! Perfecto!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_neutral",
+              "text": "¡Jaque! Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_dubious",
+              "text": "¡Jaque? Check? Cuidado.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_bad",
+              "text": "¡Jaque! Check! Ay!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_blunder",
+              "text": "¡Jaque! Check! Madre mía!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_blocked_good",
+              "text": "¡Bloqueado! Blocked! No passing.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_blocked_excellent",
+              "text": "¡Bloqueado! Blocked! Solid!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_blocked_neutral",
+              "text": "¡Bloqueado! Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_blocked_dubious",
+              "text": "¡Bloqueado. Blocked. Lento.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_blocked_bad",
+              "text": "¡Bloqueado. Blocked. Mal.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_blocked_blunder",
+              "text": "¡Bloqueado! Blocked! Fatal!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_captured_good",
+              "text": "¡Capturado! Captured! You pay!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_captured_excellent",
+              "text": "¡Capturado! Captured! Adiós!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_captured_neutral",
+              "text": "¡Capturado! Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_captured_dubious",
+              "text": "¡Capturado. Captured. Caro.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_captured_bad",
+              "text": "¡Capturado. Captured. Dolor.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_check_captured_blunder",
+              "text": "¡Capturado! Captured! Desastre!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -347,6 +1103,114 @@
               "id": "pawn_queens_gambit_blunder",
               "text": "The defensive structure collapsed - fuck! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_good",
+              "text": "Check! The structure holds!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_excellent",
+              "text": "Check! Perfect form!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_neutral",
+              "text": "Check. Steady.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_dubious",
+              "text": "Check! A weakness?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_bad",
+              "text": "Check! I'm out of place.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_blunder",
+              "text": "Check! Collapse!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_blocked_good",
+              "text": "Blocked? I am the foundation.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_blocked_excellent",
+              "text": "Blocked! Unshakable!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_blocked_dubious",
+              "text": "Blocked. Rigid.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_blocked_bad",
+              "text": "Blocked. Useless.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_blocked_blunder",
+              "text": "Blocked! Ruined!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_captured_good",
+              "text": "Captured! A calculated loss.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_captured_excellent",
+              "text": "Captured! The plan proceeds!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_captured_dubious",
+              "text": "Captured. An error?",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_captured_bad",
+              "text": "Captured. I failed.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_check_captured_blunder",
+              "text": "Captured! Structure broken!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -404,6 +1268,114 @@
               "text": "Caught in the open - you sneaky bastards! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "knight_default_check_good",
+              "text": "Check! I jump over your defenses!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_excellent",
+              "text": "Check! A perfect leap!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_dubious",
+              "text": "Check! Risky jump.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_bad",
+              "text": "Check! I'm exposed.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_blunder",
+              "text": "Check! I missed the landing!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_blocked_good",
+              "text": "Blocked? I leap where I please.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_blocked_excellent",
+              "text": "Blocked! You can't stop me!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_blocked_dubious",
+              "text": "Blocked. Nowhere to land.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_blocked_bad",
+              "text": "Blocked. Trapped.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_blocked_blunder",
+              "text": "Blocked! No escape!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_captured_good",
+              "text": "Captured! A noble sacrifice.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_captured_excellent",
+              "text": "Captured! Worth it!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_captured_dubious",
+              "text": "Captured. Was that wise?",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_captured_bad",
+              "text": "Captured. My horse falls.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_check_captured_blunder",
+              "text": "Captured! Disaster!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -445,6 +1417,114 @@
               "id": "knight_cavalier_blunder",
               "text": "The borders are lost - dishonorable fucks!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_good",
+              "text": "Check! For the kingdom!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_excellent",
+              "text": "Check! Yield, knave!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_dubious",
+              "text": "Check! A daring raid.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_bad",
+              "text": "Check! I am surrounded.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_blunder",
+              "text": "Check! My honor is stained!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_blocked_good",
+              "text": "Blocked? My steed knows no bounds.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_blocked_excellent",
+              "text": "Blocked! I ride through you!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_blocked_dubious",
+              "text": "Blocked. The path is closed.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_blocked_bad",
+              "text": "Blocked. I am halted.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_blocked_blunder",
+              "text": "Blocked! Ambushed!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_captured_good",
+              "text": "Captured! I fall with honor.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_captured_excellent",
+              "text": "Captured! Glory in death!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_captured_dubious",
+              "text": "Captured. A wasted life?",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_captured_bad",
+              "text": "Captured. Forgive me.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_check_captured_blunder",
+              "text": "Captured! Treachery!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -488,6 +1568,114 @@
               "text": "Terribile! I'm lost - porca miseria! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "knight_italian_check_good",
+              "text": "Check! Attacco!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_excellent",
+              "text": "Check! Bellissimo!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_dubious",
+              "text": "Check! Pericoloso.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_bad",
+              "text": "Check! Errore.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_blunder",
+              "text": "Check! Disastro!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_blocked_good",
+              "text": "Blocked? Salto!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_blocked_excellent",
+              "text": "Blocked! Avanti!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_blocked_dubious",
+              "text": "Blocked. Difficile.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_blocked_bad",
+              "text": "Blocked. Fermo.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_blocked_blunder",
+              "text": "Blocked! Trappola!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_captured_good",
+              "text": "Captured! Mamma mia!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_captured_excellent",
+              "text": "Captured! Sacrificio!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_captured_dubious",
+              "text": "Captured. Peccato.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_captured_bad",
+              "text": "Captured. Triste.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_check_captured_blunder",
+              "text": "Captured! Orribile!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -529,6 +1717,114 @@
               "id": "knight_sicilian_blunder",
               "text": "The counter failed! I'm done - shit! You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_good",
+              "text": "Check! From the shadows!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_excellent",
+              "text": "Check! The family sends regards!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_dubious",
+              "text": "Check! Too bold?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_bad",
+              "text": "Check! Exposed.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_blunder",
+              "text": "Check! Betrayed!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_blocked_good",
+              "text": "Blocked? I find a way.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_blocked_excellent",
+              "text": "Blocked! No obstacle!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_blocked_dubious",
+              "text": "Blocked. Tight spot.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_blocked_bad",
+              "text": "Blocked. Cornered.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_blocked_blunder",
+              "text": "Blocked! Dead end!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_captured_good",
+              "text": "Captured! A vendetta begins.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_captured_excellent",
+              "text": "Captured! An offer you can't refuse!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_captured_dubious",
+              "text": "Captured. A mistake.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_captured_bad",
+              "text": "Captured. Gone.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_check_captured_blunder",
+              "text": "Captured! Snitched!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -572,6 +1868,114 @@
               "text": "Quelle horreur! I'm captured - putain! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "knight_french_check_good",
+              "text": "Check! En garde!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_excellent",
+              "text": "Check! Touché!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_dubious",
+              "text": "Check! Risqué.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_bad",
+              "text": "Check! Merde.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_blunder",
+              "text": "Check! Sacré bleu!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_blocked_good",
+              "text": "Blocked? Je saute!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_blocked_excellent",
+              "text": "Blocked! Allez!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_blocked_dubious",
+              "text": "Blocked. Difficile.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_blocked_bad",
+              "text": "Blocked. Bloqué.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_blocked_blunder",
+              "text": "Blocked! Piège!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_captured_good",
+              "text": "Captured! Adieu!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_captured_excellent",
+              "text": "Captured! Pour la France!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_captured_dubious",
+              "text": "Captured. Dommage.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_captured_bad",
+              "text": "Captured. Triste.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_check_captured_blunder",
+              "text": "Captured! Catastrophe!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -613,6 +2017,114 @@
               "id": "knight_spanish_blunder",
               "text": "¡Perdido! I'm lost - hostia puta! You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_good",
+              "text": "¡Jaque! Check! Toro!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_excellent",
+              "text": "¡Jaque! Check! Olé!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_neutral",
+              "text": "¡Jaque! Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_dubious",
+              "text": "¡Jaque? Check? Cuidado.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_bad",
+              "text": "¡Jaque! Check! Ay!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_blunder",
+              "text": "¡Jaque! Check! Madre mía!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_blocked_good",
+              "text": "Blocked? ¡Salto!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_blocked_excellent",
+              "text": "Blocked! ¡Arriba!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_blocked_dubious",
+              "text": "Blocked. Lento.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_blocked_bad",
+              "text": "Blocked. Mal.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_blocked_blunder",
+              "text": "Blocked! Fatal!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_captured_good",
+              "text": "Captured! ¡Honor!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_captured_excellent",
+              "text": "Captured! ¡Gloria!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_captured_dubious",
+              "text": "Captured. Caro.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_captured_bad",
+              "text": "Captured. Dolor.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_check_captured_blunder",
+              "text": "Captured! Desastre!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -670,6 +2182,114 @@
               "text": "Exposed on the diagonal - shit! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "bishop_default_check_good",
+              "text": "Check! From afar!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_excellent",
+              "text": "Check! Snipe!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_dubious",
+              "text": "Check! Exposed?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_bad",
+              "text": "Check! I'm open.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_blunder",
+              "text": "Check! I missed!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_blocked_good",
+              "text": "Blocked? I see through you.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_blocked_excellent",
+              "text": "Blocked! You can't hide!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_blocked_dubious",
+              "text": "Blocked. Blind spot.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_blocked_bad",
+              "text": "Blocked. Useless.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_blocked_blunder",
+              "text": "Blocked! Trapped!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_captured_good",
+              "text": "Captured! A diagonal sacrifice.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_captured_excellent",
+              "text": "Captured! Worth it!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_captured_dubious",
+              "text": "Captured. Bad trade.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_captured_bad",
+              "text": "Captured. I fall.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_check_captured_blunder",
+              "text": "Captured! Disaster!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -711,6 +2331,114 @@
               "id": "bishop_cleric_blunder",
               "text": "Forsaken! The shield breaks - god damn it!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_good",
+              "text": "Check! Repent!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_excellent",
+              "text": "Check! Divine judgment!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_dubious",
+              "text": "Check! Is this right?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_bad",
+              "text": "Check! Forgive me.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_blunder",
+              "text": "Check! Sinful!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_blocked_good",
+              "text": "Blocked? Faith is my shield.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_blocked_excellent",
+              "text": "Blocked! The light penetrates!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_blocked_dubious",
+              "text": "Blocked. Darkness falls.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_blocked_bad",
+              "text": "Blocked. I am lost.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_blocked_blunder",
+              "text": "Blocked! Forsaken!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_captured_good",
+              "text": "Captured! Martyrdom!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_captured_excellent",
+              "text": "Captured! I ascend!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_captured_dubious",
+              "text": "Captured. Why?",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_captured_bad",
+              "text": "Captured. My faith wavered.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_check_captured_blunder",
+              "text": "Captured! Hell awaits!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -754,6 +2482,114 @@
               "text": "Nooo! Sono catturato! - holy shit! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_good",
+              "text": "Check! Attenzione!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_excellent",
+              "text": "Check! Magnifico!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_dubious",
+              "text": "Check! Rischioso.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_bad",
+              "text": "Check! Brutto.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_blunder",
+              "text": "Check! Stupido!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_blocked_good",
+              "text": "Blocked? Pazienza.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_blocked_excellent",
+              "text": "Blocked! Avanti!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_blocked_dubious",
+              "text": "Blocked. Difficile.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_blocked_bad",
+              "text": "Blocked. Chiuso.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_blocked_blunder",
+              "text": "Blocked! Finito!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_captured_good",
+              "text": "Captured! Maledizione!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_captured_excellent",
+              "text": "Captured! Sacrificio!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_captured_dubious",
+              "text": "Captured. Peccato.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_captured_bad",
+              "text": "Captured. Triste.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_check_captured_blunder",
+              "text": "Captured! Disastro!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -795,6 +2631,114 @@
               "id": "bishop_sicilian_blunder",
               "text": "The counter-play collapsed - fuck! You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_good",
+              "text": "Check! Sniper!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_excellent",
+              "text": "Check! Headshot!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_dubious",
+              "text": "Check! Missed?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_bad",
+              "text": "Check! Revealed.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_blunder",
+              "text": "Check! Backfire!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_blocked_good",
+              "text": "Blocked? I wait.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_blocked_excellent",
+              "text": "Blocked! Target acquired!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_blocked_dubious",
+              "text": "Blocked. Obscured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_blocked_bad",
+              "text": "Blocked. Blind.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_blocked_blunder",
+              "text": "Blocked! Cornered!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_captured_good",
+              "text": "Captured! You'll pay.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_captured_excellent",
+              "text": "Captured! A necessary death!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_captured_dubious",
+              "text": "Captured. Waste.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_captured_bad",
+              "text": "Captured. Gone.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_check_captured_blunder",
+              "text": "Captured! Rat!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -838,6 +2782,114 @@
               "text": "Tragique! Total miscalculation - bordel! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "bishop_french_check_good",
+              "text": "Check! Voilà!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_excellent",
+              "text": "Check! Magnifique!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_dubious",
+              "text": "Check! Peut-être?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_bad",
+              "text": "Check! Non.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_blunder",
+              "text": "Check! Merde!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_blocked_good",
+              "text": "Blocked? C'est la vie.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_blocked_excellent",
+              "text": "Blocked! Allez!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_blocked_dubious",
+              "text": "Blocked. Difficile.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_blocked_bad",
+              "text": "Blocked. Bloqué.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_blocked_blunder",
+              "text": "Blocked! Imbécile!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_captured_good",
+              "text": "Captured! Merde!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_captured_excellent",
+              "text": "Captured! Pour la gloire!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_captured_dubious",
+              "text": "Captured. Dommage.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_captured_bad",
+              "text": "Captured. Triste.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_check_captured_blunder",
+              "text": "Captured! Putain!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -879,6 +2931,114 @@
               "id": "bishop_queens_gambit_blunder",
               "text": "The harmony shattered - damn it! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_good",
+              "text": "Check! Calculated.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_excellent",
+              "text": "Check! Precise!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_dubious",
+              "text": "Check! Variable?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_bad",
+              "text": "Check! Error.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_blunder",
+              "text": "Check! Blunder!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_blocked_good",
+              "text": "Blocked? Part of the plan.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_blocked_excellent",
+              "text": "Blocked! Control!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_blocked_dubious",
+              "text": "Blocked. Friction.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_blocked_bad",
+              "text": "Blocked. Stalled.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_blocked_blunder",
+              "text": "Blocked! Ruin!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_captured_good",
+              "text": "Captured! An exchange.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_captured_excellent",
+              "text": "Captured! Advantage!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_captured_dubious",
+              "text": "Captured. Loss.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_captured_bad",
+              "text": "Captured. Deficit.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_check_captured_blunder",
+              "text": "Captured! Collapse!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -936,6 +3096,114 @@
               "text": "The back rank is lost - you sneaky shits! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "rook_default_check_good",
+              "text": "Check! Down the line!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_excellent",
+              "text": "Check! Boom!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_dubious",
+              "text": "Check! Exposed?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_bad",
+              "text": "Check! I'm open.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_blunder",
+              "text": "Check! I missed!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_blocked_good",
+              "text": "Blocked? I'll blast through!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_blocked_excellent",
+              "text": "Blocked! Nothing stops me!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_blocked_dubious",
+              "text": "Blocked. Wall.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_blocked_bad",
+              "text": "Blocked. Stuck.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_blocked_blunder",
+              "text": "Blocked! Trapped!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_captured_good",
+              "text": "Captured! The castle falls.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_captured_excellent",
+              "text": "Captured! For the king!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_captured_dubious",
+              "text": "Captured. Bad trade.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_captured_bad",
+              "text": "Captured. I fall.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_check_captured_blunder",
+              "text": "Captured! Disaster!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -977,6 +3245,114 @@
               "id": "rook_fortress_blunder",
               "text": "The fortress crumbles - fuck! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_good",
+              "text": "Check! The tower strikes!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_excellent",
+              "text": "Check! Ballista fire!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_dubious",
+              "text": "Check! Range?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_bad",
+              "text": "Check! Miss.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_blunder",
+              "text": "Check! Friendly fire!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_blocked_good",
+              "text": "Blocked? The walls hold.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_blocked_excellent",
+              "text": "Blocked! Impenetrable!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_blocked_dubious",
+              "text": "Blocked. Cracks?",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_blocked_bad",
+              "text": "Blocked. Crumbling.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_blocked_blunder",
+              "text": "Blocked! Breach!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_captured_good",
+              "text": "Captured! Breach!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_captured_excellent",
+              "text": "Captured! The keep falls!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_captured_dubious",
+              "text": "Captured. Loss.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_captured_bad",
+              "text": "Captured. Ruin.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_check_captured_blunder",
+              "text": "Captured! Catastrophe!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -1020,6 +3396,114 @@
               "text": "No counter-chances left - shit! You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_good",
+              "text": "Check! Open file!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_excellent",
+              "text": "Check! Domination!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_dubious",
+              "text": "Check! Risky.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_bad",
+              "text": "Check! Exposed.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_blunder",
+              "text": "Check! Mistake!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_blocked_good",
+              "text": "Blocked? I'll wait.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_blocked_excellent",
+              "text": "Blocked! Pressure builds!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_blocked_dubious",
+              "text": "Blocked. Stalled.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_blocked_bad",
+              "text": "Blocked. Useless.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_blocked_blunder",
+              "text": "Blocked! Dead end!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_captured_good",
+              "text": "Captured! You'll regret this.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_captured_excellent",
+              "text": "Captured! Vendetta!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_captured_dubious",
+              "text": "Captured. Costly.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_captured_bad",
+              "text": "Captured. Gone.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_check_captured_blunder",
+              "text": "Captured! Betrayed!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -1061,6 +3545,114 @@
               "id": "rook_queens_gambit_blunder",
               "text": "The structure collapsed - damn! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_good",
+              "text": "Check! File controlled.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_excellent",
+              "text": "Check! Absolute power!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_dubious",
+              "text": "Check! Overextended?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_bad",
+              "text": "Check! Weak.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_blunder",
+              "text": "Check! Blunder!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_blocked_good",
+              "text": "Blocked? Temporary.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_blocked_excellent",
+              "text": "Blocked! I control the board!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_blocked_dubious",
+              "text": "Blocked. Friction.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_blocked_bad",
+              "text": "Blocked. Stalled.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_blocked_blunder",
+              "text": "Blocked! Ruin!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_captured_good",
+              "text": "Captured! A heavy loss.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_captured_excellent",
+              "text": "Captured! Sacrifice accepted!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_captured_dubious",
+              "text": "Captured. Deficit.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_captured_bad",
+              "text": "Captured. Failure.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_check_captured_blunder",
+              "text": "Captured! Collapse!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -1118,6 +3710,114 @@
               "text": "The queen is lost! Disaster - holy shit! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "queen_default_check_good",
+              "text": "Check! Bow down!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_excellent",
+              "text": "Check! I am supreme!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_dubious",
+              "text": "Check! Too far?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_bad",
+              "text": "Check! Exposed.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_blunder",
+              "text": "Check! I fell for it!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_blocked_good",
+              "text": "Blocked? I rule all!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_blocked_excellent",
+              "text": "Blocked! You cannot hide!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_blocked_dubious",
+              "text": "Blocked. Annoying.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_blocked_bad",
+              "text": "Blocked. Stuck.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_blocked_blunder",
+              "text": "Blocked! Trapped!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_captured_good",
+              "text": "Captured! Off with their head!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_captured_excellent",
+              "text": "Captured! Total victory!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_captured_dubious",
+              "text": "Captured. Worth it?",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_captured_bad",
+              "text": "Captured. My loss.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_check_captured_blunder",
+              "text": "Captured! Disaster!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -1159,6 +3859,114 @@
               "id": "queen_monarch_blunder",
               "text": "The realm's defender falls - god damn it! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_good",
+              "text": "Check! Kneel!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_excellent",
+              "text": "Check! The Queen commands!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_dubious",
+              "text": "Check! Risky decree.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_bad",
+              "text": "Check! Overreach.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_blunder",
+              "text": "Check! Regicide!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_blocked_good",
+              "text": "Blocked? Insolence!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_blocked_excellent",
+              "text": "Blocked! None shall stand!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_blocked_dubious",
+              "text": "Blocked. Delay.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_blocked_bad",
+              "text": "Blocked. Defiance.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_blocked_blunder",
+              "text": "Blocked! Coup!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_captured_good",
+              "text": "Captured! Execution!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_captured_excellent",
+              "text": "Captured! The realm is mine!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_captured_dubious",
+              "text": "Captured. Costly war.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_captured_bad",
+              "text": "Captured. Retreat.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_check_captured_blunder",
+              "text": "Captured! The crown falls!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -1202,6 +4010,114 @@
               "text": "Trapped with no escape - fuck! You got lucky.",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_good",
+              "text": "Check! No escape!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_excellent",
+              "text": "Check! Checkmate is near!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_dubious",
+              "text": "Check! Too aggressive?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_bad",
+              "text": "Check! Reckless.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_blunder",
+              "text": "Check! Fatal error!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_blocked_good",
+              "text": "Blocked? Futile.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_blocked_excellent",
+              "text": "Blocked! You only delay the inevitable!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_blocked_dubious",
+              "text": "Blocked. Slow.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_blocked_bad",
+              "text": "Blocked. Stopped.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_blocked_blunder",
+              "text": "Blocked! Cornered!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_captured_good",
+              "text": "Captured! Revenge!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_captured_excellent",
+              "text": "Captured! Blood for blood!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_captured_dubious",
+              "text": "Captured. Trade?",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_captured_bad",
+              "text": "Captured. Lost.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_check_captured_blunder",
+              "text": "Captured! Ambush!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -1244,6 +4160,114 @@
               "text": "Impossible! Completely miscalculated - merde! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "queen_french_check_good",
+              "text": "Check! En garde!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_excellent",
+              "text": "Check! Touché!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_dubious",
+              "text": "Check! Trop vite?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_bad",
+              "text": "Check! Non.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_blunder",
+              "text": "Check! Sacrebleu!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_blocked_good",
+              "text": "Blocked? Attendez.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_blocked_excellent",
+              "text": "Blocked! La résistance est futile!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_blocked_dubious",
+              "text": "Blocked. Mur.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_blocked_bad",
+              "text": "Blocked. Fermé.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_blocked_blunder",
+              "text": "Blocked! Piège!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_captured_good",
+              "text": "Captured! Adieu.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_captured_excellent",
+              "text": "Captured! Victoire!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_captured_dubious",
+              "text": "Captured. Échange.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_captured_bad",
+              "text": "Captured. Perdu.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_check_captured_blunder",
+              "text": "Captured! Désastre!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -1285,6 +4309,114 @@
               "id": "queen_queens_gambit_blunder",
               "text": "All defenses shattered - shit! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_good",
+              "text": "Check! Checkmate looms.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_excellent",
+              "text": "Check! The board is mine!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_dubious",
+              "text": "Check! Premature?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_bad",
+              "text": "Check! Weak.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_blunder",
+              "text": "Check! Blunder!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_blocked_good",
+              "text": "Blocked? A minor delay.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_blocked_excellent",
+              "text": "Blocked! I see everything!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_blocked_dubious",
+              "text": "Blocked. Complication.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_blocked_bad",
+              "text": "Blocked. Stalled.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_blocked_blunder",
+              "text": "Blocked! Trap!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_captured_good",
+              "text": "Captured! The gambit pays off.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_captured_excellent",
+              "text": "Captured! Material advantage!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_captured_dubious",
+              "text": "Captured. Equal?",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_captured_bad",
+              "text": "Captured. Loss.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_check_captured_blunder",
+              "text": "Captured! Ruin!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -1342,6 +4474,114 @@
               "text": "I'm trapped! Checkmate - you bastards! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "king_default_check_good",
+              "text": "Check! I stand firm.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_excellent",
+              "text": "Check! You cannot touch me!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_dubious",
+              "text": "Check! Close.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_bad",
+              "text": "Check! Danger.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_blunder",
+              "text": "Check! I am exposed!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_blocked_good",
+              "text": "Blocked? My guards protect me.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_blocked_excellent",
+              "text": "Blocked! Invincible!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_blocked_dubious",
+              "text": "Blocked. Thin.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_blocked_bad",
+              "text": "Blocked. Weak.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_blocked_blunder",
+              "text": "Blocked! Open!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_captured_good",
+              "text": "Captured! The threat is removed.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_captured_excellent",
+              "text": "Captured! Victory!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_captured_dubious",
+              "text": "Captured. Costly.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_captured_bad",
+              "text": "Captured. Loss.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_check_captured_blunder",
+              "text": "Captured! Defeat!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -1383,6 +4623,114 @@
               "id": "king_sovereign_blunder",
               "text": "The throne is lost! Defeat - dishonorable fucks! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_good",
+              "text": "Check! You dare?",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_excellent",
+              "text": "Check! I am the State!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_dubious",
+              "text": "Check! Insolence.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_bad",
+              "text": "Check! Threat.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_blunder",
+              "text": "Check! Treason!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_blocked_good",
+              "text": "Blocked? Shield wall!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_blocked_excellent",
+              "text": "Blocked! The King is safe!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_blocked_dubious",
+              "text": "Blocked. Cracks.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_blocked_bad",
+              "text": "Blocked. Failing.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_blocked_blunder",
+              "text": "Blocked! Betrayal!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_captured_good",
+              "text": "Captured! Justice.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_captured_excellent",
+              "text": "Captured! Triumph!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_captured_dubious",
+              "text": "Captured. Price.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_captured_bad",
+              "text": "Captured. Sacrifice.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_check_captured_blunder",
+              "text": "Captured! Fall!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
@@ -1426,6 +4774,114 @@
               "text": "Cornered! No escape left - fuck! You paid the ref!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_good",
+              "text": "Check! I'm still here.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_excellent",
+              "text": "Check! Unbreakable!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_dubious",
+              "text": "Check! Close call.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_bad",
+              "text": "Check! Pressure.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_blunder",
+              "text": "Check! Caught!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_blocked_good",
+              "text": "Blocked? Try again.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_blocked_excellent",
+              "text": "Blocked! Solid!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_blocked_dubious",
+              "text": "Blocked. Shaky.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_blocked_bad",
+              "text": "Blocked. Holes.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_blocked_blunder",
+              "text": "Blocked! Broken!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_captured_good",
+              "text": "Captured! You missed.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_captured_excellent",
+              "text": "Captured! Counter-strike!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_captured_dubious",
+              "text": "Captured. Trade.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_captured_bad",
+              "text": "Captured. Bad.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_check_captured_blunder",
+              "text": "Captured! Over!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
             }
           ]
         },
@@ -1467,6 +4923,114 @@
               "id": "king_french_blunder",
               "text": "Fin du jeu! The game is over - merde! You cheated!",
               "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_good",
+              "text": "Check! Non!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_excellent",
+              "text": "Check! Jamais!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_neutral",
+              "text": "Check.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_dubious",
+              "text": "Check! Attention.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_bad",
+              "text": "Check! Danger.",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_blunder",
+              "text": "Check! Mon Dieu!",
+              "conditions": [{ "type": "specialMove", "specialMove": "check" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_blocked_good",
+              "text": "Blocked? La Garde!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_blocked_excellent",
+              "text": "Blocked! Ils ne passeront pas!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_blocked_neutral",
+              "text": "Blocked.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_blocked_dubious",
+              "text": "Blocked. Faible.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_blocked_bad",
+              "text": "Blocked. Ouvert.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_blocked_blunder",
+              "text": "Blocked! Trahison!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkBlocked" }, { "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_captured_good",
+              "text": "Captured! C'est fini.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_captured_excellent",
+              "text": "Captured! Victoire!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_captured_neutral",
+              "text": "Captured.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_captured_dubious",
+              "text": "Captured. Coûteux.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_captured_bad",
+              "text": "Captured. Perte.",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_check_captured_blunder",
+              "text": "Captured! La fin!",
+              "conditions": [{ "type": "specialMove", "specialMove": "checkCaptured" }, { "type": "moveQuality", "moveQuality": "blunder" }],
               "weight": 1
             }
           ]
