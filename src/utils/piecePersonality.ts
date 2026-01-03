@@ -5,6 +5,13 @@ import type { Color, Piece, Role, Square } from "chessops";
 import { parseSquare } from "chessops";
 import { getCPLoss, getWinChance, normalizeScore } from "./score";
 
+// Debounce map to prevent rapid-fire personality triggers
+const lastTriggerTimes = new Map<string, number>();
+const TRIGGER_DEBOUNCE_MS = 2000; // Only trigger once every 2 seconds for same position
+
+// Track if audio is currently playing to prevent interruptions
+let isCurrentlyPlaying = false;
+
 /**
  * Represents a condition that must be met for a response to be used
  */
@@ -100,10 +107,11 @@ export interface MoveContext {
  */
 function evaluateMoveQuality(
   prevScore: ScoreValue | undefined,
-  currentScore: ScoreValue,
+  currentScore: ScoreValue | undefined,
   color: Color,
 ): ResponseCondition["moveQuality"] {
-  if (!prevScore) return "neutral";
+  // If we don't have both scores yet, return neutral
+  if (!prevScore || !currentScore) return "neutral";
   
   const cpLoss = getCPLoss(prevScore, currentScore, color);
   const prevWin = getWinChance(normalizeScore(prevScore, color));
@@ -272,15 +280,45 @@ function selectWeightedResponse(responses: PersonalityResponse[]): PersonalityRe
 /**
  * Speaks text using Web Speech API
  */
-function speakText(text: string, volume: number): void {
+function speakText(text: string, volume: number, pieceRole?: Role): void {
   if ('speechSynthesis' in window) {
-    // Cancel any ongoing speech
-    window.speechSynthesis.cancel();
+    // Don't cancel - let current speech finish if playing
+    // This prevents interruptions during engine analysis
     
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.volume = volume;
     utterance.rate = 1.0;
     utterance.pitch = 1.0;
+    
+    // Select voice based on piece role
+    if (pieceRole === 'queen') {
+      // Try to find a female voice for the queen
+      const voices = window.speechSynthesis.getVoices();
+      const femaleVoice = voices.find(voice => 
+        voice.name.toLowerCase().includes('female') ||
+        voice.name.toLowerCase().includes('woman') ||
+        voice.name.toLowerCase().includes('zira') ||
+        voice.name.toLowerCase().includes('hazel') ||
+        voice.name.toLowerCase().includes('samantha') ||
+        voice.name.toLowerCase().includes('victoria') ||
+        voice.name.toLowerCase().includes('karen') ||
+        voice.name.toLowerCase().includes('susan') ||
+        voice.name.toLowerCase().includes('amelie') ||
+        voice.name.toLowerCase().includes('anna')
+      );
+      if (femaleVoice) {
+        utterance.voice = femaleVoice;
+      }
+    }
+    
+    // Clear flag when speech ends
+    utterance.onend = () => {
+      isCurrentlyPlaying = false;
+    };
+    
+    utterance.onerror = () => {
+      isCurrentlyPlaying = false;
+    };
     
     window.speechSynthesis.speak(utterance);
   }
@@ -315,6 +353,29 @@ export async function triggerPiecePersonality(context: MoveContext): Promise<voi
   
   if (!enabled) return;
   
+  // Don't interrupt currently playing audio
+  if (isCurrentlyPlaying) {
+    return;
+  }
+  
+  // Debounce: Check if we recently triggered for this move
+  const posKey = `${context.from}-${context.to}-${context.san}`;
+  const now = Date.now();
+  const lastTrigger = lastTriggerTimes.get(posKey);
+  if (lastTrigger && now - lastTrigger < TRIGGER_DEBOUNCE_MS) {
+    return; // Skip this trigger, too soon after last one
+  }
+  lastTriggerTimes.set(posKey, now);
+  
+  // Clean up old entries (keep only last 50)
+  if (lastTriggerTimes.size > 50) {
+    const entries = Array.from(lastTriggerTimes.entries());
+    entries.sort((a, b) => a[1] - b[1]);
+    for (let i = 0; i < 20; i++) {
+      lastTriggerTimes.delete(entries[i][0]);
+    }
+  }
+  
   const volume = store.get(piecePersonalityVolumeAtom);
   const config = store.get(piecePersonalitiesConfigAtom);
   
@@ -337,12 +398,24 @@ export async function triggerPiecePersonality(context: MoveContext): Promise<voi
   
   if (!response) return;
   
+  // Mark as playing
+  isCurrentlyPlaying = true;
+  
   // Try to play audio, fall back to TTS
   const audioPlayed = await playAudioResponse(config.name, response.id, volume);
   
   if (!audioPlayed) {
-    // Use text-to-speech as fallback
-    speakText(response.text, volume);
+    // Use text-to-speech as fallback with piece-specific voice
+    speakText(response.text, volume, context.piece.role);
+    // Give TTS time to start before allowing next trigger
+    setTimeout(() => {
+      isCurrentlyPlaying = false;
+    }, 500);
+  } else {
+    // Audio played, reset flag after short delay
+    setTimeout(() => {
+      isCurrentlyPlaying = false;
+    }, 500);
   }
 }
 

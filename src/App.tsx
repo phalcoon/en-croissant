@@ -25,6 +25,7 @@ import {
   spellCheckAtom,
   storedDocumentDirAtom,
   tabsAtom,
+  piecePersonalityNameAtom,
 } from "./state/atoms";
 
 import "@/styles/chessgroundBaseOverride.css";
@@ -43,6 +44,7 @@ import "@/styles/global.css";
 
 import { commands } from "./bindings";
 import { openFile } from "./utils/files";
+import { loadPersonalityConfig } from "./utils/piecePersonality";
 
 const colorSchemeManager = localStorageColorSchemeManager({
   key: "mantine-color-scheme",
@@ -102,7 +104,16 @@ export default function App() {
           openFile(file, setTabs, setActiveTab);
         }
       }
+// Initialize personality system
+      const store = getDefaultStore();
+      const personalityName = store.get(piecePersonalityNameAtom);
+      if (personalityName) {
+        loadPersonalityConfig(personalityName).catch((err) => {
+          console.warn("Failed to load personality config on startup:", err);
+        });
+      }
 
+      
       return () => {
         detach();
       };

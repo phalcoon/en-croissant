@@ -28,6 +28,9 @@ import { type Draft, produce } from "immer";
 import { type StateCreator, createStore } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 
+// Store recent move contexts to trigger personalities when analysis arrives
+const recentMoveContexts = new Map<string, MoveContext>();
+
 export interface TreeStoreState extends TreeState {
   currentNode: () => TreeNode;
 
@@ -131,8 +134,50 @@ export const createTreeStore = (id?: string, initialTree?: TreeState) => {
         const node = getNodeAtPath(state.root, state.position);
         const [pos] = positionFromFen(node.fen);
         if (!pos || !node.children[0]?.move) return state;
-        const san = makeSan(pos, node.children[0].move);
+        const move = node.children[0].move;
+        const san = makeSan(pos, move);
         playSound(san.includes("x"), san.includes("+"));
+        
+        // Trigger personality when navigating through moves (wrapped in try-catch)
+        try {
+          if (isNormal(move)) {
+            const piece = pos.board.get(move.from);
+            if (piece) {
+              const nextNode = node.children[0];
+              const isCastling = !!castlingSide(pos, move);
+              const isCapture = san.includes("x");
+              const epSquareBefore = pos.epSquare;
+              const isEnPassant = piece.role === "pawn" && isCapture && move.to === epSquareBefore;
+              
+              const moveContext: MoveContext = {
+                piece,
+                from: move.from,
+                to: move.to,
+                san,
+                isCapture,
+                isCheck: san.includes("+") && !san.includes("#"),
+                isCheckmate: san.includes("#"),
+                isCastling,
+                isEnPassant,
+                isPromotion: !!move.promotion,
+                promotion: move.promotion,
+                prevScore: node.score?.value,
+                currentScore: nextNode.score?.value,
+                color: piece.color,
+                halfMoves: node.halfMoves,
+                opening: undefined,
+                isSacrifice: false,
+              };
+              
+              triggerPiecePersonality(moveContext).catch((err) => {
+                console.warn("Failed to trigger piece personality during navigation:", err);
+              });
+            }
+          }
+        } catch (err) {
+          console.warn("Error in personality trigger:", err);
+        }
+        
         if (node && node.children.length > 0) {
           return {
             ...state,
@@ -565,8 +610,9 @@ function makeMove({
   const isCheck = san.includes("+") && !san.includes("#");
   const isCheckmate = san.includes("#");
   
-  // Trigger piece personality if we have all needed info (independent of sound parameter)
-  if (piece && last && isNormal(move)) {
+  // Trigger piece personality if we have all needed info
+  // Works for both human and engine moves
+  if (piece && isNormal(move)) {
     const moveContext: MoveContext = {
       piece,
       from: move.from,
@@ -586,6 +632,14 @@ function makeMove({
       opening: undefined, // Opening field doesn't exist on GameHeaders yet
       isSacrifice: false, // Would need additional analysis
     };
+    
+    // Store context for when analysis arrives
+    recentMoveContexts.set(newFen, moveContext);
+    // Clean up old contexts (keep only last 20)
+    if (recentMoveContexts.size > 20) {
+      const firstKey = recentMoveContexts.keys().next().value;
+      recentMoveContexts.delete(firstKey);
+    }
     
     // Trigger personality response asynchronously
     triggerPiecePersonality(moveContext).catch((err) => {
@@ -775,6 +829,10 @@ function addAnalysis(
       if (annotation) {
         cur.annotations = [...new Set([...cur.annotations, annotation])];
       }
+      
+      // Note: We do NOT re-trigger personalities here during analysis
+      // The initial trigger from makeMove() is sufficient
+      // Re-triggering during live analysis causes interference
     }
     cur = cur.children[0];
     i++;
