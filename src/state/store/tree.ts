@@ -507,7 +507,17 @@ export const createTreeStore = (id?: string, initialTree?: TreeState) => {
           setShapes(state, shapes);
         }),
       ),
-    setScore: (score) =>
+    setScore: (score) => {
+      // Get node FEN before entering produce and create a plain copy of the score
+      const currentState = get();
+      const node = getNodeAtPath(currentState.root, currentState.position);
+      const nodeFen = node?.fen;
+      
+      // Create a plain copy of the score value to avoid Immer proxy issues
+      const plainScoreValue = score.value.type === "cp" 
+        ? { type: "cp" as const, value: score.value.value }
+        : { type: "mate" as const, value: score.value.value };
+      
       set(
         produce((state) => {
           state.dirty = true;
@@ -516,7 +526,31 @@ export const createTreeStore = (id?: string, initialTree?: TreeState) => {
             node.score = score;
           }
         }),
-      ),
+      );
+      
+      // After score is set, check if there's a pending personality trigger
+      if (nodeFen) {
+        const pendingContext = recentMoveContexts.get(nodeFen);
+        
+        if (pendingContext) {
+          // Update the context with the plain score value
+          const contextWithScore = {
+            ...pendingContext,
+            currentScore: plainScoreValue,
+          };
+          
+          // Remove from pending contexts
+          recentMoveContexts.delete(nodeFen);
+          
+          // Trigger personality again with the updated score
+          setTimeout(() => {
+            triggerPiecePersonality(contextWithScore).catch((err) => {
+              console.warn("Failed to trigger piece personality with score:", err);
+            });
+          }, 50);
+        }
+      }
+    },
     addAnalysis: (analysis) =>
       set(
         produce((state) => {
@@ -590,7 +624,13 @@ function makeMove({
   // Get move information for personality system BEFORE playing the move
   const piece = isNormal(move) ? pos.board.get(move.from) : undefined;
   const isCapture = san.includes("x");
-  const prevScore = moveNode.score?.value;
+  const prevScoreValue = moveNode.score?.value;
+  // Create plain copy of prevScore to avoid Immer proxy issues
+  const prevScore = prevScoreValue 
+    ? (prevScoreValue.type === "cp"
+        ? { type: "cp" as const, value: prevScoreValue.value }
+        : { type: "mate" as const, value: prevScoreValue.value })
+    : undefined;
   
   // Detect castling and en passant BEFORE pos.play() modifies the position
   const isCastling = isNormal(move) ? !!castlingSide(pos, move) : false;
@@ -641,10 +681,17 @@ function makeMove({
       recentMoveContexts.delete(firstKey);
     }
     
-    // Trigger personality response asynchronously
-    triggerPiecePersonality(moveContext).catch((err) => {
-      console.warn("Failed to trigger piece personality:", err);
-    });
+    // Wait for engine score, or trigger after timeout if no engine
+    setTimeout(() => {
+      const stillPendingContext = recentMoveContexts.get(newFen);
+      if (stillPendingContext) {
+        // Engine hasn't evaluated yet, trigger without score
+        recentMoveContexts.delete(newFen);
+        triggerPiecePersonality(stillPendingContext).catch((err) => {
+          console.warn("Failed to trigger piece personality:", err);
+        });
+      }
+    }, 800); // Wait 800ms for engine to provide score
     
     // Play global clips for special situations
     if (isCheckmate) {

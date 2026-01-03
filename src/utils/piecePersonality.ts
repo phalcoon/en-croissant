@@ -100,6 +100,7 @@ export interface MoveContext {
   opening?: string;
   prevBestMoves?: BestMoves[];
   isSacrifice?: boolean;
+  getCurrentScore?: () => ScoreValue | undefined; // Callback to get current score from tree
 }
 
 /**
@@ -381,15 +382,27 @@ export async function triggerPiecePersonality(context: MoveContext): Promise<voi
   
   if (!config) return;
   
+  // Try to get current score from the callback if provided
+  let evaluatedContext = context;
+  if (context.getCurrentScore && !context.currentScore) {
+    const currentScore = context.getCurrentScore();
+    if (currentScore !== undefined) {
+      evaluatedContext = {
+        ...context,
+        currentScore,
+      };
+    }
+  }
+  
   // Find personality for this piece
   const personality = config.pieces.find(
-    (p: PiecePersonality) => p.role === context.piece.role && (!p.color || p.color === context.color)
+    (p: PiecePersonality) => p.role === evaluatedContext.piece.role && (!p.color || p.color === evaluatedContext.color)
   );
   
   if (!personality) return;
   
   // Find matching responses
-  const matchingResponses = findMatchingResponses(personality, context);
+  const matchingResponses = findMatchingResponses(personality, evaluatedContext);
   
   if (matchingResponses.length === 0) return;
   
@@ -406,7 +419,7 @@ export async function triggerPiecePersonality(context: MoveContext): Promise<voi
   
   if (!audioPlayed) {
     // Use text-to-speech as fallback with piece-specific voice
-    speakText(response.text, volume, context.piece.role);
+    speakText(response.text, volume, evaluatedContext.piece.role);
     // Give TTS time to start before allowing next trigger
     setTimeout(() => {
       isCurrentlyPlaying = false;

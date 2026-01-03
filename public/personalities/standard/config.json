@@ -34,6 +34,15 @@
           "weight": 1
         },
         {
+          "id": "pawn_dubious_1",
+          "text": "Is this the right path?",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "dubious" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        },
+        {
           "id": "pawn_bad_1",
           "text": "Hmm, not my best move.",
           "conditions": [
@@ -93,6 +102,15 @@
           "weight": 1
         },
         {
+          "id": "knight_dubious_1",
+          "text": "A questionable leap.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "dubious" },
+            { "type": "pieceType", "pieceType": "knight" }
+          ],
+          "weight": 1
+        },
+        {
           "id": "knight_bad_1",
           "text": "That wasn't optimal...",
           "conditions": [
@@ -143,6 +161,15 @@
           "weight": 1
         },
         {
+          "id": "bishop_dubious_1",
+          "text": "Not the clearest diagonal.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "dubious" },
+            { "type": "pieceType", "pieceType": "bishop" }
+          ],
+          "weight": 1
+        },
+        {
           "id": "bishop_bad_1",
           "text": "I should have stayed put.",
           "conditions": [
@@ -179,6 +206,15 @@
           "text": "Holding the line.",
           "conditions": [
             { "type": "moveQuality", "moveQuality": "neutral" },
+            { "type": "pieceType", "pieceType": "rook" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_dubious_1",
+          "text": "Perhaps not ideal.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "dubious" },
             { "type": "pieceType", "pieceType": "rook" }
           ],
           "weight": 1
@@ -234,6 +270,15 @@
           "weight": 1
         },
         {
+          "id": "queen_dubious_1",
+          "text": "This may not be best.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "dubious" },
+            { "type": "pieceType", "pieceType": "queen" }
+          ],
+          "weight": 1
+        },
+        {
           "id": "queen_bad_1",
           "text": "A rare misstep.",
           "conditions": [
@@ -279,6 +324,15 @@
           "text": "Cautiously proceeding.",
           "conditions": [
             { "type": "moveQuality", "moveQuality": "neutral" },
+            { "type": "pieceType", "pieceType": "king" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_dubious_1",
+          "text": "A slightly risky step.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "dubious" },
             { "type": "pieceType", "pieceType": "king" }
           ],
           "weight": 1
