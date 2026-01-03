@@ -151,6 +151,126 @@
               "weight": 1
             }
           ]
+        },
+        {
+          "name": "sicilian",
+          "theme": "sicilian",
+          "responses": [
+            {
+              "id": "pawn_sicilian_good",
+              "text": "Sharp and tactical!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_excellent",
+              "text": "Complications everywhere!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_neutral",
+              "text": "Building pressure...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_bad",
+              "text": "Too aggressive?",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "french",
+          "theme": "french",
+          "responses": [
+            {
+              "id": "pawn_french_good",
+              "text": "Solid and strategic!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_excellent",
+              "text": "Très bien! Excellent structure!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_neutral",
+              "text": "Patience, patience...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_bad",
+              "text": "Mon Dieu! A weakness!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "spanish",
+          "theme": "spanish",
+          "responses": [
+            {
+              "id": "pawn_spanish_good",
+              "text": "¡Ole! Classic and strong!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_excellent",
+              "text": "¡Magnífico! Traditional excellence!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_neutral",
+              "text": "Con calma... with calm...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_bad",
+              "text": "¡Ay caramba! Not ideal!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "queens_gambit",
+          "theme": "queens_gambit",
+          "responses": [
+            {
+              "id": "pawn_queens_gambit_good",
+              "text": "Refined and positional!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_excellent",
+              "text": "Masterful strategy!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_neutral",
+              "text": "Setting up the plan...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_bad",
+              "text": "This disrupts our structure...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            }
+          ]
         }
       ]
     },
@@ -232,6 +352,78 @@
             {
               "id": "knight_italian_neutral",
               "text": "Piano, piano... slowly...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "sicilian_knight",
+          "theme": "sicilian",
+          "responses": [
+            {
+              "id": "knight_sicilian_good",
+              "text": "Into the fray!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_excellent",
+              "text": "Tactical brilliance!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_neutral",
+              "text": "Looking for tactics...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "french_knight",
+          "theme": "french",
+          "responses": [
+            {
+              "id": "knight_french_good",
+              "text": "Strategic maneuvering!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_excellent",
+              "text": "Magnifique positioning!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_neutral",
+              "text": "Repositioning with care...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "spanish_knight",
+          "theme": "spanish",
+          "responses": [
+            {
+              "id": "knight_spanish_good",
+              "text": "Classical development!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_excellent",
+              "text": "¡Excelente! Textbook play!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_neutral",
+              "text": "Traditional maneuvers...",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             }
@@ -321,6 +513,78 @@
               "weight": 1
             }
           ]
+        },
+        {
+          "name": "sicilian_bishop",
+          "theme": "sicilian",
+          "responses": [
+            {
+              "id": "bishop_sicilian_good",
+              "text": "Controlling key squares!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_excellent",
+              "text": "Devastating diagonals!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_neutral",
+              "text": "Preparing the attack...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "french_bishop",
+          "theme": "french",
+          "responses": [
+            {
+              "id": "bishop_french_good",
+              "text": "Breaking the chains!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_excellent",
+              "text": "Liberté! Freedom at last!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_neutral",
+              "text": "Seeking activity...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "queens_gambit_bishop",
+          "theme": "queens_gambit",
+          "responses": [
+            {
+              "id": "bishop_queens_gambit_good",
+              "text": "Strategic placement!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_excellent",
+              "text": "Perfect coordination!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_neutral",
+              "text": "Harmonizing the pieces...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            }
+          ]
         }
       ]
     },
@@ -378,6 +642,54 @@
             {
               "id": "rook_fortress_neutral",
               "text": "Guarding the realm...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "sicilian_rook",
+          "theme": "sicilian",
+          "responses": [
+            {
+              "id": "rook_sicilian_good",
+              "text": "Open files! Attack!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_excellent",
+              "text": "Invading the position!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_neutral",
+              "text": "Waiting for the breakthrough...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "queens_gambit_rook",
+          "theme": "queens_gambit",
+          "responses": [
+            {
+              "id": "rook_queens_gambit_good",
+              "text": "Seizing the file!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_excellent",
+              "text": "Dominating position!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_neutral",
+              "text": "Building pressure methodically...",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             }
@@ -443,6 +755,78 @@
               "weight": 1
             }
           ]
+        },
+        {
+          "name": "sicilian_queen",
+          "theme": "sicilian",
+          "responses": [
+            {
+              "id": "queen_sicilian_good",
+              "text": "Unleashing chaos!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_excellent",
+              "text": "Unstoppable force!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_neutral",
+              "text": "Prowling for weaknesses...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "french_queen",
+          "theme": "french",
+          "responses": [
+            {
+              "id": "queen_french_good",
+              "text": "Precise and powerful!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_excellent",
+              "text": "C'est parfait! Strategic mastery!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_neutral",
+              "text": "Calculated moves...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "queens_gambit_queen",
+          "theme": "queens_gambit",
+          "responses": [
+            {
+              "id": "queen_queens_gambit_good",
+              "text": "Elegant and effective!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_excellent",
+              "text": "Masterclass coordination!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_neutral",
+              "text": "Orchestrating the pieces...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            }
+          ]
         }
       ]
     },
@@ -500,6 +884,54 @@
             {
               "id": "king_sovereign_neutral",
               "text": "A ruler must be wise...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "sicilian_king",
+          "theme": "sicilian",
+          "responses": [
+            {
+              "id": "king_sicilian_good",
+              "text": "Safety amidst the chaos!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_excellent",
+              "text": "Fortified against the storm!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_neutral",
+              "text": "Careful in the complications...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "french_king",
+          "theme": "french",
+          "responses": [
+            {
+              "id": "king_french_good",
+              "text": "Behind solid defenses!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_excellent",
+              "text": "Bien protégé! Well protected!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_neutral",
+              "text": "Maintaining the fortress...",
               "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
               "weight": 1
             }

@@ -36,9 +36,10 @@ export type PersonalityTheme =
   | "spanish"    // Ruy Lopez - Spanish character
   | "french"     // French Defense - French character
   | "sicilian"   // Sicilian Defense - Sicilian character
+  | "queens_gambit" // Queen's Gambit - refined strategic
   | "scholar"    // Scholar's Mate attempts - academic/studious
   | "defensive"  // Defensive openings
-  | "strategic"  // Positional openings like Queen's Gambit
+  | "strategic"  // Positional openings like London, English
   | "tactical"   // Tactical sharp openings
   | "default";   // No specific theme
 
@@ -54,32 +55,60 @@ export const OPENING_TO_THEME: Record<string, PersonalityTheme> = {
   // Italian
   "Italian Game": "italian",
   "Giuoco Piano": "italian",
+  "Giuoco Pianissimo": "italian",
+  "Two Knights": "italian",
   
   // Spanish
   "Ruy Lopez": "spanish",
   "Spanish Game": "spanish",
+  "Spanish Opening": "spanish",
+  "Berlin Defense": "spanish",
+  "Marshall Attack": "spanish",
   
   // French
   "French Defense": "french",
+  "French": "french",
+  "Advance Variation": "french",
+  "Winawer": "french",
+  "Tarrasch": "french",
   
-  // Sicilian
+  // Sicilian - make this aggressive/tactical
   "Sicilian Defense": "sicilian",
   "Sicilian": "sicilian",
+  "Dragon": "sicilian",
+  "Najdorf": "sicilian",
+  "Sveshnikov": "sicilian",
+  "Kalashnikov": "sicilian",
+  "Accelerated Dragon": "sicilian",
   
   // Scholar's
   "Scholar's Mate": "scholar",
   
-  // Queen's Gambit
-  "Queen's Gambit": "strategic",
-  "Queen's Pawn": "strategic",
+  // Queen's Gambit and related
+  "Queen's Gambit": "queens_gambit",
+  "Queen's Pawn": "queens_gambit",
+  "Queen's Gambit Accepted": "queens_gambit",
+  "Queen's Gambit Declined": "queens_gambit",
+  "Slav Defense": "queens_gambit",
+  "Semi-Slav": "queens_gambit",
   
   // English
   "English Opening": "strategic",
   
-  // Tactical
+  // Other positional/strategic
+  "Caro-Kann": "defensive",
+  "London System": "strategic",
+  "Nimzo-Indian": "strategic",
+  "Catalan": "strategic",
+  
+  // Tactical/Sharp
   "Scotch Game": "tactical",
+  "Scotch Gambit": "aggressive",
   "Evans Gambit": "aggressive",
   "Danish Gambit": "aggressive",
+  "Smith-Morra": "aggressive",
+  "Vienna": "tactical",
+  "Four Knights": "tactical",
 };
 
 /**

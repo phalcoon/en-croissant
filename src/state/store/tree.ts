@@ -688,6 +688,10 @@ function makeMove({
   const isCheck = san.includes("+") && !san.includes("#");
   const isCheckmate = san.includes("#");
   
+  // Declare these at function scope so they're accessible in opening detection later
+  let opening: string | undefined;
+  let pieceKey: string | undefined;
+  
   // Trigger piece personality if we have all needed info
   // Works for both human and engine moves
   if (piece && isNormal(move)) {
@@ -731,33 +735,10 @@ function makeMove({
     store.set(pieceStartSquaresFamily(tabId), new Map(startSquaresMap));
     
     // Create unique piece key for personality assignment
-    const pieceKey = getPieceKey(piece.color, piece.role, actualStartSquare);
+    pieceKey = getPieceKey(piece.color, piece.role, actualStartSquare);
     
-    // Extract opening from state headers OR detect from moves
-    let opening = state.headers?.Opening;
-    
-    // If no opening in headers, try to detect from move sequence
-    if (!opening) {
-      const store = getDefaultStore();
-      const currentOpeningAtom = currentOpeningAtomFamily(tabId);
-      const storedOpening = store.get(currentOpeningAtom);
-      
-      // Detect opening from current game tree
-      opening = updateOpeningDetection(state.root, storedOpening);
-      
-      // Store detected opening
-      if (opening && opening !== storedOpening) {
-        store.set(currentOpeningAtom, opening);
-      }
-    }
-    
-    // Debug: Log opening detection
-    console.log('[Opening Detection]', {
-      hasHeaders: !!state.headers,
-      fromHeaders: state.headers?.Opening,
-      detected: opening,
-      pieceKey,
-    });
+    // Extract opening from state headers (detection will happen after move is added to tree)
+    opening = state.headers?.Opening;
     
     const moveContext: MoveContext = {
       piece,
@@ -857,6 +838,36 @@ function makeMove({
       } else {
         state.position = [...position, moveNode.children.length - 1];
       }
+    }
+  }
+  
+  // NOW detect opening after move is added to tree
+  // This must happen inside the personality block where opening/pieceKey/newFen are defined
+  if (piece && isNormal(move) && !opening && tabId) {
+    const store = getDefaultStore();
+    const currentOpeningAtom = currentOpeningAtomFamily(tabId);
+    const storedOpening = store.get(currentOpeningAtom);
+    
+    // Detect opening from current game tree (NOW includes the new move)
+    opening = updateOpeningDetection(state.root, storedOpening);
+    
+    // Store detected opening
+    if (opening && opening !== storedOpening) {
+      store.set(currentOpeningAtom, opening);
+    }
+    
+    // Debug: Log opening detection
+    console.log('[Opening Detection]', {
+      hasHeaders: !!state.headers,
+      fromHeaders: state.headers?.Opening,
+      detected: opening,
+      pieceKey,
+    });
+    
+    // Update the moveContext with the detected opening
+    const existingContext = recentMoveContexts.get(newFen);
+    if (existingContext) {
+      existingContext.opening = opening;
     }
   }
 }

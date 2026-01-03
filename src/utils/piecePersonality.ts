@@ -78,7 +78,7 @@ export interface PersonalityVariant {
   // Unique name for this variant (e.g., "peasant", "warrior", "italian")
   name: string;
   // Theme/category this personality belongs to
-  theme: "royal" | "aggressive" | "italian" | "spanish" | "french" | "sicilian" | "scholar" | "defensive" | "strategic" | "tactical" | "default";
+  theme: "royal" | "aggressive" | "italian" | "spanish" | "french" | "sicilian" | "queens_gambit" | "scholar" | "defensive" | "strategic" | "tactical" | "default";
   // Description of this personality variant
   description?: string;
   // Responses specific to this variant
@@ -173,6 +173,56 @@ function evaluateMoveQuality(
   }
   
   return "neutral";
+}
+
+/**
+ * Provides detailed explanation of why a move quality was selected
+ */
+function explainMoveQuality(
+  prevScore: ScoreValue | undefined,
+  currentScore: ScoreValue | undefined,
+  color: Color,
+): string {
+  // If we don't have both scores yet, return neutral
+  if (!prevScore || !currentScore) {
+    return "No evaluation available (missing previous or current score)";
+  }
+  
+  const cpLoss = getCPLoss(prevScore, currentScore, color);
+  const prevWin = getWinChance(normalizeScore(prevScore, color));
+  const currentWin = getWinChance(normalizeScore(currentScore, color));
+  const winChanceDiff = prevWin - currentWin;
+
+  // Format score values for display
+  const formatScore = (score: ScoreValue) => {
+    if ('type' in score && score.type === 'cp') return `${score.value}cp`;
+    if ('type' in score && score.type === 'mate') return `M${score.value}`;
+    return 'unknown';
+  };
+
+  const explanation = [
+    `Previous: ${formatScore(prevScore)} (${prevWin.toFixed(1)}% win chance)`,
+    `Current: ${formatScore(currentScore)} (${currentWin.toFixed(1)}% win chance)`,
+    `CP Loss: ${cpLoss.toFixed(1)}`,
+    `Win Chance Change: ${winChanceDiff >= 0 ? '-' : '+'}${Math.abs(winChanceDiff).toFixed(1)}%`,
+  ];
+
+  // Add quality determination logic
+  if (winChanceDiff > 20 || cpLoss > 300) {
+    explanation.push(`→ BLUNDER (${winChanceDiff > 20 ? `lost ${winChanceDiff.toFixed(1)}% win chance (>20%)` : `lost ${cpLoss.toFixed(1)}cp (>300cp)`})`);
+  } else if (winChanceDiff > 10 || cpLoss > 150) {
+    explanation.push(`→ BAD (${winChanceDiff > 10 ? `lost ${winChanceDiff.toFixed(1)}% win chance (>10%)` : `lost ${cpLoss.toFixed(1)}cp (>150cp)`})`);
+  } else if (winChanceDiff > 5 || cpLoss > 75) {
+    explanation.push(`→ DUBIOUS (${winChanceDiff > 5 ? `lost ${winChanceDiff.toFixed(1)}% win chance (>5%)` : `lost ${cpLoss.toFixed(1)}cp (>75cp)`})`);
+  } else if (winChanceDiff < -5) {
+    explanation.push(`→ EXCELLENT (gained ${Math.abs(winChanceDiff).toFixed(1)}% win chance (>5%))`);
+  } else if (winChanceDiff < -2) {
+    explanation.push(`→ GOOD (gained ${Math.abs(winChanceDiff).toFixed(1)}% win chance (>2%))`);
+  } else {
+    explanation.push(`→ NEUTRAL (win chance change within ±2%)`);
+  }
+
+  return explanation.join(' | ');
 }
 
 /**
@@ -506,12 +556,63 @@ export async function triggerPiecePersonality(context: MoveContext): Promise<voi
   // Find matching responses from the assigned variant or default responses
   const matchingResponses = findMatchingResponses({ ...pieceConfig, responses }, evaluatedContext);
   
-  if (matchingResponses.length === 0) return;
+  if (matchingResponses.length === 0) {
+    console.log('[Personality No Match]', {
+      piece: `${evaluatedContext.color} ${evaluatedContext.piece.role}`,
+      totalResponses: responses.length,
+      context: {
+        moveQuality: evaluateMoveQuality(evaluatedContext.prevScore, evaluatedContext.currentScore, evaluatedContext.color),
+        isCapture: evaluatedContext.isCapture,
+        isCheck: evaluatedContext.isCheck,
+        isCastling: evaluatedContext.isCastling,
+      }
+    });
+    return;
+  }
   
   // Select a response
   const response = selectWeightedResponse(matchingResponses);
   
   if (!response) return;
+  
+  // ========== DEBUG LOGGING: Dialog Selection Details ==========
+  const moveQuality = evaluateMoveQuality(evaluatedContext.prevScore, evaluatedContext.currentScore, evaluatedContext.color);
+  const qualityExplanation = explainMoveQuality(evaluatedContext.prevScore, evaluatedContext.currentScore, evaluatedContext.color);
+  
+  console.group(`🎭 [Personality Dialog] ${evaluatedContext.color} ${evaluatedContext.piece.role}`);
+  console.log('📜 Dialog Text:', response.text);
+  console.log('🎯 Dialog ID:', response.id);
+  console.log('👤 Piece:', `${evaluatedContext.color} ${evaluatedContext.piece.role} (${evaluatedContext.pieceKey || 'no-key'})`);
+  console.log('🎨 Personality Variant:', assignedVariant || 'default');
+  console.log('⭐ Move Quality:', moveQuality);
+  console.log('📊 Quality Explanation:', qualityExplanation);
+  console.log('🎲 Selection Process:', {
+    matchingResponses: matchingResponses.length,
+    selectedWeight: response.weight || 1,
+    totalWeight: matchingResponses.reduce((sum, r) => sum + (r.weight || 1), 0),
+  });
+  console.log('🔍 Move Context:', {
+    from: evaluatedContext.from,
+    to: evaluatedContext.to,
+    san: evaluatedContext.san,
+    isCapture: evaluatedContext.isCapture,
+    isCheck: evaluatedContext.isCheck,
+    isCastling: evaluatedContext.isCastling,
+    isPromotion: evaluatedContext.isPromotion,
+    opening: evaluatedContext.opening,
+    gamePhase: getGamePhase(evaluatedContext.halfMoves),
+  });
+  console.log('🎯 Conditions Met:', response.conditions.map(c => {
+    if (c.type === 'moveQuality') return `Quality: ${c.moveQuality}`;
+    if (c.type === 'specialMove') return `Special: ${c.specialMove}`;
+    if (c.type === 'pieceType') return `Piece: ${c.pieceType}`;
+    if (c.type === 'opening') return `Opening: ${c.openingPattern}`;
+    if (c.type === 'gamePhase') return `Phase: ${c.gamePhase}`;
+    if (c.type === 'position') return `Position: ${c.positionType}`;
+    return c.type;
+  }));
+  console.groupEnd();
+  // ========== END DEBUG LOGGING ==========
   
   // Mark as playing
   isCurrentlyPlaying = true;
@@ -564,12 +665,48 @@ export async function playGlobalClip(
 
 /**
  * Loads a personality configuration from a JSON file
+ * Supports loading separate white/black configs for color-specific dialogue
  */
 export async function loadPersonalityConfig(name: string): Promise<PersonalityConfig | null> {
   try {
+    // Try to load color-specific configs first (config-white.json and config-black.json)
+    const whiteResponse = await fetch(`/personalities/${name}/config-white.json`).catch(() => null);
+    const blackResponse = await fetch(`/personalities/${name}/config-black.json`).catch(() => null);
+    
+    if (whiteResponse?.ok && blackResponse?.ok) {
+      // Merge white and black configs
+      const whiteConfig = await whiteResponse.json();
+      const blackConfig = await blackResponse.json();
+      
+      const mergedConfig: PersonalityConfig = {
+        name: whiteConfig.name.replace('-white', '').replace('-black', ''),
+        description: `${whiteConfig.description} / ${blackConfig.description}`,
+        contextual: whiteConfig.contextual || blackConfig.contextual,
+        pieces: [...whiteConfig.pieces, ...blackConfig.pieces],
+        globalClips: whiteConfig.globalClips || blackConfig.globalClips,
+      };
+      
+      console.log('[Config Loader] Loaded color-specific configs:', {
+        white: whiteConfig.pieces.length,
+        black: blackConfig.pieces.length,
+        total: mergedConfig.pieces.length,
+      });
+      
+      // Store in atom for use by the system
+      const store = getDefaultStore();
+      store.set(piecePersonalitiesConfigAtom, mergedConfig);
+      
+      return mergedConfig;
+    }
+    
+    // Fall back to single config.json for backward compatibility
     const response = await fetch(`/personalities/${name}/config.json`);
     if (!response.ok) return null;
     const config = await response.json();
+    
+    console.log('[Config Loader] Loaded unified config:', {
+      pieces: config.pieces.length,
+    });
     
     // Store in atom for use by the system
     const store = getDefaultStore();

@@ -1,0 +1,1477 @@
+{
+  "name": "standard-black",
+  "description": "Black pieces - Defensive and reactive, countering White's initiative",
+  "contextual": true,
+  "pieces": [
+    {
+      "role": "pawn",
+      "color": "black",
+      "responses": [
+        {
+          "id": "pawn_fallback_1",
+          "text": "Holding steady.",
+          "conditions": [],
+          "weight": 1
+        }
+      ],
+      "personalities": [
+        {
+          "name": "default",
+          "theme": "default",
+          "responses": [
+            {
+              "id": "pawn_default_good",
+              "text": "Holding the line!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_excellent",
+              "text": "Counterattacking brilliantly!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_neutral",
+              "text": "Staying solid...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_dubious",
+              "text": "This feels risky...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_bad",
+              "text": "They're breaking through...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_default_blunder",
+              "text": "I'm captured! The line collapses!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "royal",
+          "theme": "royal",
+          "responses": [
+            {
+              "id": "pawn_royal_good",
+              "text": "Defending the realm!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_excellent",
+              "text": "Our defenses are impregnable!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_neutral",
+              "text": "Standing watch, my lord.",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_dubious",
+              "text": "Sire, I fear this position...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_bad",
+              "text": "The walls are breached, sire!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_royal_blunder",
+              "text": "The defenses have fallen!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "italian",
+          "theme": "italian",
+          "responses": [
+            {
+              "id": "pawn_italian_good",
+              "text": "Difesa forte! Strong defense!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_excellent",
+              "text": "Bellissimo contrattacco! Beautiful counter!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_neutral",
+              "text": "Restiamo calmi... staying calm...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_dubious",
+              "text": "Attenzione! This looks questionable...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_bad",
+              "text": "Aiuto! They're too strong!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_italian_blunder",
+              "text": "Finito! We are finished!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "aggressive",
+          "theme": "aggressive",
+          "responses": [
+            {
+              "id": "pawn_aggressive_good",
+              "text": "You want a fight? Here it is!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_excellent",
+              "text": "Counter-strike! Take that!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_neutral",
+              "text": "Waiting for my moment...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_dubious",
+              "text": "Risky, but I stand my ground!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_bad",
+              "text": "I won't give in! Even if it hurts!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_aggressive_blunder",
+              "text": "Crushed! But I fought till the end!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "sicilian",
+          "theme": "sicilian",
+          "responses": [
+            {
+              "id": "pawn_sicilian_good",
+              "text": "Sharp counter-play!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_excellent",
+              "text": "Turning the tables with tactics!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_neutral",
+              "text": "Creating counter-chances...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_dubious",
+              "text": "Maybe I'm overextending...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_bad",
+              "text": "Too aggressive in defense...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_sicilian_blunder",
+              "text": "The counter-attack failed miserably!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "french",
+          "theme": "french",
+          "responses": [
+            {
+              "id": "pawn_french_good",
+              "text": "Solid resistance!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_excellent",
+              "text": "Magnifique! Our structure holds!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_neutral",
+              "text": "Patience against the pressure...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_dubious",
+              "text": "Incertain... uncertain position...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_bad",
+              "text": "Sacré bleu! A crack in the wall!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_french_blunder",
+              "text": "Désastre! The fortress is breached!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "spanish",
+          "theme": "spanish",
+          "responses": [
+            {
+              "id": "pawn_spanish_good",
+              "text": "¡Resistencia! Classic defense!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_excellent",
+              "text": "¡Excelente! Traditional resilience!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_neutral",
+              "text": "With caution and respect...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_dubious",
+              "text": "¡Cuidado! This looks suspect...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_bad",
+              "text": "¡Problema! They found the weakness!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_spanish_blunder",
+              "text": "¡Catástrofe! Everything crumbles!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "queens_gambit",
+          "theme": "queens_gambit",
+          "responses": [
+            {
+              "id": "pawn_queens_gambit_good",
+              "text": "Strategic resistance, holding firm!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_excellent",
+              "text": "Masterful defensive structure!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_neutral",
+              "text": "Maintaining our defensive setup...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_dubious",
+              "text": "This disrupts our structure slightly...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_bad",
+              "text": "Our harmony is compromised...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "pawn_queens_gambit_blunder",
+              "text": "The defensive structure collapsed!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "knight",
+      "color": "black",
+      "responses": [
+        {
+          "id": "knight_fallback_1",
+          "text": "Defending.",
+          "conditions": [],
+          "weight": 1
+        }
+      ],
+      "personalities": [
+        {
+          "name": "default",
+          "theme": "default",
+          "responses": [
+            {
+              "id": "knight_default_good",
+              "text": "Blocking their advance!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_excellent",
+              "text": "Perfect defensive square!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_neutral",
+              "text": "Repositioning to defend...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_dubious",
+              "text": "This square feels exposed...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_bad",
+              "text": "I'm out of position!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_default_blunder",
+              "text": "Caught in the open!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "cavalier",
+          "theme": "royal",
+          "responses": [
+            {
+              "id": "knight_cavalier_good",
+              "text": "Guarding the kingdom!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_excellent",
+              "text": "No invader shall pass!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_neutral",
+              "text": "Patrolling our borders...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_dubious",
+              "text": "My lord, this position is questionable...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_bad",
+              "text": "The defenses weaken!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_cavalier_blunder",
+              "text": "The borders are lost!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "italian_knight",
+          "theme": "italian",
+          "responses": [
+            {
+              "id": "knight_italian_good",
+              "text": "Difesa tattica! Tactical defense!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_excellent",
+              "text": "Bravissimo! Stopping them cold!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_neutral",
+              "text": "Aspettando... waiting for them...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_dubious",
+              "text": "Preoccupante... worrying...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_bad",
+              "text": "Problematico! This is bad!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_italian_blunder",
+              "text": "Terribile! I'm lost!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "sicilian_knight",
+          "theme": "sicilian",
+          "responses": [
+            {
+              "id": "knight_sicilian_good",
+              "text": "Counter-jumping!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_excellent",
+              "text": "Counter-tactical strike!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_neutral",
+              "text": "Watching for counter-tactics...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_dubious",
+              "text": "Risky counter-position...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_bad",
+              "text": "The counter-play is failing!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_sicilian_blunder",
+              "text": "The counter failed! I'm done!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "french_knight",
+          "theme": "french",
+          "responses": [
+            {
+              "id": "knight_french_good",
+              "text": "Strategic counter-placement!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_excellent",
+              "text": "Parfait! Neutralizing their threats!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_neutral",
+              "text": "Careful repositioning...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_dubious",
+              "text": "Douteux... doubtful square...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_bad",
+              "text": "Mauvaise position! Bad position!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_french_blunder",
+              "text": "Quelle horreur! I'm captured!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "spanish_knight",
+          "theme": "spanish",
+          "responses": [
+            {
+              "id": "knight_spanish_good",
+              "text": "Classical resilience!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_excellent",
+              "text": "¡Perfecto! Traditional defense!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_neutral",
+              "text": "Respecting their strength...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_dubious",
+              "text": "¡Dudoso! This seems questionable...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_bad",
+              "text": "¡Mal! Bad placement!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "knight_spanish_blunder",
+              "text": "¡Perdido! I'm lost!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "bishop",
+      "color": "black",
+      "responses": [
+        {
+          "id": "bishop_fallback_1",
+          "text": "Watching.",
+          "conditions": [],
+          "weight": 1
+        }
+      ],
+      "personalities": [
+        {
+          "name": "default",
+          "theme": "default",
+          "responses": [
+            {
+              "id": "bishop_default_good",
+              "text": "Watching the diagonals!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_excellent",
+              "text": "A counter-diagonal strikes!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_neutral",
+              "text": "Monitoring their threats...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_dubious",
+              "text": "This diagonal feels unsafe...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_bad",
+              "text": "Poorly placed!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_default_blunder",
+              "text": "Exposed on the diagonal!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "cleric",
+          "theme": "royal",
+          "responses": [
+            {
+              "id": "bishop_cleric_good",
+              "text": "Protection from above!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_excellent",
+              "text": "Divine shield holds firm!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_neutral",
+              "text": "Praying for resilience...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_dubious",
+              "text": "Lord, test not my faith...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_bad",
+              "text": "The shield weakens!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_cleric_blunder",
+              "text": "Forsaken! The shield breaks!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "italian_bishop",
+          "theme": "italian",
+          "responses": [
+            {
+              "id": "bishop_italian_good",
+              "text": "Difesa elegante! Elegant defense!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_excellent",
+              "text": "Che resistenza! What resistance!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_neutral",
+              "text": "Guardando attentamente...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_dubious",
+              "text": "Pericoloso... dangerous...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_bad",
+              "text": "Brutta posizione! Ugly position!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_italian_blunder",
+              "text": "Nooo! Sono catturato!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "sicilian_bishop",
+          "theme": "sicilian",
+          "responses": [
+            {
+              "id": "bishop_sicilian_good",
+              "text": "Controlling defensive squares!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_excellent",
+              "text": "Counter-pressure on the diagonals!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_neutral",
+              "text": "Looking for counter-play...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_dubious",
+              "text": "Risky diagonal...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_bad",
+              "text": "Counter-play is failing!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_sicilian_blunder",
+              "text": "The counter-play collapsed!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "french_bishop",
+          "theme": "french",
+          "responses": [
+            {
+              "id": "bishop_french_good",
+              "text": "Fighting for freedom!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_excellent",
+              "text": "Liberté trouvée! Freedom found!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_neutral",
+              "text": "Seeking active squares...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_dubious",
+              "text": "Risqué... risky...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_bad",
+              "text": "Mauvais! This is bad!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_french_blunder",
+              "text": "Tragique! Total miscalculation!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "queens_gambit_bishop",
+          "theme": "queens_gambit",
+          "responses": [
+            {
+              "id": "bishop_queens_gambit_good",
+              "text": "Strategic defensive placement!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_excellent",
+              "text": "Harmonious defensive setup!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_neutral",
+              "text": "Coordinating our defenses...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_dubious",
+              "text": "Coordination slightly off...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_bad",
+              "text": "Setup is compromised!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "bishop_queens_gambit_blunder",
+              "text": "The harmony shattered!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "rook",
+      "color": "black",
+      "responses": [
+        {
+          "id": "rook_fallback_1",
+          "text": "Holding position.",
+          "conditions": [],
+          "weight": 1
+        }
+      ],
+      "personalities": [
+        {
+          "name": "default",
+          "theme": "default",
+          "responses": [
+            {
+              "id": "rook_default_good",
+              "text": "Holding the back rank!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_excellent",
+              "text": "Defending actively!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_neutral",
+              "text": "Staying vigilant...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_dubious",
+              "text": "Vulnerable file...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_bad",
+              "text": "File control slipping!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_default_blunder",
+              "text": "The back rank is lost!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "fortress",
+          "theme": "royal",
+          "responses": [
+            {
+              "id": "rook_fortress_good",
+              "text": "The fortress stands strong!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_excellent",
+              "text": "Unbreakable walls!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_neutral",
+              "text": "Defending the castle...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_dubious",
+              "text": "The walls show cracks...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_bad",
+              "text": "The fortress weakens!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_fortress_blunder",
+              "text": "The fortress crumbles!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "sicilian_rook",
+          "theme": "sicilian",
+          "responses": [
+            {
+              "id": "rook_sicilian_good",
+              "text": "Counter-file pressure!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_excellent",
+              "text": "Turning defense into offense!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_neutral",
+              "text": "Waiting for the counter-strike...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_dubious",
+              "text": "Counter-chances unclear...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_bad",
+              "text": "Counter-chances fading!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_sicilian_blunder",
+              "text": "No counter-chances left!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "queens_gambit_rook",
+          "theme": "queens_gambit",
+          "responses": [
+            {
+              "id": "rook_queens_gambit_good",
+              "text": "Defending the key file!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_excellent",
+              "text": "Solid file control!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_neutral",
+              "text": "Maintaining defensive structure...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_dubious",
+              "text": "Structure slightly compromised...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_bad",
+              "text": "Defensive structure failing!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "rook_queens_gambit_blunder",
+              "text": "The structure collapsed!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "queen",
+      "color": "black",
+      "responses": [
+        {
+          "id": "queen_fallback_1",
+          "text": "Ready.",
+          "conditions": [],
+          "weight": 1
+        }
+      ],
+      "personalities": [
+        {
+          "name": "default",
+          "theme": "default",
+          "responses": [
+            {
+              "id": "queen_default_good",
+              "text": "Defending with authority!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_excellent",
+              "text": "Counter-strike power!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_neutral",
+              "text": "Watching for opportunities...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_dubious",
+              "text": "Overextended position...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_bad",
+              "text": "Exposed and vulnerable!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_default_blunder",
+              "text": "The queen is lost! Disaster!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "monarch",
+          "theme": "royal",
+          "responses": [
+            {
+              "id": "queen_monarch_good",
+              "text": "The queen defends her realm!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_excellent",
+              "text": "Royal resistance prevails!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_neutral",
+              "text": "The queen stands ready.",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_dubious",
+              "text": "The queen risks too much...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_bad",
+              "text": "Royal danger imminent!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_monarch_blunder",
+              "text": "The realm's defender falls!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "sicilian_queen",
+          "theme": "sicilian",
+          "responses": [
+            {
+              "id": "queen_sicilian_good",
+              "text": "Counter-chaos activated!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_excellent",
+              "text": "Defensive fury unleashed!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_neutral",
+              "text": "Seeking counter-weaknesses...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_dubious",
+              "text": "Counter-balance uncertain...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_bad",
+              "text": "Counter-position collapsing!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_sicilian_blunder",
+              "text": "Trapped with no escape!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "french_queen",
+          "theme": "french",
+          "responses": [
+            {
+              "id": "queen_french_good",
+              "text": "Precise counter-play!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_excellent",
+              "text": "C'est brillant! Defensive mastery!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_neutral",
+              "text": "Calculating the defense...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_dubious",
+              "text": "Calculations look doubtful...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_bad",
+              "text": "Miscalculation endangers us!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_french_blunder",
+              "text": "Impossible! Completely miscalculated!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "queens_gambit_queen",
+          "theme": "queens_gambit",
+          "responses": [
+            {
+              "id": "queen_queens_gambit_good",
+              "text": "Elegant resilience!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_excellent",
+              "text": "Flawless defensive coordination!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_neutral",
+              "text": "Orchestrating our resistance...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_dubious",
+              "text": "Coordination faltering...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_bad",
+              "text": "Coordination breaking down!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "queen_queens_gambit_blunder",
+              "text": "All defenses shattered!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "king",
+      "color": "black",
+      "responses": [
+        {
+          "id": "king_fallback_1",
+          "text": "Cautiously...",
+          "conditions": [],
+          "weight": 1
+        }
+      ],
+      "personalities": [
+        {
+          "name": "default",
+          "theme": "default",
+          "responses": [
+            {
+              "id": "king_default_good",
+              "text": "Finding shelter.",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_excellent",
+              "text": "Safe from their threats!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_neutral",
+              "text": "Evading danger...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_dubious",
+              "text": "Still exposed...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_bad",
+              "text": "Danger closing in!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_default_blunder",
+              "text": "I'm trapped! Checkmate!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "sovereign",
+          "theme": "royal",
+          "responses": [
+            {
+              "id": "king_sovereign_good",
+              "text": "The throne is protected!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_excellent",
+              "text": "My kingdom endures!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_neutral",
+              "text": "Ensuring royal survival...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_dubious",
+              "text": "The throne remains vulnerable...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_bad",
+              "text": "Royal peril increases!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sovereign_blunder",
+              "text": "The throne is lost! Defeat!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "sicilian_king",
+          "theme": "sicilian",
+          "responses": [
+            {
+              "id": "king_sicilian_good",
+              "text": "Safe enough to counter!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_excellent",
+              "text": "Now we fight back!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_neutral",
+              "text": "Dodging their attacks...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_dubious",
+              "text": "Not safe enough yet...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_bad",
+              "text": "Danger intensifies!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_sicilian_blunder",
+              "text": "Cornered! No escape left!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "french_king",
+          "theme": "french",
+          "responses": [
+            {
+              "id": "king_french_good",
+              "text": "Fortified and secure!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "good" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_excellent",
+              "text": "En sécurité! In safety!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "excellent" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_neutral",
+              "text": "Maintaining fortress integrity...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "neutral" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_dubious",
+              "text": "The fortress shows weakness...",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "dubious" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_bad",
+              "text": "Fortress defenses failing!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "bad" }],
+              "weight": 1
+            },
+            {
+              "id": "king_french_blunder",
+              "text": "Fin du jeu! The game is over!",
+              "conditions": [{ "type": "moveQuality", "moveQuality": "blunder" }],
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
