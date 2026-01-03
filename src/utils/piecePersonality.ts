@@ -1,9 +1,21 @@
 import type { BestMoves, Score, ScoreValue } from "@/bindings";
-import { piecePersonalitiesConfigAtom, piecePersonalityEnabledAtom, piecePersonalityVolumeAtom, piecePersonalityNameAtom } from "@/state/atoms";
+import { 
+  piecePersonalitiesConfigAtom, 
+  piecePersonalityEnabledAtom, 
+  piecePersonalityVolumeAtom, 
+  piecePersonalityNameAtom,
+  pieceIdentityMapFamily,
+  currentOpeningAtomFamily
+} from "@/state/atoms";
 import { getDefaultStore } from "jotai";
 import type { Color, Piece, Role, Square } from "chessops";
 import { parseSquare } from "chessops";
 import { getCPLoss, getWinChance, normalizeScore } from "./score";
+import { 
+  getThemeFromOpening, 
+  selectPersonalityVariant,
+  type PersonalityTheme
+} from "./pieceIdentity";
 
 // Debounce map to prevent rapid-fire personality triggers
 const lastTriggerTimes = new Map<string, number>();
@@ -55,6 +67,22 @@ export interface PiecePersonality {
   color?: Color;
   // Responses this piece can give
   responses: PersonalityResponse[];
+  // Multiple personality variants for this piece type (optional)
+  personalities?: PersonalityVariant[];
+}
+
+/**
+ * A personality variant that can be assigned to individual pieces
+ */
+export interface PersonalityVariant {
+  // Unique name for this variant (e.g., "peasant", "warrior", "italian")
+  name: string;
+  // Theme/category this personality belongs to
+  theme: "royal" | "aggressive" | "italian" | "spanish" | "french" | "sicilian" | "scholar" | "defensive" | "strategic" | "tactical" | "default";
+  // Description of this personality variant
+  description?: string;
+  // Responses specific to this variant
+  responses: PersonalityResponse[];
 }
 
 /**
@@ -98,9 +126,13 @@ export interface MoveContext {
   color: Color;
   halfMoves: number;
   opening?: string;
+  // Piece identity tracking for individual personalities
+  pieceKey?: string; // Unique key like "white-pawn-e2"
+  startSquare?: Square; // Original square where piece started
   prevBestMoves?: BestMoves[];
   isSacrifice?: boolean;
   getCurrentScore?: () => ScoreValue | undefined; // Callback to get current score from tree
+  tabId?: string; // Tab ID for accessing tab-specific atoms
 }
 
 /**
@@ -394,15 +426,85 @@ export async function triggerPiecePersonality(context: MoveContext): Promise<voi
     }
   }
   
-  // Find personality for this piece
-  const personality = config.pieces.find(
+  // Find personality for this piece type
+  const pieceConfig = config.pieces.find(
     (p: PiecePersonality) => p.role === evaluatedContext.piece.role && (!p.color || p.color === evaluatedContext.color)
   );
   
-  if (!personality) return;
+  if (!pieceConfig) return;
   
-  // Find matching responses
-  const matchingResponses = findMatchingResponses(personality, evaluatedContext);
+  // Check if this piece already has an assigned personality variant
+  let assignedVariant: string | undefined;
+  let responses: PersonalityResponse[] = pieceConfig.responses;
+  
+  // Debug logging
+  console.log('[Personality Debug]', {
+    role: evaluatedContext.piece.role,
+    pieceKey: evaluatedContext.pieceKey,
+    tabId: evaluatedContext.tabId,
+    opening: evaluatedContext.opening,
+    hasPersonalities: !!pieceConfig.personalities,
+    personalitiesCount: pieceConfig.personalities?.length || 0,
+  });
+  
+  // If piece has personality variants and we have pieceKey and tabId
+  if (pieceConfig.personalities && pieceConfig.personalities.length > 0 && 
+      evaluatedContext.pieceKey && evaluatedContext.tabId) {
+    // Access tab-specific atom for persistent personality assignments
+    const identityAtom = pieceIdentityMapFamily(evaluatedContext.tabId);
+    const identityMap = store.get(identityAtom);
+    
+    assignedVariant = identityMap.get(evaluatedContext.pieceKey);
+    
+    if (!assignedVariant) {
+      // First move for this piece - assign personality based on opening
+      const theme = getThemeFromOpening(evaluatedContext.opening);
+      assignedVariant = selectPersonalityVariant(evaluatedContext.piece.role, theme, config);
+      
+      console.log('[Personality Assignment]', {
+        pieceKey: evaluatedContext.pieceKey,
+        opening: evaluatedContext.opening,
+        theme,
+        assignedVariant,
+      });
+      
+      // Store the assignment persistently in the atom
+      const newIdentityMap = new Map(identityMap);
+      newIdentityMap.set(evaluatedContext.pieceKey, assignedVariant);
+      store.set(identityAtom, newIdentityMap);
+      
+      // Also update opening atom if we have one
+      if (evaluatedContext.opening) {
+        const openingAtom = currentOpeningAtomFamily(evaluatedContext.tabId);
+        if (!store.get(openingAtom)) {
+          store.set(openingAtom, evaluatedContext.opening);
+        }
+      }
+    } else {
+      console.log('[Personality Using Existing]', {
+        pieceKey: evaluatedContext.pieceKey,
+        assignedVariant,
+      });
+    }
+    
+    // Get responses from the assigned variant
+    const variant = pieceConfig.personalities.find(v => v.name === assignedVariant);
+    if (variant) {
+      responses = variant.responses;
+      console.log('[Personality Variant Loaded]', {
+        variant: variant.name,
+        responsesCount: responses.length,
+      });
+    } else {
+      console.log('[Personality Variant NOT FOUND]', {
+        assignedVariant,
+        availableVariants: pieceConfig.personalities.map(p => p.name),
+      });
+    }
+  }
+  
+  // Find matching responses from the assigned variant or default responses
+  const matchingResponses = findMatchingResponses({ ...pieceConfig, responses }, evaluatedContext);
   
   if (matchingResponses.length === 0) return;
   

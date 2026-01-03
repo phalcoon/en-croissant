@@ -10,6 +10,18 @@ import {
   playGlobalClip,
   type MoveContext,
 } from "@/utils/piecePersonality";
+import { 
+  getPieceKey, 
+  updateStartSquaresAfterMove, 
+  initializeStandardStartSquares 
+} from "@/utils/pieceIdentity";
+import { updateOpeningDetection } from "@/utils/openingDetection";
+import {
+  pieceStartSquaresFamily,
+  pieceIdentityMapFamily,
+  currentOpeningAtomFamily,
+} from "@/state/atoms";
+import { getDefaultStore } from "jotai";
 import { castlingSide } from "chessops/chess";
 import {
   type GameHeaders,
@@ -24,6 +36,7 @@ import type { DrawShape } from "chessground/draw";
 import { type Move, isNormal } from "chessops";
 import { INITIAL_FEN, makeFen } from "chessops/fen";
 import { makeSan, parseSan } from "chessops/san";
+import { makeSquare, parseSquare } from "chessops/util";
 import { type Draft, produce } from "immer";
 import { type StateCreator, createStore } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
@@ -99,6 +112,7 @@ export interface TreeStoreState extends TreeState {
 export type TreeStore = ReturnType<typeof createTreeStore>;
 
 export const createTreeStore = (id?: string, initialTree?: TreeState) => {
+  const tabId = id || "default";
   const stateCreator: StateCreator<TreeStoreState> = (set, get) => ({
     ...(initialTree ?? defaultTree()),
 
@@ -108,10 +122,17 @@ export const createTreeStore = (id?: string, initialTree?: TreeState) => {
       set(() => state);
     },
 
-    reset: () =>
-      set(() => {
+    reset: () => {
+      // Initialize piece tracking atoms for new game
+      const store = getDefaultStore();
+      store.set(pieceStartSquaresFamily(tabId), initializeStandardStartSquares());
+      store.set(pieceIdentityMapFamily(tabId), new Map());
+      store.set(currentOpeningAtomFamily(tabId), undefined);
+      
+      return set(() => {
         return defaultTree();
-      }),
+      });
+    },
 
     save: () => {
       set((state) => ({
@@ -120,14 +141,21 @@ export const createTreeStore = (id?: string, initialTree?: TreeState) => {
       }));
     },
 
-    setFen: (fen) =>
-      set(
+    setFen: (fen) => {
+      // Clear piece tracking for custom position
+      const store = getDefaultStore();
+      store.set(pieceStartSquaresFamily(tabId), new Map());
+      store.set(pieceIdentityMapFamily(tabId), new Map());
+      store.set(currentOpeningAtomFamily(tabId), undefined);
+      
+      return set(
         produce((state) => {
           state.dirty = true;
           state.root = defaultTree(fen).root;
           state.position = [];
         }),
-      ),
+      );
+    },
 
     goToNext: () =>
       set((state) => {
@@ -167,6 +195,7 @@ export const createTreeStore = (id?: string, initialTree?: TreeState) => {
                 halfMoves: node.halfMoves,
                 opening: undefined,
                 isSacrifice: false,
+                tabId,
               };
               
               triggerPiecePersonality(moveContext).catch((err) => {
@@ -227,6 +256,7 @@ export const createTreeStore = (id?: string, initialTree?: TreeState) => {
       clock,
       changeHeaders = true,
     }) => {
+      const currentTabId = tabId; // Capture tabId before produce callback
       set(
         produce((state) => {
           if (typeof payload === "string") {
@@ -246,20 +276,24 @@ export const createTreeStore = (id?: string, initialTree?: TreeState) => {
             changeHeaders,
             mainline,
             clock,
+            tabId: currentTabId,
           });
         }),
       );
     },
 
-    appendMove: ({ payload, clock }) =>
-      set(
+    appendMove: ({ payload, clock }) => {
+      const currentTabId = tabId; // Capture tabId
+      return set(
         produce((state) => {
-          makeMove({ state, move: payload, last: true, clock });
+          makeMove({ state, move: payload, last: true, clock, tabId: currentTabId });
         }),
-      ),
+      );
+    },
 
-    makeMoves: ({ payload, mainline, changeHeaders = true }) =>
-      set(
+    makeMoves: ({ payload, mainline, changeHeaders = true }) => {
+      const currentTabId = tabId; // Capture tabId
+      return set(
         produce((state) => {
           state.dirty = true;
           const node = getNodeAtPath(state.root, state.position);
@@ -276,10 +310,12 @@ export const createTreeStore = (id?: string, initialTree?: TreeState) => {
               mainline,
               sound: i === payload.length - 1,
               changeHeaders,
+              tabId: currentTabId,
             });
           }
         }),
-      ),
+      );
+    },
     goToEnd: () =>
       set(
         produce((state) => {
@@ -600,6 +636,7 @@ function makeMove({
   mainline = false,
   clock,
   sound = true,
+  tabId,
 }: {
   state: TreeState;
   move: Move;
@@ -609,6 +646,7 @@ function makeMove({
   mainline?: boolean;
   clock?: number;
   sound?: boolean;
+  tabId: string;
 }) {
   const mainLine = Array.from(treeIteratorMainLine(state.root));
   const position = last
@@ -653,6 +691,74 @@ function makeMove({
   // Trigger piece personality if we have all needed info
   // Works for both human and engine moves
   if (piece && isNormal(move)) {
+    // Get square names for piece identity tracking
+    const fromSquareName = makeSquare(move.from);
+    const toSquareName = makeSquare(move.to);
+    
+    // Access tab-specific atom to get actual start square
+    const store = getDefaultStore();
+    let startSquaresMap = store.get(pieceStartSquaresFamily(tabId));
+    
+    // Initialize map if empty (lazy initialization for games that don't call reset)
+    if (startSquaresMap.size === 0) {
+      console.log('[Start Square Tracking] Map empty, initializing...');
+      startSquaresMap = initializeStandardStartSquares();
+      store.set(pieceStartSquaresFamily(tabId), startSquaresMap);
+    }
+    
+    console.log('[Start Square Tracking]', {
+      fromSquare: fromSquareName,
+      toSquare: toSquareName,
+      mapSize: startSquaresMap.size,
+      hasFromSquare: startSquaresMap.has(fromSquareName),
+      mappedStartSquare: startSquaresMap.get(fromSquareName),
+    });
+    
+    const actualStartSquareName = startSquaresMap.get(fromSquareName) || fromSquareName;
+    const actualStartSquare = parseSquare(actualStartSquareName) ?? move.from;
+    
+    console.log('[Piece Identity]', {
+      piece: piece.role,
+      fromSquareNumber: move.from,
+      fromSquareName,
+      actualStartSquareName,
+      actualStartSquareNumber: actualStartSquare,
+      pieceKeyWillBe: `${piece.color}-${piece.role}-${actualStartSquare}`,
+    });
+    
+    // Update start squares after this move
+    updateStartSquaresAfterMove(startSquaresMap, fromSquareName, toSquareName, isCapture);
+    store.set(pieceStartSquaresFamily(tabId), new Map(startSquaresMap));
+    
+    // Create unique piece key for personality assignment
+    const pieceKey = getPieceKey(piece.color, piece.role, actualStartSquare);
+    
+    // Extract opening from state headers OR detect from moves
+    let opening = state.headers?.Opening;
+    
+    // If no opening in headers, try to detect from move sequence
+    if (!opening) {
+      const store = getDefaultStore();
+      const currentOpeningAtom = currentOpeningAtomFamily(tabId);
+      const storedOpening = store.get(currentOpeningAtom);
+      
+      // Detect opening from current game tree
+      opening = updateOpeningDetection(state.root, storedOpening);
+      
+      // Store detected opening
+      if (opening && opening !== storedOpening) {
+        store.set(currentOpeningAtom, opening);
+      }
+    }
+    
+    // Debug: Log opening detection
+    console.log('[Opening Detection]', {
+      hasHeaders: !!state.headers,
+      fromHeaders: state.headers?.Opening,
+      detected: opening,
+      pieceKey,
+    });
+    
     const moveContext: MoveContext = {
       piece,
       from: move.from,
@@ -669,8 +775,11 @@ function makeMove({
       currentScore: undefined, // Will be set by analysis if available
       color: piece.color,
       halfMoves: moveNode.halfMoves,
-      opening: undefined, // Opening field doesn't exist on GameHeaders yet
+      opening,
       isSacrifice: false, // Would need additional analysis
+      pieceKey,
+      startSquare: actualStartSquare,
+      tabId,
     };
     
     // Store context for when analysis arrives

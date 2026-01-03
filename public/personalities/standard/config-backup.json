@@ -1,0 +1,367 @@
+{
+  "name": "standard",
+  "description": "A balanced, respectful personality for all pieces",
+  "contextual": false,
+  "pieces": [
+    {
+      "role": "pawn",
+      "responses": [
+        {
+          "id": "pawn_good_1",
+          "text": "Forward march!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "good" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_excellent_1",
+          "text": "Breaking through!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "excellent" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_neutral_1",
+          "text": "One step at a time.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "neutral" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_dubious_1",
+          "text": "Is this the right path?",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "dubious" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_bad_1",
+          "text": "Hmm, not my best move.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "bad" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_capture_1",
+          "text": "Got him!",
+          "conditions": [
+            { "type": "specialMove", "specialMove": "capture" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "pawn_promotion_1",
+          "text": "Finally, a promotion!",
+          "conditions": [
+            { "type": "specialMove", "specialMove": "promotion" },
+            { "type": "pieceType", "pieceType": "pawn" }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "role": "knight",
+      "responses": [
+        {
+          "id": "knight_good_1",
+          "text": "Hop, skip, and jump!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "good" },
+            { "type": "pieceType", "pieceType": "knight" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_excellent_1",
+          "text": "A perfect jump!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "excellent" },
+            { "type": "pieceType", "pieceType": "knight" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_neutral_1",
+          "text": "Advancing position.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "neutral" },
+            { "type": "pieceType", "pieceType": "knight" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_dubious_1",
+          "text": "A questionable leap.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "dubious" },
+            { "type": "pieceType", "pieceType": "knight" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_bad_1",
+          "text": "That wasn't optimal...",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "bad" },
+            { "type": "pieceType", "pieceType": "knight" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "knight_check_1",
+          "text": "Check! From an unexpected angle!",
+          "conditions": [
+            { "type": "specialMove", "specialMove": "check" },
+            { "type": "pieceType", "pieceType": "knight" }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "role": "bishop",
+      "responses": [
+        {
+          "id": "bishop_good_1",
+          "text": "Diagonals are my domain.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "good" },
+            { "type": "pieceType", "pieceType": "bishop" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_excellent_1",
+          "text": "A brilliant diagonal strike!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "excellent" },
+            { "type": "pieceType", "pieceType": "bishop" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_neutral_1",
+          "text": "Repositioning...",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "neutral" },
+            { "type": "pieceType", "pieceType": "bishop" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_dubious_1",
+          "text": "Not the clearest diagonal.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "dubious" },
+            { "type": "pieceType", "pieceType": "bishop" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "bishop_bad_1",
+          "text": "I should have stayed put.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "bad" },
+            { "type": "pieceType", "pieceType": "bishop" }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "role": "rook",
+      "responses": [
+        {
+          "id": "rook_good_1",
+          "text": "Straight and strong!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "good" },
+            { "type": "pieceType", "pieceType": "rook" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_excellent_1",
+          "text": "Dominating the file!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "excellent" },
+            { "type": "pieceType", "pieceType": "rook" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_neutral_1",
+          "text": "Holding the line.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "neutral" },
+            { "type": "pieceType", "pieceType": "rook" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_dubious_1",
+          "text": "Perhaps not ideal.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "dubious" },
+            { "type": "pieceType", "pieceType": "rook" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_bad_1",
+          "text": "That was reckless.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "bad" },
+            { "type": "pieceType", "pieceType": "rook" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "rook_castling_1",
+          "text": "Protecting the king!",
+          "conditions": [
+            { "type": "specialMove", "specialMove": "castling" },
+            { "type": "pieceType", "pieceType": "rook" }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "role": "queen",
+      "responses": [
+        {
+          "id": "queen_good_1",
+          "text": "The queen moves with purpose.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "good" },
+            { "type": "pieceType", "pieceType": "queen" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_excellent_1",
+          "text": "Magnificent!",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "excellent" },
+            { "type": "pieceType", "pieceType": "queen" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_neutral_1",
+          "text": "Surveying the board.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "neutral" },
+            { "type": "pieceType", "pieceType": "queen" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_dubious_1",
+          "text": "This may not be best.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "dubious" },
+            { "type": "pieceType", "pieceType": "queen" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_bad_1",
+          "text": "A rare misstep.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "bad" },
+            { "type": "pieceType", "pieceType": "queen" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_blunder_1",
+          "text": "Oh no! What have I done?",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "blunder" },
+            { "type": "pieceType", "pieceType": "queen" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "queen_check_1",
+          "text": "Check! The queen demands attention!",
+          "conditions": [
+            { "type": "specialMove", "specialMove": "check" },
+            { "type": "pieceType", "pieceType": "queen" }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "role": "king",
+      "responses": [
+        {
+          "id": "king_good_1",
+          "text": "A wise move.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "good" },
+            { "type": "pieceType", "pieceType": "king" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_neutral_1",
+          "text": "Cautiously proceeding.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "neutral" },
+            { "type": "pieceType", "pieceType": "king" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_dubious_1",
+          "text": "A slightly risky step.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "dubious" },
+            { "type": "pieceType", "pieceType": "king" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_bad_1",
+          "text": "I may have walked into danger.",
+          "conditions": [
+            { "type": "moveQuality", "moveQuality": "bad" },
+            { "type": "pieceType", "pieceType": "king" }
+          ],
+          "weight": 1
+        },
+        {
+          "id": "king_castling_1",
+          "text": "Safety first!",
+          "conditions": [
+            { "type": "specialMove", "specialMove": "castling" },
+            { "type": "pieceType", "pieceType": "king" }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "globalClips": {
+    "brilliant": "brilliant.mp3",
+    "blunder": "blunder.mp3",
+    "checkmate": "checkmate.mp3",
+    "stalemate": "stalemate.mp3"
+  }
+}

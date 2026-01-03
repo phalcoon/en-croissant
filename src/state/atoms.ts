@@ -206,6 +206,32 @@ export const piecePersonalityNameAtom = atomWithStorage<string>(
 
 export const piecePersonalitiesConfigAtom = atom<any | null>(null);
 
+/**
+ * Tracks the original starting square of each piece currently on the board
+ * Key: current square, Value: starting square (where piece began the game)
+ * Format: "e4" -> "e2" (the pawn on e4 started at e2)
+ * This is tab-specific and resets when starting a new game
+ */
+export const pieceStartSquaresFamily = atomFamily((tabId: string) =>
+  atom<Map<string, string>>(new Map())
+);
+
+/**
+ * Tracks which personality variant is assigned to each piece
+ * Key format: "white-pawn-e2" maps to personality variant name like "peasant" or "italian"
+ * This is tab-specific and resets when starting a new game
+ */
+export const pieceIdentityMapFamily = atomFamily((tabId: string) =>
+  atom<Map<string, string>>(new Map())
+);
+
+/**
+ * Tracks opening name for current game to influence personality assignments
+ */
+export const currentOpeningAtomFamily = atomFamily((tabId: string) =>
+  atom<string | undefined>(undefined)
+);
+
 export const pieceSetAtom = atomWithStorage<string>("piece-set", "staunty");
 export const boardImageAtom = atomWithStorage<string>(
   "board-image",

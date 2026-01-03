@@ -1,0 +1,166 @@
+{
+  "name": "standard",
+  "description": "Personality system with individual piece personalities based on opening",
+  "contextual": true,
+  "pieces": [
+    {
+      "role": "pawn",
+      "responses": [],
+      "personalities": [
+        {
+          "name": "default",
+          "theme": "default",
+          "description": "Standard pawn personality",
+          "responses": [
+            {
+              "id": "pawn_neutral_1",
+              "text": "One step at a time.",
+              "conditions": [
+                { "type": "moveQuality", "moveQuality": "neutral" },
+                { "type": "pieceType", "pieceType": "pawn" }
+              ],
+              "weight": 1
+            },
+            {
+              "id": "pawn_good_1",
+              "text": "Forward march!",
+              "conditions": [
+                { "type": "moveQuality", "moveQuality": "good" },
+                { "type": "pieceType", "pieceType": "pawn" }
+              ],
+              "weight": 1
+            },
+            {
+              "id": "pawn_excellent_1",
+              "text": "Breaking through!",
+              "conditions": [
+                { "type": "moveQuality", "moveQuality": "excellent" },
+                { "type": "pieceType", "pieceType": "pawn" }
+              ],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "peasant",
+          "theme": "royal",
+          "description": "A loyal peasant serving the king",
+          "responses": [
+            {
+              "id": "peasant_pawn_neutral",
+              "text": "For the king's glory!",
+              "conditions": [
+                { "type": "moveQuality", "moveQuality": "neutral" },
+                { "type": "pieceType", "pieceType": "pawn" }
+              ],
+              "weight": 1
+            },
+            {
+              "id": "peasant_pawn_good",
+              "text": "I serve my liege well!",
+              "conditions": [
+                { "type": "moveQuality", "moveQuality": "good" },
+                { "type": "pieceType", "pieceType": "pawn" }
+              ],
+              "weight": 1
+            },
+            {
+              "id": "peasant_pawn_excellent",
+              "text": "The king shall be pleased with this sacrifice!",
+              "conditions": [
+                { "type": "moveQuality", "moveQuality": "excellent" },
+                { "type": "pieceType", "pieceType": "pawn" }
+              ],
+              "weight": 1
+            },
+            {
+              "id": "peasant_pawn_dubious",
+              "text": "I hope I haven't displeased his majesty...",
+              "conditions": [
+                { "type": "moveQuality", "moveQuality": "dubious" },
+                { "type": "pieceType", "pieceType": "pawn" }
+              ],
+              "weight": 1
+            },
+            {
+              "id": "peasant_pawn_bad",
+              "text": "Forgive me, my lord!",
+              "conditions": [
+                { "type": "moveQuality", "moveQuality": "bad" },
+                { "type": "pieceType", "pieceType": "pawn" }
+              ],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "name": "italian",
+          "theme": "italian",
+          "description": "Passionate Italian fighter",
+          "responses": [
+            {
+              "id": "italian_pawn_neutral",
+              "text": "Andiamo! Let's go!",
+              "conditions": [
+                { "type": "moveQuality", "moveQuality": "neutral" },
+                { "type": "pieceType", "pieceType": "pawn" }
+              ],
+              "weight": 1
+            },
+            {
+              "id": "italian_pawn_good",
+              "text": "Molto bene! Very good!",
+              "conditions": [
+                { "type": "moveQuality", "moveQuality": "good" },
+                { "type": "pieceType", "pieceType": "pawn" }
+              ],
+              "weight": 1
+            },
+            {
+              "id": "italian_pawn_excellent",
+              "text": "Magnifico! Perfetto!",
+              "conditions": [
+                { "type": "moveQuality", "moveQuality": "excellent" },
+                { "type": "pieceType", "pieceType": "pawn" }
+              ],
+              "weight": 1
+            },
+            {
+              "id": "italian_pawn_dubious",
+              "text": "Mamma mia... not sure about this...",
+              "conditions": [
+                { "type": "moveQuality", "moveQuality": "dubious" },
+                { "type": "pieceType", "pieceType": "pawn" }
+              ],
+              "weight": 1
+            },
+            {
+              "id": "italian_pawn_bad",
+              "text": "Che disastro! What a disaster!",
+              "conditions": [
+                { "type": "moveQuality", "moveQuality": "bad" },
+                { "type": "pieceType", "pieceType": "pawn" }
+              ],
+              "weight": 1
+            },
+            {
+              "id": "italian_pawn_blunder",
+              "text": "Madonna! What have I done?!",
+              "conditions": [
+                { "type": "moveQuality", "moveQuality": "blunder" },
+                { "type": "pieceType", "pieceType": "pawn" }
+              ],
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalClips": {
+    "brilliant": "brilliant.mp3",
+    "blunder": "blunder.mp3",
+    "checkmate": "checkmate.mp3",
+    "stalemate": "stalemate.mp3"
+  }
+}
